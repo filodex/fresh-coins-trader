@@ -6,7 +6,7 @@ export class ConfigService {
 
     get(settingName) {
         const configFileText = fs.readFileSync(this.configPath, { encoding: 'utf8' })
-        const allSettingsArray = configFileText.split('/n')
+        const allSettingsArray = configFileText.split('\r\n')
         for (const setting of allSettingsArray) {
             const settingSplitted = setting.split('=')
             if (settingSplitted[0] === settingName) {
