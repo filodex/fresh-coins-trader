@@ -42,7 +42,7 @@ export class EtherscanApi {
             throw new Error('Error in getListOfTokenTransfers' + error)
         }
     }
-    async getListOfTokenTransfers({ address, offset = 500, page = 1, sort = 'desc' }) {
+    async getListOfTokenTransfers({ address, offset = 600, page = 1, sort = 'desc' }) {
         try {
             const url = new URL('https://api.etherscan.io/api?module=account&action=tokentx')
             url.searchParams.append('apikey', this.#apiToken)
