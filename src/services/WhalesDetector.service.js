@@ -1,31 +1,34 @@
 import etherscanApi from '../apis/EtherscanApi/EtherscanApi.js'
+import configService from './config.service.js'
 
 export class WhalesDetectorService {
-    async getListOfWalletsBoughtThisToken({ address }) {
+    async checkIsWalletProfitable({ address }) {}
+    async getSetOfWalletsBoughtThisToken({ address }) {
         try {
-            const listOfWalletsBoughtThisToken = []
+            const setOfWalletsBoughtThisToken = new Set()
             const { listOfTokenTransfers } = await etherscanApi.getListOfTokenTransfers({
                 address,
             })
             for (const tokenTransfer of listOfTokenTransfers) {
                 const senderAdress = tokenTransfer.from
                 if (tokenTransfer.tokenSymbol === 'WETH') {
-                    listOfWalletsBoughtThisToken.push(senderAdress)
+                    setOfWalletsBoughtThisToken.add(senderAdress)
                 }
             }
-            return { listOfWalletsBoughtThisToken }
+            return { setOfWalletsBoughtThisToken }
         } catch (error) {
             console.log('Error in getListOfWalletsToCheck', error)
         }
     }
-    async findGoodWhalesInListOfWallets({ listOfWallets }) {
-        if (!Array.isArray(listOfWallets)) {
-            throw new Error('findGoodWhalesInListOfWallets need an array to be provided')
-        }
+    async findGoodWhalesInListOfWallets({ setOfWallets }) {
         try {
-            for (const walletAddress of listOfWallets) {
-                const { etherBalance } = await etherscanApi
+            const addressesToCheckForProfit = []
+            for (const address of setOfWallets) {
+                const { etherBalance } = await etherscanApi.getWalletEtherBalanceForSingleAddress({ address })
+                const ethBalanceThreshold = configService.get('ethBalanceThreshold')
+                Number(etherBalance) >= ethBalanceThreshold ? addressesToCheckForProfit.push(address) : null
             }
+            console.log(addressesToCheckForProfit)
         } catch (error) {
             console.log('Error in findGoodWhalesInListOfWallets', error)
         }
