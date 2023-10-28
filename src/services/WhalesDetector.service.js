@@ -1,4 +1,4 @@
-import etherscanApi from './src/apis/EtherscanApi/EtherscanApi.js'
+import etherscanApi from '../apis/EtherscanApi/EtherscanApi.js'
 
 export class WhalesDetectorService {
     async getListOfWalletsBoughtThisToken({ address }) {
@@ -24,6 +24,7 @@ export class WhalesDetectorService {
         }
         try {
             for (const walletAddress of listOfWallets) {
+                const { etherBalance } = await etherscanApi
             }
         } catch (error) {
             console.log('Error in findGoodWhalesInListOfWallets', error)
