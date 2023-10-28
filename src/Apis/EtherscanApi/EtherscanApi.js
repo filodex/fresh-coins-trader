@@ -3,22 +3,41 @@ export class EtherscanApi {
     constructor(apiToken) {
         this.#apiToken = apiToken
     }
-    async getWalletBalance({ address }) {
+    async getWalletTokenBalanceForSingleAddressByContractAddress({ address, contractAddress }) {
         try {
-            const url = new URL('https://api.etherscan.io/api?module=account&action=tokentx')
+            const url = new URL('https://api.etherscan.io/api?module=account&action=tokenbalance&address')
             url.searchParams.append('apikey', this.#apiToken)
-            url.searchParams.append('offset', offset)
-            url.searchParams.append('page', page)
-            url.searchParams.append('sort', sort)
-            address ? url.searchParams.append('address', address) : null
+            url.searchParams.append('address', address)
+            url.searchParams.append('contractaddress', contractAddress ?? '')
+            console.log(url.toString())
 
             const res = await fetch(url)
             const resJson = await res.json()
+
             if (resJson.message !== 'OK') {
-                console.log(resJson)
+                console.log('Something wrong in getWalletBalanceForSingleAddress', resJson)
                 throw new Error(`resJson message: ${resJson.message}, resJson result: ${resJson.result}`)
             }
-            return {}
+            return { tokenBalance: resJson.result }
+        } catch (error) {
+            throw new Error('Error in getWalletTokenBalanceForSingleAddress' + error)
+        }
+    }
+    async getWalletEtherBalanceForSingleAddress({ address }) {
+        try {
+            const url = new URL('https://api.etherscan.io/api?module=account&action=balance')
+            url.searchParams.append('apikey', this.#apiToken)
+            url.searchParams.append('address', address)
+
+            const res = await fetch(url)
+            const resJson = await res.json()
+
+            if (resJson.message !== 'OK') {
+                console.log('Something wrong in getWalletBalanceForSingleAddress', resJson)
+                throw new Error(`resJson message: ${resJson.message}, resJson result: ${resJson.result}`)
+            }
+
+            return { etherBalance: resJson.result / 10 ** 18, weiBalance: resJson.result }
         } catch (error) {
             throw new Error('Error in getListOfTokenTransfers' + error)
         }
@@ -35,7 +54,7 @@ export class EtherscanApi {
             const res = await fetch(url)
             const resJson = await res.json()
             if (resJson.message !== 'OK') {
-                console.log(resJson)
+                console.log('Something wrong in getListOfTokenTransfers', resJson)
                 throw new Error(`resJson message: ${resJson.message}, resJson result: ${resJson.result}`)
             }
             return { listOfTokenTransfers: resJson.result }
