@@ -1,6 +1,7 @@
-import etherscanApi from '../apis/EtherscanApi/EtherscanApi.js'
+import etherscanApi from '../Apis/EtherscanApi.js'
 import syveApi from '../apis/SyveApi.js'
-import configService from './config.service.js'
+import configService from './Config.service.js'
+import EthAddress from '../model/EthAddress.js'
 
 export class WhalesDetectorService {
     async getProfitableWhaleWalletsBoughtThisToken({ address }) {
@@ -14,15 +15,19 @@ export class WhalesDetectorService {
             console.log(`Error in getProfitableWhaleWalletsBoughtThisToken`, error)
         }
     }
-    async checkIsWalletProfitable({ address }) {
+    async getWalletTotalPerformance({ address, ethAddress }) {
         try {
-            const { totalProfit } = await syveApi.getLatestTotalPerformance({ address })
-            console.log(totalProfit, address)
+            const { totalProfit, totalWalletPerformance } = await syveApi.getLatestTotalPerformance({
+                address,
+            })
+            ethAddress.totalProfitStats = totalWalletPerformance
+            let isProfitable
             if (Number(totalProfit) > configService.get('balanceEnoughThreshold')) {
-                return true
+                isProfitable = true
             } else {
-                return false
+                isProfitable = false
             }
+            return { isProfitable, totalWalletPerformance }
         } catch (error) {
             console.log('Error in checkIsWalletProfitable', error)
         }
@@ -50,9 +55,10 @@ export class WhalesDetectorService {
         try {
             const addressesWithGoodProfit = []
             for (const address of setOfWallets) {
-                const isProfitable = await this.checkIsWalletProfitable({ address })
+                const ethAddress = new EthAddress({ address })
+                const { isProfitable } = await this.getWalletTotalPerformance({ address, ethAddress })
                 if (isProfitable) {
-                    addressesWithGoodProfit.push(address)
+                    addressesWithGoodProfit.push(ethAddress)
                 }
             }
 
