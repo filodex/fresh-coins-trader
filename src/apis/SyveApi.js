@@ -1,3 +1,5 @@
+import { sleep } from '../utils/utils.js'
+
 export class SyveApi {
     async getLatestTotalPerformance({ address }) {
         try {
@@ -8,9 +10,12 @@ export class SyveApi {
             const resJson = await res.json()
             if (resJson.error) {
                 console.log(resJson.error)
+                if (resJson.error?.includes('Rate limit of')) {
+                    await sleep(1000)
+                }
             }
 
-            return { totalwalletPerformance: resJson, totalProfit: resJson.total_profit }
+            return { totalWalletPerformance: resJson, totalProfit: resJson.total_profit }
         } catch (error) {
             throw new Error('Error in getLatestTotalPerformance' + error)
         }
