@@ -1,8 +1,9 @@
 import 'dotenv/config'
-import etherscanApi from './src/apis/EtherscanApi/EtherscanApi.js'
-import configService from './src/services/config.service.js'
+import etherscanApi from './src/Apis/EtherscanApi.js'
+import configService from './src/services/Config.service.js'
 import whalesDetectorService from './src/Services/WhalesDetector.service.js'
 import syveApi from './src/apis/SyveApi.js'
+import EthAddress from './src/model/EthAddress.js'
 
 const titanxTokenAddress = '0xc45a81bc23a64ea556ab4cdf08a86b61cdceea8b'
 const walletsToCheckProfit = [
@@ -12,9 +13,14 @@ const walletsToCheckProfit = [
     '0xdef1c0ded9bec7f1a1670819833240f027b25eff',
 ]
 
-const { addressesWithGoodProfit } = await whalesDetectorService.getProfitableWhaleWalletsBoughtThisToken({
-    address: titanxTokenAddress,
-})
-console.log(addressesWithGoodProfit)
+// const { addressesWithGoodProfit } = await whalesDetectorService.getProfitableWhaleWalletsBoughtThisToken({
+//     address: titanxTokenAddress,
+// })
+// console.log(addressesWithGoodProfit)
+// addressesWithGoodProfit[0].appendToListInFile()
+const addr = new EthAddress({ address: '0xedw4lk43l43hkj43kjh' })
+addr.totalProfitStats = { a: 1, b: 2 }
+
+addr.appendToListInFile()
 
 setInterval(() => {}, 100000)
