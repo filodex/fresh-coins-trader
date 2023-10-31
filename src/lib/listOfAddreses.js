@@ -1,4 +1,4 @@
-export const watchlist = [
+export default [
     '0x3e57efEf507b4db7aCFa2eE79CeCA6B19e18D106',
     '0x0D260D8aD1CCAe73f0d53BE60Ff6Aa6ed94A01FC',
     '0x3f7C536193a8BB51F4Ff5834793E05C030481A3d',
