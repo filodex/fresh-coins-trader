@@ -13,14 +13,7 @@ const walletsToCheckProfit = [
     '0xdef1c0ded9bec7f1a1670819833240f027b25eff',
 ]
 
-// const { addressesWithGoodProfit } = await whalesDetectorService.getProfitableWhaleWalletsBoughtThisToken({
-//     address: titanxTokenAddress,
-// })
-// console.log(addressesWithGoodProfit)
-// addressesWithGoodProfit[0].appendToListInFile()
-const addr = new EthAddress({ address: '0xedw4lk43l43hkj43kjh' })
-addr.totalProfitStats = { a: 1, b: 2 }
-
-addr.appendToListInFile()
+const { listOfWallets } = whalesDetectorService.readListOfWhaleWalletsFromFile()
+console.log(listOfWallets)
 
 setInterval(() => {}, 100000)
