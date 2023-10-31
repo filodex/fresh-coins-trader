@@ -2,8 +2,12 @@ import etherscanApi from '../Apis/EtherscanApi.js'
 import syveApi from '../apis/SyveApi.js'
 import configService from './Config.service.js'
 import EthAddress from '../model/EthAddress.js'
+import path from 'path'
+import fs from 'fs'
 
 export class WhalesDetectorService {
+    #listOfWalletsFilePath = path.join(path.resolve(), 'src', 'lib', 'goodWhales.json')
+
     async getProfitableWhaleWalletsBoughtThisToken({ address }) {
         try {
             const { setOfWalletsBoughtThisToken } = await this.getSetOfWalletsBoughtThisToken({ address })
@@ -50,6 +54,11 @@ export class WhalesDetectorService {
         } catch (error) {
             console.log('Error in getListOfWalletsToCheck', error)
         }
+    }
+    readListOfWhaleWalletsFromFile() {
+        const text = fs.readFileSync(this.#listOfWalletsFilePath)
+        const listOfWallets = JSON.parse(text)
+        return { listOfWallets }
     }
     async findProfitableWalletsInListOfWallets({ setOfWallets }) {
         try {
