@@ -2,11 +2,6 @@ import path from 'path'
 import fs from 'fs'
 
 export default class EthAddress {
-    balance = {
-        updated: undefined,
-        value: undefined,
-    }
-    totalProfitStats
     constructor({ address }) {
         this.address = address
     }
