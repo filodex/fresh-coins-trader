@@ -7,6 +7,7 @@ import EthAddress from './src/model/EthAddress.js'
 import traderService from './src/services/Trader.service.js'
 import path from 'path'
 import fs from 'fs'
+import { sleep } from './src/utils/utils.js'
 
 /**
  * Нашел токены, которые купили несколько крутых ребяt
@@ -33,4 +34,13 @@ setInterval(async () => {
             fs.appendFileSync(path.join(path.resolve(), 'src', 'lib', 'tokensBought.txt'), '\n' + jsonToWrite)
         }
     }
-}, 10000)
+}, 20000)
+
+process.on('uncaughtException', async (err) => {
+    console.log(err)
+    await sleep(5000)
+})
+process.on('unhandledRejection', async (err) => {
+    console.log(err)
+    await sleep(5000)
+})

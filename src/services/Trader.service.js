@@ -9,7 +9,7 @@ export class TraderService {
     #listOfWalletsFilePath = path.join(path.resolve(), 'src', 'lib', 'goodWhales.json')
 
     /**@returns {contractAddress,contractAddress} */
-    async findTokensTradedByGoodWhales({ transfersTime = 30 } = {}) {
+    async findTokensTradedByGoodWhales({ transfersTime = 100 } = {}) {
         // transfersTime in minutes
         const { tokensTradedSet } = await this.#getSetOfTokensTradedAndAddToEthAddress({
             listOfAddresses: this.#listOfEthAddresses,
