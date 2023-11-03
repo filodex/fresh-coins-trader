@@ -1,0 +1,3 @@
+
+{"tokenAddress":"0x030d5c270bb0d6b940047187d8cbd6f84aaa7ef6","boughtAt":"2023-11-03T15:36:23.017Z"}
+{"tokenAddress":"0x0b216d7be0e7406e28cbcc96d733e344ba0d763b","boughtAt":"2023-11-03T15:36:23.020Z"}
