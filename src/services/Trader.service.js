@@ -9,14 +9,14 @@ export class TraderService {
     #listOfWalletsFilePath = path.join(path.resolve(), 'src', 'lib', 'goodWhales.json')
 
     /**@returns {contractAddress,contractAddress} */
-    async findTokensTradedByGoodWhales({ transfersTime = 100 } = {}) {
+    async findTokensTradedByGoodWhales({ transfersTime = 150 } = {}) {
         // transfersTime in minutes
         const { tokensTradedSet } = await this.#getSetOfTokensTradedAndAddToEthAddress({
             listOfAddresses: this.#listOfEthAddresses,
             transfersTime,
         })
-        // console.log('set', tokensTradedSet)
-        // console.log(this.#listOfEthAddresses)
+        console.log('set', tokensTradedSet)
+        console.log(this.#listOfEthAddresses)
 
         const { tokensTradedMoreThanOnce } = this.#findTokensTradedMoreThanOneWallet({
             tokensTradedSet,
@@ -164,7 +164,8 @@ export class TraderService {
                     enumerable: false,
                 })
             } catch (error) {
-                throw new Error('Error in for of in getSetOfTokensTradedAndAddToEthAddress' + error)
+                // throw new Error('Error in for of in getSetOfTokensTradedAndAddToEthAddress' + error)
+                console.log(error)
             }
         }
         return { tokensTradedSet }
