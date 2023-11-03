@@ -9,33 +9,6 @@ import path from 'path'
 import fs from 'fs'
 import { sleep } from './src/utils/utils.js'
 
-/**
- * Нашел токены, которые купили несколько крутых ребяt
- * Узнать цену, по которой я могу сейчас тоже купить
- * Запомнить цену
- */
-console.log(await traderService.findTokensTradedByGoodWhales())
-
-const tokensBoughtSet = new Set()
-
-setInterval(async () => {
-    const { tokensTradedByMoreThanOneWallet } = await traderService.findTokensTradedByGoodWhales()
-    for (const key in tokensTradedByMoreThanOneWallet) {
-        if (tokensTradedByMoreThanOneWallet[key].walletsCount > 2) {
-            if (tokensBoughtSet.has(key)) {
-                continue
-            }
-
-            tokensBoughtSet.add(key)
-            const jsonToWrite = JSON.stringify({
-                tokenAddress: key,
-                boughtAt: new Date(),
-            })
-            fs.appendFileSync(path.join(path.resolve(), 'src', 'lib', 'tokensBought.txt'), '\n' + jsonToWrite)
-        }
-    }
-}, 20000)
-
 process.on('uncaughtException', async (err) => {
     console.log(err)
     await sleep(5000)
@@ -44,3 +17,39 @@ process.on('unhandledRejection', async (err) => {
     console.log(err)
     await sleep(5000)
 })
+
+/**
+ * Нашел токены, которые купили несколько крутых ребяt
+ * Узнать цену, по которой я могу сейчас тоже купить
+ * Запомнить цену
+ */
+// console.log(await traderService.findTokensTradedByGoodWhales())
+
+const tokensBoughtSet = new Set()
+
+setInterval(async () => {
+    try {
+        const { tokensTradedByMoreThanOneWallet } = await traderService.findTokensTradedByGoodWhales()
+        console.log(tokensTradedByMoreThanOneWallet)
+        for (const key in tokensTradedByMoreThanOneWallet) {
+            if (tokensTradedByMoreThanOneWallet[key].walletsCount >= 2) {
+                if (tokensBoughtSet.has(key)) {
+                    continue
+                }
+
+                tokensBoughtSet.add(key)
+                const jsonToWrite = JSON.stringify({
+                    tokenAddress: key,
+                    boughtAt: new Date(),
+                })
+                console.log('jsonToWrite', jsonToWrite)
+                fs.appendFileSync(
+                    path.join(path.resolve(), 'src', 'lib', 'tokensBought.txt'),
+                    '\n' + jsonToWrite
+                )
+            }
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}, 20000)
