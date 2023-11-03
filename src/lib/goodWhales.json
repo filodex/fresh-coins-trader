@@ -1,144 +1,156 @@
 [
-  {
-    "balance": {},
-    "address": "0x3e57efEf507b4db7aCFa2eE79CeCA6B19e18D106"
-  },
-  {
-    "balance": {},
-    "address": "0x0D260D8aD1CCAe73f0d53BE60Ff6Aa6ed94A01FC"
-  },
-  {
-    "balance": {},
-    "address": "0x3f7C536193a8BB51F4Ff5834793E05C030481A3d"
-  },
-  {
-    "balance": {},
-    "address": "0x42D78dDED2305E11914947b07B92F7E9675d9BCb"
-  },
-  {
-    "balance": {},
-    "address": "0x7CB6D73a687cA25e96A2Ebcc6A51f07b49857386"
-  },
-  {
-    "balance": {},
-    "address": "0xe9ccdf5612F6092EfF7D67B4Ec730B4432cA8CCF"
-  },
-  {
-    "balance": {},
-    "address": "0x37e38E229ecEBBf9a6F4B8479B71508Ece16D597"
-  },
-  {
-    "balance": {},
-    "address": "0x36A0EE3aFB54bfaAf132aeD59f6aaA675Fa1da33"
-  },
-  {
-    "balance": {},
-    "address": "0xE65f5AA38b867f9159b2f6aA658abF6F58A21C18"
-  },
-  {
-    "balance": {},
-    "address": "0xF1f890B43b463f3AEE993995d9eaB80a94A43958"
-  },
-  {
-    "balance": {},
-    "address": "0x42048942108a4C371e3B8252e01478128c2e8457"
-  },
-  {
-    "balance": {},
-    "address": "0x57d180bB8BFb5B021f96DD71Eb499f70294cE4AE"
-  },
-  {
-    "balance": {},
-    "address": "0x42048942108a4C371e3B8252e01478128c2e8457"
-  },
-  {
-    "balance": {},
-    "address": "0xDb5969f2bCF31051C89c69Cb47BB2AEf492579cE"
-  },
-  {
-    "balance": {},
-    "address": "0x86dd9393539D2413ABDD273Af7ab604A103f91FB"
-  },
-  {
-    "balance": {},
-    "address": "0xd4FFB9c0D616a7cBba0eBdB03fF60165edfD9e84"
-  },
-  {
-    "balance": {},
-    "address": "0xE68B9b33963347bA4E97150EFc7b4cF035458200"
-  },
-  {
-    "balance": {},
-    "address": "0x3754860e3B3AE40b3B9f195C8f1b34d718ebffB6"
-  },
-  {
-    "balance": {},
-    "address": "0x1071316b698da9947b2F267A02fD77e17ef2Fb5b"
-  },
-  {
-    "balance": {},
-    "address": "0xd9158d245d05cbEd496053641aAE09888994b2e9"
-  },
-  {
-    "balance": {},
-    "address": "0xC94782F82a18175F3402C0Bed1aaf59Cf1d15bB7"
-  },
-  {
-    "balance": {},
-    "address": "0xD9cB2313CE3dcba4e521497535F53a6616f06F85"
-  },
-  {
-    "balance": {},
-    "address": "0x5c1Ef9FDF2dC91eA2eFD2F21cD2AC24A243FDAF3"
-  },
-  {
-    "balance": {},
-    "address": "0x6B5bA6d2F7659eD400fbB2C4F43509e0Cc397777"
-  },
-  {
-    "balance": {},
-    "address": "0xA304131ecb56Cc6Ea33CCA0Ca90d5559C74C2e9f"
-  },
-  {
-    "address": "0x905256c9b924127bbfe5d3ba520448bc434a548d",
-    "totalProfitStats": {
-      "wallet_address": "0x905256c9b924127bbfe5d3ba520448bc434a548d",
-      "realized_profit": 12766.25082806777,
-      "realized_investment": 17557.8795787634,
-      "realized_return": 72.7095249218408,
-      "unrealized_profit": -4081.170534339304,
-      "unrealized_investment": 4858.234944682587,
-      "unrealized_return": -84.00521137427097,
-      "total_profit": 8685.080293728466,
-      "total_investment": 22416.114523445987,
-      "total_return": 38.74480693183631,
-      "win_rate": 0.4447513812154696,
-      "total_trades": 478,
-      "total_buys": 210,
-      "total_sells": 268,
-      "first_trade_timestamp": 1686894599,
-      "last_trade_timestamp": 1698894635
+    {
+        "balance": {},
+        "address": "0x3e57efEf507b4db7aCFa2eE79CeCA6B19e18D106"
+    },
+    {
+        "balance": {},
+        "address": "0x0D260D8aD1CCAe73f0d53BE60Ff6Aa6ed94A01FC"
+    },
+    {
+        "balance": {},
+        "address": "0x3f7C536193a8BB51F4Ff5834793E05C030481A3d"
+    },
+    {
+        "balance": {},
+        "address": "0x42D78dDED2305E11914947b07B92F7E9675d9BCb"
+    },
+    {
+        "balance": {},
+        "address": "0x7CB6D73a687cA25e96A2Ebcc6A51f07b49857386"
+    },
+    {
+        "balance": {},
+        "address": "0xe9ccdf5612F6092EfF7D67B4Ec730B4432cA8CCF"
+    },
+    {
+        "balance": {},
+        "address": "0x37e38E229ecEBBf9a6F4B8479B71508Ece16D597"
+    },
+    {
+        "balance": {},
+        "address": "0x36A0EE3aFB54bfaAf132aeD59f6aaA675Fa1da33"
+    },
+    {
+        "balance": {},
+        "address": "0xE65f5AA38b867f9159b2f6aA658abF6F58A21C18"
+    },
+    {
+        "balance": {},
+        "address": "0xF1f890B43b463f3AEE993995d9eaB80a94A43958"
+    },
+    {
+        "balance": {},
+        "address": "0x42048942108a4C371e3B8252e01478128c2e8457"
+    },
+    {
+        "balance": {},
+        "address": "0x57d180bB8BFb5B021f96DD71Eb499f70294cE4AE"
+    },
+    {
+        "balance": {},
+        "address": "0x42048942108a4C371e3B8252e01478128c2e8457"
+    },
+    {
+        "balance": {},
+        "address": "0xDb5969f2bCF31051C89c69Cb47BB2AEf492579cE"
+    },
+    {
+        "balance": {},
+        "address": "0x86dd9393539D2413ABDD273Af7ab604A103f91FB"
+    },
+    {
+        "balance": {},
+        "address": "0xd4FFB9c0D616a7cBba0eBdB03fF60165edfD9e84"
+    },
+    {
+        "balance": {},
+        "address": "0xE68B9b33963347bA4E97150EFc7b4cF035458200"
+    },
+    {
+        "balance": {},
+        "address": "0x3754860e3B3AE40b3B9f195C8f1b34d718ebffB6"
+    },
+    {
+        "balance": {},
+        "address": "0x1071316b698da9947b2F267A02fD77e17ef2Fb5b"
+    },
+    {
+        "balance": {},
+        "address": "0xd9158d245d05cbEd496053641aAE09888994b2e9"
+    },
+    {
+        "balance": {},
+        "address": "0xC94782F82a18175F3402C0Bed1aaf59Cf1d15bB7"
+    },
+    {
+        "balance": {},
+        "address": "0xD9cB2313CE3dcba4e521497535F53a6616f06F85"
+    },
+    {
+        "balance": {},
+        "address": "0x5c1Ef9FDF2dC91eA2eFD2F21cD2AC24A243FDAF3"
+    },
+    {
+        "balance": {},
+        "address": "0x6B5bA6d2F7659eD400fbB2C4F43509e0Cc397777"
+    },
+    {
+        "balance": {},
+        "address": "0xA304131ecb56Cc6Ea33CCA0Ca90d5559C74C2e9f"
+    },
+    {
+        "balance": {},
+        "address": "0x40505aeD7d57F474A70f9f238d7aF0431969Ec05"
+    },
+    {
+        "balance": {},
+        "address": "0xC2f1Dd064a80E1b5239B3c5f42177Da1558700eF"
+    },
+    {
+        "balance": {},
+        "address": "0x7DC2bbDa44C0e3e5CA48ac2c4586a85a9A545512"
+    },
+    {
+        "address": "0x905256c9b924127bbfe5d3ba520448bc434a548d",
+        "totalProfitStats": {
+            "wallet_address": "0x905256c9b924127bbfe5d3ba520448bc434a548d",
+            "realized_profit": 12766.25082806777,
+            "realized_investment": 17557.8795787634,
+            "realized_return": 72.7095249218408,
+            "unrealized_profit": -4081.170534339304,
+            "unrealized_investment": 4858.234944682587,
+            "unrealized_return": -84.00521137427097,
+            "total_profit": 8685.080293728466,
+            "total_investment": 22416.114523445987,
+            "total_return": 38.74480693183631,
+            "win_rate": 0.4447513812154696,
+            "total_trades": 478,
+            "total_buys": 210,
+            "total_sells": 268,
+            "first_trade_timestamp": 1686894599,
+            "last_trade_timestamp": 1698894635
+        }
+    },
+    {
+        "address": "0xf7fc149cdb128304c0aed87e05d47d066e6b9722",
+        "totalProfitStats": {
+            "wallet_address": "0xf7fc149cdb128304c0aed87e05d47d066e6b9722",
+            "realized_profit": 121770.95623775691,
+            "realized_investment": 14577.282054853049,
+            "realized_return": 835.347465868763,
+            "unrealized_profit": -61036.20707575757,
+            "unrealized_investment": 65173.67321603682,
+            "unrealized_return": -93.65162965947242,
+            "total_profit": 60734.74916199934,
+            "total_investment": 79750.95527088987,
+            "total_return": 76.15551306652286,
+            "win_rate": 0.12379935965848453,
+            "total_trades": 1000,
+            "total_buys": 861,
+            "total_sells": 139,
+            "first_trade_timestamp": 1683478415,
+            "last_trade_timestamp": 1696053755
+        }
     }
-  },
-  {
-    "address": "0xf7fc149cdb128304c0aed87e05d47d066e6b9722",
-    "totalProfitStats": {
-      "wallet_address": "0xf7fc149cdb128304c0aed87e05d47d066e6b9722",
-      "realized_profit": 121770.95623775691,
-      "realized_investment": 14577.282054853049,
-      "realized_return": 835.347465868763,
-      "unrealized_profit": -61036.20707575757,
-      "unrealized_investment": 65173.67321603682,
-      "unrealized_return": -93.65162965947242,
-      "total_profit": 60734.74916199934,
-      "total_investment": 79750.95527088987,
-      "total_return": 76.15551306652286,
-      "win_rate": 0.12379935965848453,
-      "total_trades": 1000,
-      "total_buys": 861,
-      "total_sells": 139,
-      "first_trade_timestamp": 1683478415,
-      "last_trade_timestamp": 1696053755
-    }
-  }
 ]
