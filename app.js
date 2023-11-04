@@ -29,6 +29,8 @@ const tokensBoughtSet = new Set()
 
 setInterval(async () => {
     try {
+        traderService.updateListOfEthAddressesFromFile()
+
         const { tokensTradedByMoreThanOneWallet } = await traderService.findTokensTradedByGoodWhales()
         console.log(tokensTradedByMoreThanOneWallet)
         for (const key in tokensTradedByMoreThanOneWallet) {
@@ -41,6 +43,9 @@ setInterval(async () => {
                 const jsonToWrite = JSON.stringify({
                     tokenAddress: key,
                     boughtAt: new Date(),
+                    walletsCount: tokensTradedByMoreThanOneWallet[key]?.walletsCount,
+                    lastBuy: tokensTradedByMoreThanOneWallet[key]?.lastBuyDate,
+                    tokenName: tokensTradedByMoreThanOneWallet[key]?.tokenName,
                 })
                 console.log('jsonToWrite', jsonToWrite)
                 fs.appendFileSync(
@@ -52,4 +57,4 @@ setInterval(async () => {
     } catch (error) {
         console.log(error)
     }
-}, 20000)
+}, 120000)
