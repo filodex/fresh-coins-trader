@@ -46,7 +46,7 @@ export class EtherscanApi {
     }
     async getListOfTokenTransfers({ address, offset = 400, page = 1, sort = 'desc' }) {
         try {
-            await sleep(500)
+            await sleep(300)
             console.log('Requesting to etherscan for list of tiken transfers')
             const url = new URL('https://api.etherscan.io/api?module=account&action=tokentx')
             url.searchParams.append('apikey', this.#apiToken)
