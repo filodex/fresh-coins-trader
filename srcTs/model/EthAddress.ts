@@ -3,7 +3,7 @@ import fs from 'fs'
 
 export default class EthAddress {
     address: string
-
+    latestTokenTransfers: any
     constructor({ address }: { address: string }) {
         this.address = address
     }
