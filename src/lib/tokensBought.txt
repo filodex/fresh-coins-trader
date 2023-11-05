@@ -1,3 +1,0 @@
-
-{"tokenAddress":"0x0a437faddcdbca45e13d4fd4b88b3ba4f12a6ff8","boughtAt":"2023-11-03T21:17:29.642Z","walletsCount":2,"lastBuy":"2023-11-03T21:14:35.000Z","tokenName":"Algorithms"}
-{"tokenAddress":"0xa2dab8da9a112ffe10f492482cd40ba8b82355e8","boughtAt":"2023-11-03T21:17:29.643Z","walletsCount":2,"lastBuy":"2023-11-03T21:13:47.000Z","tokenName":"SafeMoon"}
