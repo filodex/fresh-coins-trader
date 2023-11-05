@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import etherscanApi from './apis/EtherscanApi.js'
 import { returnValueOfGetWalletTokenBalanceForSingleAddressByContractAddress } from './apis/IEtherscanApi'
-import whalesDetectorService from './services/WhalesDetector.service.js'
+// import whalesDetectorService from './services/WhalesDetector.service.js'
 import { sleep } from './utils/utils.js'
 import path from 'path'
 import traderService from './services/Trader.service.js'
