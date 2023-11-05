@@ -6,7 +6,7 @@ import EthAddress from '../model/EthAddress.js'
 export class TraderService {
     #listOfEthAddresses: any
     constructor({} = {}) {}
-    #listOfWalletsFilePath = path.join(path.resolve(), 'src', 'lib', 'goodWhales.json')
+    #listOfWalletsFilePath = path.join(path.resolve(), 'diff', 'goodWhales.json')
 
     async findTokensTradedByGoodWhales({ transfersTime = 150 } = {}) {
         // transfersTime in minutes
@@ -138,13 +138,14 @@ export class TraderService {
         listOfTokenTransfers,
         transfersTime,
     }: {
-        listOfTokenTransfers: any
+        listOfTokenTransfers: any[]
         transfersTime: any
     }) {
-        const latestTokenTransfers = []
+        const latestTokenTransfers: any[] = []
         for (const tokenTransfer of listOfTokenTransfers) {
+            const transfer: any = tokenTransfer
             if (new Date().getTime() / 1000 - tokenTransfer.timeStamp < transfersTime * 60) {
-                latestTokenTransfers.push(tokenTransfer)
+                latestTokenTransfers.push(transfer)
             } else {
                 break
             }
@@ -167,10 +168,12 @@ export class TraderService {
                     offset: 100,
                 })
 
-                const { latestTokenTransfers } = this.#filterTransfersByLatest({
-                    listOfTokenTransfers,
-                    transfersTime,
-                })
+                const { latestTokenTransfers }: { latestTokenTransfers: any } = this.#filterTransfersByLatest(
+                    {
+                        listOfTokenTransfers,
+                        transfersTime,
+                    }
+                )
 
                 for (const transfer of latestTokenTransfers) {
                     tokensTradedSet.add(transfer.contractAddress)
