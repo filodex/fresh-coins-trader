@@ -6,7 +6,7 @@ import {
 } from './IEtherscanApi.js'
 
 export class EtherscanApi implements IEtrescanApi {
-    private apiToken
+    private apiToken: string
     constructor(apiToken: string | undefined) {
         if (!apiToken) {
             throw new Error('No Etherscan API token')
