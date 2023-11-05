@@ -1,0 +1,13 @@
+
+{"tokenAddress":"0x9f508e800654b3d2644312cfe4dfad54520a8dae","boughtAt":"2023-11-05T11:15:21.476Z","walletsCount":6,"lastBuy":"2023-11-05T11:09:59.000Z","tokenName":"Gemini AI"}
+{"tokenAddress":"0x7dbc0e989815baacbd7cc1060464aaee561befcb","boughtAt":"2023-11-05T11:15:21.827Z","walletsCount":5,"lastBuy":"2023-11-05T08:54:59.000Z","tokenName":"Grok AI"}
+{"tokenAddress":"0x9f508e800654b3d2644312cfe4dfad54520a8dae","boughtAt":"2023-11-05T11:15:54.568Z","walletsCount":6,"lastBuy":"2023-11-05T11:09:59.000Z","tokenName":"Gemini AI"}
+{"tokenAddress":"0x7dbc0e989815baacbd7cc1060464aaee561befcb","boughtAt":"2023-11-05T11:15:54.866Z","walletsCount":5,"lastBuy":"2023-11-05T08:54:59.000Z","tokenName":"Grok AI"}
+{"tokenAddress":"0x9f508e800654b3d2644312cfe4dfad54520a8dae","boughtAt":"2023-11-05T11:17:00.156Z","walletsCount":6,"lastBuy":"2023-11-05T11:09:59.000Z","tokenName":"Gemini AI","price":"0.001917"}
+{"tokenAddress":"0x7dbc0e989815baacbd7cc1060464aaee561befcb","boughtAt":"2023-11-05T11:17:00.524Z","walletsCount":5,"lastBuy":"2023-11-05T08:54:59.000Z","tokenName":"Grok AI","price":"0.0000005181"}
+{"tokenAddress":"0x9f508e800654b3d2644312cfe4dfad54520a8dae","boughtAt":"2023-11-05T11:17:36.717Z","walletsCount":6,"lastBuy":"2023-11-05T11:09:59.000Z","tokenName":"Gemini AI","price":"0.001892"}
+{"tokenAddress":"0x7dbc0e989815baacbd7cc1060464aaee561befcb","boughtAt":"2023-11-05T11:17:37.020Z","walletsCount":5,"lastBuy":"2023-11-05T08:54:59.000Z","tokenName":"Grok AI","price":"0.0000005181"}
+!!!
+{"tokenAddress":"0x9f508e800654b3d2644312cfe4dfad54520a8dae","boughtAt":"2023-11-05T11:19:28.417Z","walletsCount":6,"lastBuy":"2023-11-05T11:09:59.000Z","tokenName":"Gemini AI","price":"0.002109"}
+{"tokenAddress":"0x7dbc0e989815baacbd7cc1060464aaee561befcb","boughtAt":"2023-11-05T11:19:28.744Z","walletsCount":4,"lastBuy":"2023-11-05T08:54:59.000Z","tokenName":"Grok AI","price":"0.0000005260"}
+{"tokenAddress":"0x1782bb88ae0aa07031bc05bbe2bd4150c9da223a","boughtAt":"2023-11-05T12:53:20.311Z","walletsCount":2,"lastBuy":"2023-11-05T12:52:11.000Z","tokenName":"Clickart.ai","price":"0.0003491"}
