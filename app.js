@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import etherscanApi from './src/Apis/EtherscanApi.js'
+import etherscanApi from './src/apis/EtherscanApi.js'
 import configService from './src/services/Config.service.js'
 import whalesDetectorService from './src/Services/WhalesDetector.service.js'
 import syveApi from './src/apis/SyveApi.js'
