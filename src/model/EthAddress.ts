@@ -11,7 +11,7 @@ export default class EthAddress {
     async updateBalance() {}
 
     async appendToListInFile() {
-        const goodWhalesJsonPath = path.join(path.resolve(), 'src', 'lib', 'goodWhales.json')
+        const goodWhalesJsonPath = path.join(path.resolve(), 'diff', 'goodWhales.json')
         const fileText = fs.readFileSync(goodWhalesJsonPath, { encoding: 'utf-8' })
         const jsoned = JSON.parse(fileText)
         jsoned.push(this)
