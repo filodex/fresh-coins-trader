@@ -6,6 +6,7 @@ import { sleep } from './utils/utils.js'
 import path from 'path'
 import traderService from './services/Trader.service.js'
 import fs from 'fs'
+import dexScreenerApi from './apis/DexScreenerApi.js'
 
 process.on('uncaughtException', async (err) => {
     console.log(err)
@@ -16,40 +17,59 @@ process.on('unhandledRejection', async (err) => {
     await sleep(5000)
 })
 
-writeGoodTrades()
+const tokensBoughtSet = new Set()
+
+await writeGoodTrades()
 
 async function writeGoodTrades() {
-    const tokensBoughtSet = new Set()
+    try {
+        traderService.updateListOfEthAddressesFromFile()
 
-    setInterval(async () => {
-        try {
-            traderService.updateListOfEthAddressesFromFile()
-
-            const { tokensTradedByMoreThanOneWallet } = await traderService.findTokensTradedByGoodWhales()
-            console.log(tokensTradedByMoreThanOneWallet)
-            for (const key in tokensTradedByMoreThanOneWallet) {
-                if (tokensTradedByMoreThanOneWallet[key].walletsCount >= 2) {
-                    if (tokensBoughtSet.has(key)) {
-                        continue
-                    }
-
-                    tokensBoughtSet.add(key)
-                    const jsonToWrite = JSON.stringify({
-                        tokenAddress: key,
-                        boughtAt: new Date(),
-                        walletsCount: tokensTradedByMoreThanOneWallet[key]?.walletsCount,
-                        lastBuy: tokensTradedByMoreThanOneWallet[key]?.lastBuyDate,
-                        tokenName: tokensTradedByMoreThanOneWallet[key]?.tokenName,
-                    })
-                    console.log('jsonToWrite', jsonToWrite)
-                    fs.appendFileSync(
-                        path.join(path.resolve(), 'src', 'lib', 'tokensBought.txt'),
-                        '\n' + jsonToWrite
-                    )
+        const { tokensTradedByMoreThanOneWallet } = await traderService.findTokensTradedByGoodWhales()
+        console.log(tokensTradedByMoreThanOneWallet)
+        for (const key in tokensTradedByMoreThanOneWallet) {
+            if (tokensTradedByMoreThanOneWallet[key].walletsCount >= 2) {
+                if (tokensBoughtSet.has(key)) {
+                    continue
                 }
+
+                let tokenPrice
+                try {
+                    const pairs = await dexScreenerApi.getPairsDataByName(
+                        tokensTradedByMoreThanOneWallet[key]?.tokenSymbol
+                    )
+                    console.log(pairs)
+
+                    for (const pair of pairs) {
+                        if (pair.pairCreatedAt || 0 > new Date().getTime() - 1000 * 60 * 60 * 24) {
+                            tokenPrice = pair.priceUsd
+                            break
+                        }
+                    }
+                } catch (error) {
+                    console.log(error)
+                }
+
+                tokensBoughtSet.add(key)
+                const jsonToWrite = JSON.stringify({
+                    tokenAddress: key,
+                    boughtAt: new Date(),
+                    walletsCount: tokensTradedByMoreThanOneWallet[key]?.walletsCount,
+                    lastBuy: tokensTradedByMoreThanOneWallet[key]?.lastBuyDate,
+                    tokenName: tokensTradedByMoreThanOneWallet[key]?.tokenName,
+                    price: tokenPrice,
+                })
+                console.log('jsonToWrite', jsonToWrite)
+                fs.appendFileSync(path.join(path.resolve(), 'diff', 'tokensBought.txt'), '\n' + jsonToWrite)
             }
-        } catch (error) {
-            console.log(error)
         }
-    }, 120000)
+        setTimeout(() => {
+            writeGoodTrades()
+        }, 20000)
+    } catch (error) {
+        console.log(error)
+        setTimeout(() => {
+            writeGoodTrades()
+        }, 20000)
+    }
 }
