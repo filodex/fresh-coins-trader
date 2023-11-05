@@ -48,13 +48,26 @@ setInterval(async () => {
                     tokenName: tokensTradedByMoreThanOneWallet[key]?.tokenName,
                 })
                 console.log('jsonToWrite', jsonToWrite)
-                fs.appendFileSync(
-                    path.join(path.resolve(), 'src', 'lib', 'tokensBought.txt'),
-                    '\n' + jsonToWrite
-                )
+                fs.appendFileSync(path.join(path.resolve(), 'diff', 'tokensBought.txt'), '\n' + jsonToWrite)
             }
         }
     } catch (error) {
         console.log(error)
     }
 }, 120000)
+
+for (let key in Object.keys(obj).sort((a, b) => {
+    console.log(a, b)
+    if (a < b) return -1
+    if (a > b) return 1
+    return 0
+})) {
+    console.log(key)
+}
+
+Object.keys(obj).sort((a, b) => {
+    console.log(a, b)
+    if (a < b) return -1
+    if (a > b) return 1
+    return 0
+})
