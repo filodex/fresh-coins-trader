@@ -5,10 +5,9 @@ import EthAddress from '../model/EthAddress.js'
 import path from 'path'
 import fs from 'fs'
 import { returnGetWalletTotalPerformance, setOfWalletsBoughtThisToken } from './IWhalesDetector.service'
-import { IGoodWhales } from '../lib/IGoodWhales.js'
 
 export class WhalesDetectorService {
-    #listOfWalletsFilePath = path.join(path.resolve(), 'src', 'lib', 'goodWhales.json')
+    #listOfWalletsFilePath = path.join(path.resolve(), 'diff', 'goodWhales.json')
 
     async getProfitableWhaleWalletsBoughtThisToken({ address }: { address: string }) {
         try {
@@ -56,12 +55,12 @@ export class WhalesDetectorService {
     }): Promise<setOfWalletsBoughtThisToken> {
         try {
             const setOfWalletsBoughtThisToken: Set<string> = new Set()
-            const listOfWalletsBoughtThisToken = []
+            const listOfWalletsBoughtThisToken: Array<any> = []
             const { listOfTokenTransfers } = await etherscanApi.getListOfTokenTransfers({
                 address,
             })
             for (const tokenTransfer of listOfTokenTransfers) {
-                const senderAdress = tokenTransfer.from
+                const senderAdress: string = tokenTransfer.from
                 if (tokenTransfer.tokenSymbol !== 'WETH') {
                     setOfWalletsBoughtThisToken.add(senderAdress)
                     listOfWalletsBoughtThisToken.push(senderAdress)
@@ -75,7 +74,7 @@ export class WhalesDetectorService {
     readListOfWhaleWalletsFromFile(): { listOfWallets: EthAddress[] } {
         const text: string = String(fs.readFileSync(this.#listOfWalletsFilePath))
         const listOfWallets = JSON.parse(text)
-        listOfWallets.forEach((element: IGoodWhales) => {
+        listOfWallets.forEach((element: any) => {
             element = new EthAddress({ address: element.address })
         })
         return { listOfWallets }
@@ -86,7 +85,7 @@ export class WhalesDetectorService {
         setOfWallets: Set<string>
     }): Promise<{ addressesWithGoodProfit: Array<EthAddress> }> {
         try {
-            const addressesWithGoodProfit = []
+            const addressesWithGoodProfit: any[] = []
             for (const address of setOfWallets) {
                 const ethAddress = new EthAddress({ address })
                 const walletTotalPerformance = await this.getWalletTotalPerformance({ address, ethAddress })
