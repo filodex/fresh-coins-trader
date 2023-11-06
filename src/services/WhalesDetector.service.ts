@@ -4,7 +4,7 @@ import configService from './Config.service.js'
 import EthAddress from '../model/EthAddress.js'
 import path from 'path'
 import fs from 'fs'
-import { returnGetWalletTotalPerformance, setOfWalletsBoughtThisToken } from './IWhalesDetector.service'
+import { returnGetWalletTotalPerformance, setOfWalletsBoughtThisToken } from './IWhalesDetector.service.js'
 
 export class WhalesDetectorService {
     #listOfWalletsFilePath = path.join(path.resolve(), 'diff', 'goodWhales.json')
