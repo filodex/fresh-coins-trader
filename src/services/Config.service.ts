@@ -1,6 +1,6 @@
 import fs, { PathLike } from 'fs'
 import path from 'path'
-import { IConfigService } from './IConfig.service'
+import { IConfigService } from './IConfig.service.js'
 
 export class ConfigService implements IConfigService {
     configPath: PathLike = path.join(path.resolve(), 'src', 'config', 'config.cfg')
