@@ -1,12 +1,12 @@
 import 'dotenv/config'
 import etherscanApi from './apis/EtherscanApi.js'
-import { returnValueOfGetWalletTokenBalanceForSingleAddressByContractAddress } from './apis/IEtherscanApi'
 // import whalesDetectorService from './services/WhalesDetector.service.js'
 import { sleep } from './utils/utils.js'
 import path from 'path'
 import traderService from './services/Trader.service.js'
 import fs from 'fs'
 import dexScreenerApi from './apis/DexScreenerApi.js'
+import telegramBotService from './services/TelegramBot.service.js'
 
 process.on('uncaughtException', async (err) => {
     console.log(err)
@@ -19,14 +19,21 @@ process.on('unhandledRejection', async (err) => {
 
 const tokensBoughtSet = new Set()
 
+/**
+ * MAIN
+ */
 await writeGoodTrades()
+// await telegramBotService.handleBotCommands()
+// await telegramBotService.sendMessageToMyChannel('hehe hoho')
+
+setInterval(() => {}, 5000)
 
 async function writeGoodTrades() {
     try {
         traderService.updateListOfEthAddressesFromFile()
 
         const { tokensTradedByMoreThanOneWallet } = await traderService.findTokensTradedByGoodWhales()
-        console.log(tokensTradedByMoreThanOneWallet)
+        console.log('tokensTradedByMoreThanOneWallet', tokensTradedByMoreThanOneWallet)
         for (const key in tokensTradedByMoreThanOneWallet) {
             if (tokensTradedByMoreThanOneWallet[key].walletsCount >= 2) {
                 if (tokensBoughtSet.has(key)) {
@@ -38,7 +45,6 @@ async function writeGoodTrades() {
                     const pairs = await dexScreenerApi.getPairsDataByName(
                         tokensTradedByMoreThanOneWallet[key]?.tokenSymbol
                     )
-                    console.log(pairs)
 
                     for (const pair of pairs) {
                         if (pair.pairCreatedAt || 0 > new Date().getTime() - 1000 * 60 * 60 * 24) {
@@ -46,6 +52,14 @@ async function writeGoodTrades() {
                             break
                         }
                     }
+                } catch (error) {
+                    console.log(error)
+                }
+
+                try {
+                    telegramBotService.sendMessageToMyChannel(
+                        `Вот хэш токена ${tokensTradedByMoreThanOneWallet[key]?.tokenName}, покупай\n${key}\nЕго купили ${tokensTradedByMoreThanOneWallet[key]?.walletsCount} кит(ов)`
+                    )
                 } catch (error) {
                     console.log(error)
                 }
@@ -59,7 +73,7 @@ async function writeGoodTrades() {
                     tokenName: tokensTradedByMoreThanOneWallet[key]?.tokenName,
                     price: tokenPrice,
                 })
-                console.log('jsonToWrite', jsonToWrite)
+                // console.log('jsonToWrite', jsonToWrite)
                 fs.appendFileSync(path.join(path.resolve(), 'diff', 'tokensBought.txt'), '\n' + jsonToWrite)
             }
         }
