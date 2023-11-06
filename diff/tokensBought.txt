@@ -11,3 +11,38 @@
 {"tokenAddress":"0x9f508e800654b3d2644312cfe4dfad54520a8dae","boughtAt":"2023-11-05T11:19:28.417Z","walletsCount":6,"lastBuy":"2023-11-05T11:09:59.000Z","tokenName":"Gemini AI","price":"0.002109"}
 {"tokenAddress":"0x7dbc0e989815baacbd7cc1060464aaee561befcb","boughtAt":"2023-11-05T11:19:28.744Z","walletsCount":4,"lastBuy":"2023-11-05T08:54:59.000Z","tokenName":"Grok AI","price":"0.0000005260"}
 {"tokenAddress":"0x1782bb88ae0aa07031bc05bbe2bd4150c9da223a","boughtAt":"2023-11-05T12:53:20.311Z","walletsCount":2,"lastBuy":"2023-11-05T12:52:11.000Z","tokenName":"Clickart.ai","price":"0.0003491"}
+{"tokenAddress":"0x53feeb1e14e68513291ca3dc556f923026cccd64","boughtAt":"2023-11-05T17:33:48.487Z","walletsCount":2,"lastBuy":"2023-11-05T17:09:47.000Z","tokenName":"Satoshi","price":"0.000000000001487"}
+{"tokenAddress":"0x24d73bca2bd9c3a61e99dfc7cb86d3c379ebded7","boughtAt":"2023-11-05T17:33:48.779Z","walletsCount":2,"lastBuy":null,"tokenName":"Micro AI","price":"1.11"}
+{"tokenAddress":"0x3ef9181c9b96baaafb3717a553e808ccc72be37d","boughtAt":"2023-11-05T17:33:49.094Z","walletsCount":2,"lastBuy":"2023-11-05T17:08:59.000Z","tokenName":"Meme Pepe","price":"0.0000000002424"}
+{"tokenAddress":"0x7468d234a8db6f1085dbf4e403553bfed41df95c","boughtAt":"2023-11-05T17:33:49.591Z","walletsCount":3,"lastBuy":"2023-11-05T16:58:47.000Z","tokenName":"IO","price":"0.3226"}
+{"tokenAddress":"0x9c8ae0d6fd8b0e862f286a93951fa78bb93ffb36","boughtAt":"2023-11-05T17:33:49.888Z","walletsCount":3,"lastBuy":"2023-11-05T16:40:35.000Z","tokenName":"CLUCK","price":"0.001579"}
+{"tokenAddress":"0x92b234d2b289b74486540ec37666d5676d9aa7f8","boughtAt":"2023-11-05T17:33:50.174Z","walletsCount":2,"lastBuy":"2023-11-05T15:46:11.000Z","tokenName":"Frok","price":"0.00000005319"}
+{"tokenAddress":"0xf19308f923582a6f7c465e5ce7a9dc1bec6665b1","boughtAt":"2023-11-05T17:33:50.529Z","walletsCount":2,"lastBuy":"2023-11-05T17:25:59.000Z","tokenName":"TITAN X","price":"0.000003429"}
+{"tokenAddress":"0xdf9884f54d20bac02b02cf819cecb1c07406031f","boughtAt":"2023-11-05T17:33:50.817Z","walletsCount":3,"lastBuy":"2023-11-05T15:10:35.000Z","tokenName":"Based Grok","price":"0.0000009981"}
+{"tokenAddress":"0xf9b7fa69e227e33f62556dda5c4662565fc5d048","boughtAt":"2023-11-05T18:06:32.600Z","walletsCount":4,"lastBuy":"2023-11-05T17:57:23.000Z","tokenName":"DORK NERD GEEK","price":"0.0000002427"}
+{"tokenAddress":"0x9f508e800654b3d2644312cfe4dfad54520a8dae","boughtAt":"2023-11-05T18:06:33.266Z","walletsCount":3,"lastBuy":"2023-11-05T17:25:35.000Z","tokenName":"Gemini AI","price":"0.0003783"}
+{"tokenAddress":"0x96084dddf1f7d73d243e09fe6a5b166b7ef9e243","boughtAt":"2023-11-05T18:13:57.642Z","walletsCount":3,"lastBuy":"2023-11-05T18:12:59.000Z","tokenName":"GROOOOOK","price":"0.00000002424"}
+{"tokenAddress":"0xd2aff64115772abe8713f81762983237a009ed7d","boughtAt":"2023-11-05T18:13:58.098Z","walletsCount":2,"lastBuy":"2023-11-05T18:10:11.000Z","tokenName":"Remilia","price":"0.0001689"}
+{"tokenAddress":"0x1ff2ee9d40516deb60c7a56dd2cd371fab6786ad","boughtAt":"2023-11-05T18:47:46.932Z","walletsCount":2,"lastBuy":"2023-11-05T18:45:59.000Z","tokenName":"Meme 2.0","price":"0.00000000003188"}
+{"tokenAddress":"0x20abf008e6e511966be7959a80d1f7b889ec9655","boughtAt":"2023-11-05T19:04:15.053Z","walletsCount":3,"lastBuy":"2023-11-05T19:01:23.000Z","tokenName":"Narnia","price":"0.00004645"}
+{"tokenAddress":"0xfb8a515477dc93bf91f4d78b63ca7632e39cd235","boughtAt":"2023-11-05T19:04:15.499Z","walletsCount":2,"lastBuy":"2023-11-05T19:02:23.000Z","tokenName":"BuyTruth","price":"0.000001007"}
+{"tokenAddress":"0x0c21638d4bcb88568f88bc84a50e317715f8de8a","boughtAt":"2023-11-05T19:16:40.186Z","walletsCount":2,"lastBuy":"2023-11-05T19:13:47.000Z","tokenName":"GrokDogeX","price":"0.0008349"}
+{"tokenAddress":"0x94cfa0aca414afcaf7ab3d357c90c3e1fc1da135","boughtAt":"2023-11-05T19:29:45.649Z","walletsCount":3,"lastBuy":"2023-11-05T19:28:35.000Z","tokenName":"GrokShibaX","price":"0.00001448"}
+{"tokenAddress":"0x8a94bb6d064a1d21077550156556df3be2da2e67","boughtAt":"2023-11-05T19:53:27.364Z","walletsCount":2,"lastBuy":"2023-11-05T19:46:11.000Z","tokenName":"nioC eoJ","price":"0.0006862"}
+{"tokenAddress":"0x64de78a9af7a3ae5364758a2d38f306fcf8a7023","boughtAt":"2023-11-05T20:03:55.781Z","walletsCount":2,"lastBuy":"2023-11-05T20:03:11.000Z","tokenName":"Belligol","price":"0.005446"}
+{"tokenAddress":"0x0ea570f431b56d157a47b957325d58d184961653","boughtAt":"2023-11-05T20:15:18.990Z","walletsCount":3,"lastBuy":"2023-11-05T20:10:23.000Z","tokenName":"MOONMISSION","price":"0.9177"}
+{"tokenAddress":"0x58634c5a6cae6c96b9344973f485aa005abec2ab","boughtAt":"2023-11-05T20:40:53.579Z","walletsCount":2,"lastBuy":"2023-11-05T20:37:23.000Z","tokenName":"ObiWanPepeClintonKingKongYes","price":"0.00001469"}
+{"tokenAddress":"0x6d5777dce2541175adf6d49cadd666f3ab0ac142","boughtAt":"2023-11-05T21:07:45.170Z","walletsCount":2,"lastBuy":"2023-11-05T21:06:47.000Z","tokenName":"CARTMAN","price":"0.0000005512"}
+{"tokenAddress":"0x9470e1e043e87c3e74820b6da120e730d8d850df","boughtAt":"2023-11-05T21:32:52.348Z","walletsCount":5,"lastBuy":"2023-11-05T21:24:11.000Z","tokenName":"The New Road","price":"0.007419"}
+{"tokenAddress":"0x6267423c8e1671f82285ad35e2684761174201f5","boughtAt":"2023-11-05T21:41:32.830Z","walletsCount":2,"lastBuy":"2023-11-05T21:39:35.000Z","tokenName":"Bart","price":"0.001321"}
+{"tokenAddress":"0xa1a1af550f39d8597dd809ce44d18e7d3ee9e821","boughtAt":"2023-11-05T21:43:23.548Z","walletsCount":2,"lastBuy":"2023-11-05T21:41:47.000Z","tokenName":"GrokAIOpenAIGeminiAI","price":"11.89"}
+{"tokenAddress":"0x2f3f0589021d202e9fbb48cb17b23961b9ef75b3","boughtAt":"2023-11-05T21:51:12.546Z","walletsCount":2,"lastBuy":"2023-11-05T21:45:35.000Z","tokenName":"AJAX","price":"0.06292"}
+{"tokenAddress":"0x8390a1da07e376ef7add4be859ba74fb83aa02d5","boughtAt":"2023-11-05T23:56:41.317Z","walletsCount":2,"lastBuy":"2023-11-05T23:54:11.000Z","tokenName":"GROK","price":"0.004213"}
+{"tokenAddress":"0x88e264f970692b07d0f42409a58144cd78de3b0b","boughtAt":"2023-11-06T00:00:35.121Z","walletsCount":2,"lastBuy":"2023-11-05T23:58:59.000Z","tokenName":"Azrael","price":"0.0000002578"}
+{"tokenAddress":"0xb0928136b5c50b460443a913277def5563b58e87","boughtAt":"2023-11-06T00:41:34.487Z","walletsCount":2,"lastBuy":"2023-11-06T00:36:11.000Z","tokenName":"Hobo Coin","price":"0.00003998"}
+{"tokenAddress":"0x66b7c5264f9b44e673ae660b81a846c4d709051c","boughtAt":"2023-11-06T01:02:19.318Z","walletsCount":2,"lastBuy":"2023-11-06T01:01:11.000Z","tokenName":"Grok-1","price":"0.00001626"}
+{"tokenAddress":"0xacd5921f2752019de463076854b211edba02c9f2","boughtAt":"2023-11-06T01:28:24.084Z","walletsCount":2,"lastBuy":"2023-11-06T01:27:47.000Z","tokenName":"Early Retirement Coin","price":"0.01748"}
+{"tokenAddress":"0x1e971b5b21367888239f00da16f0a6b0effecb03","boughtAt":"2023-11-06T02:08:47.917Z","walletsCount":2,"lastBuy":"2023-11-06T02:07:11.000Z","tokenName":"LEEEEEEEEEEEROOOOY JENKINNNNNS!!!!","price":"0.00004217"}
+{"tokenAddress":"0x8761559f6ead0e5ccc2cbc84e2cff65e02ef5bea","boughtAt":"2023-11-06T02:14:18.614Z","walletsCount":2,"lastBuy":"2023-11-06T02:09:59.000Z","tokenName":"BART","price":"0.0000000007530"}
+{"tokenAddress":"0x8c9cfafdd13d718dc97011293d159bb4f2494237","boughtAt":"2023-11-06T02:19:09.966Z","walletsCount":2,"lastBuy":"2023-11-06T02:15:23.000Z","tokenName":"GPT-4 AI","price":"0.00000008577"}
+{"tokenAddress":"0xd5dd5af6893817b5a92145cf0ad7e65131c708a0","boughtAt":"2023-11-06T03:19:07.246Z","walletsCount":2,"lastBuy":"2023-11-06T03:18:35.000Z","tokenName":"","price":"1884.15"}
