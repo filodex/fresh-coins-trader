@@ -1,4 +1,4 @@
-import { Pair } from './IDexScreenerApi'
+import { Pair } from './IDexScreenerApi.js'
 
 export class DexScreenerApi {
     async getPairsDataByName(name: string): Promise<Pair[]> {
