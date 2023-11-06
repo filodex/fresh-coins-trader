@@ -12,7 +12,8 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "dotenv": "^16.3.1"
+        "dotenv": "^16.3.1",
+        "telegraf": "^4.15.0"
     },
     "devDependencies": {
         "@types/node": "^20.8.10",
