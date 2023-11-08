@@ -10,6 +10,7 @@ import fs from 'fs'
 import { fetchCandles } from './test/fetchcandles.js'
 import { getDayCandleData } from './test/getCandlesData.js'
 import puppeteer from 'puppeteer'
+import statsService from './services/Stats.service.js'
 
 process.on('uncaughtException', async (err) => {
     console.log(err)
@@ -28,17 +29,19 @@ const tokensBoughtSet = new Set()
 // await writeGoodTrades()
 // await telegramBotService.handleBotCommands()
 
-const browser = await puppeteer.launch({ headless: false })
+// const browser = await puppeteer.launch({ headless: false })
+// const candlesData = await getDayCandleData({
+//     browser,
+//     pairAddress: '0x88c119ee1d2be7a3f35a4c957361bc445a05d3d6',
+// })
+// console.log(candlesData)
 
-const dayCandleData = await getDayCandleData({
-    browser,
-    pairAddress: '0x5BD29C689411A396B7a28F54FFE154f70e65Bd6F',
-    res: 1440,
-})
+// const tokensBought = statsService.readTokensBought()
+// console.log(tokensBought)
 
-console.log(dayCandleData)
+statsService.calcStats()
 
-setInterval(() => {}, 5000)
+// setInterval(() => {}, 5000)
 
 // async function writeGoodTrades() {
 //     try {
