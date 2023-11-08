@@ -4,3 +4,8 @@ export async function sleep(ms: number) {
         setTimeout(resolve, ms)
     })
 }
+
+export function getYesterdayTime() {
+    const now = new Date().getTime()
+    return now - 1000 * 60 * 60 * 24
+}
