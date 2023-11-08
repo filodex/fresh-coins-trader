@@ -7,6 +7,9 @@ import path from 'path'
 import fs from 'fs'
 // import dexScreenerApi from './apis/DexScreenerApi.js'
 // import telegramBotService from './services/TelegramBot.service.js'
+import { fetchCandles } from './test/fetchcandles.js'
+import { getDayCandleData } from './test/getCandlesData.js'
+import puppeteer from 'puppeteer'
 
 process.on('uncaughtException', async (err) => {
     console.log(err)
@@ -25,10 +28,15 @@ const tokensBoughtSet = new Set()
 // await writeGoodTrades()
 // await telegramBotService.handleBotCommands()
 
-const transfers = await etherscanApi.getListOfTokenTransfers({
-    address: '0x3f744aaFD19d6f8Db011FB2Acc67375cb2B5189F',
+const browser = await puppeteer.launch({ headless: false })
+
+const dayCandleData = await getDayCandleData({
+    browser,
+    pairAddress: '0x5BD29C689411A396B7a28F54FFE154f70e65Bd6F',
+    res: 1440,
 })
-console.log(transfers)
+
+console.log(dayCandleData)
 
 setInterval(() => {}, 5000)
 
