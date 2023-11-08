@@ -1,27 +1,27 @@
 import puppeteer from 'puppeteer'
-import { getYesterdayTime } from '../utils/utils.js'
+import { getYesterdayTime, sleep } from '../utils/utils.js'
 
 export async function getDayCandleData({
     browser,
-    pairAddress: address,
-    res = 5,
+    pairAddress,
 }: {
     browser: puppeteer.Browser
     pairAddress: string
-    res?: number
 }) {
     const url = new URL(`
-    https://io.dexscreener.com/dex/chart/amm/v2/uniswap/bars/ethereum/${address}`)
+    https://io.dexscreener.com/dex/chart/amm/v2/uniswap/bars/ethereum/${pairAddress}`)
 
     url.searchParams.append('from', String(getYesterdayTime()))
     url.searchParams.append('to', String(new Date().getTime()))
-    url.searchParams.append('res', String(res))
+    url.searchParams.append('res', String(1440))
     url.searchParams.append('cb', '2')
     url.searchParams.append('q', '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2')
 
     const page = await browser.newPage()
 
     await page.goto(String(url))
+
+    await sleep(3000)
 
     const dayCandleData = await page.evaluate(() => {
         const text = document.querySelector('body > pre')?.textContent
@@ -51,10 +51,12 @@ export async function getDayCandleData({
         const c = splitted[7]
         const v = splitted[8]
 
-        return { o, h, l, c, v, to: new Date().toString() }
+        return { o, h, l, c, v, updated: new Date().toString() }
     })
 
-    // await page.close()
+    console.log('dayCandleData', dayCandleData, 'address', pairAddress)
+
+    await page.close()
 
     return { ...dayCandleData }
 }
