@@ -174,3 +174,10 @@
 {"tokenAddress":"0x0a266778c113a8f0d3d7aeacd12b74a7da5037a0","boughtAt":"2023-11-08T16:58:54.725Z","walletsCount":3,"lastBuy":"2023-11-08T16:57:59.000Z","tokenName":"OLYMPUS","price":"0.000000009131"}
 {"tokenAddress":"0xcfe940bbcfc8e8226d2ad47bc49ccb003525ec73","boughtAt":"2023-11-08T17:09:55.241Z","walletsCount":2,"lastBuy":"2023-11-08T17:09:23.000Z","tokenName":"Choices","price":"0.002180"}
 {"tokenAddress":"0x88c119ee1d2be7a3f35a4c957361bc445a05d3d6","boughtAt":"2023-11-08T17:20:15.216Z","walletsCount":2,"lastBuy":"2023-11-08T17:19:11.000Z","tokenName":"Alameda Secret Society","price":"2.61"}
+{"tokenAddress":"0xe8b482015837a526d210a9089626758e18806c1f","boughtAt":"2023-11-09T14:45:31.413Z","walletsCount":4,"lastBuy":"2023-11-09T14:00:35.000Z","tokenName":"DOGE Army","price":"0.0001511"}
+{"tokenAddress":"0xcb8ceed39e8126f3d90ae260aba6e0a9ac150cc9","boughtAt":"2023-11-09T14:45:31.721Z","walletsCount":2,"lastBuy":"2023-11-09T13:06:35.000Z","tokenName":"Hustle Dividend","price":"1943.28"}
+{"tokenAddress":"0x3a4c122243b53135e7f6bf5b4658092c3a3109ab","boughtAt":"2023-11-09T14:45:31.988Z","walletsCount":2,"lastBuy":"2023-11-09T13:06:35.000Z","tokenName":"HustleBot","price":"0.00006508"}
+{"tokenAddress":"0xc60ad4ef5c7b238103e435053f4f305bc659d88a","boughtAt":"2023-11-09T14:45:32.297Z","walletsCount":2,"lastBuy":null,"tokenName":"InternetsCoin.org","price":"0.00006729"}
+{"tokenAddress":"0x4f5379d20af898fc2a613cef68b37e85c2ba6ee3","boughtAt":"2023-11-09T14:45:32.645Z","walletsCount":2,"lastBuy":"2023-11-09T14:34:35.000Z","tokenName":"Kopa","price":"0.0002058"}
+{"tokenAddress":"0x40f8a2088afb905fe9c9bc49902ad6bf2122412a","boughtAt":"2023-11-09T14:45:32.925Z","walletsCount":2,"lastBuy":"2023-11-09T13:34:59.000Z","tokenName":"Ravenous Bugblatter Beast Of Traal","price":"0.00004776"}
+{"tokenAddress":"0x212035a4fa861ffdd8614a62897e79b454b261d1","boughtAt":"2023-11-09T14:45:33.242Z","walletsCount":2,"lastBuy":"2023-11-09T13:04:11.000Z","tokenName":"BONK","price":"0.000006763"}

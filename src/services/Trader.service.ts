@@ -4,22 +4,22 @@ import fs from 'fs'
 import EthAddress from '../model/EthAddress.js'
 
 export class TraderService {
-    #listOfEthAddresses: any
+    listOfEthAddresses: any
     constructor({} = {}) {}
     #listOfWalletsFilePath = path.join(path.resolve(), 'diff', 'goodWhales.json')
 
     async findTokensTradedByGoodWhales({ transfersTime = 150 } = {}) {
         // transfersTime in minutes
         const { tokensTradedSet } = await this.#getSetOfTokensTradedAndAddToEthAddress({
-            listOfAddresses: this.#listOfEthAddresses,
+            listOfAddresses: this.listOfEthAddresses,
             transfersTime,
         })
         console.log('set', tokensTradedSet)
-        console.log(this.#listOfEthAddresses)
+        console.log(this.listOfEthAddresses)
 
         const { tokensTradedMoreThanOnce } = this.#findTokensTradedMoreThanOneWallet({
             tokensTradedSet,
-            listOfEthAddresses: this.#listOfEthAddresses,
+            listOfEthAddresses: this.listOfEthAddresses,
         })
 
         this.#detalizeTradesData({ tokensTradedMoreThanOnce })
@@ -193,8 +193,13 @@ export class TraderService {
     updateListOfEthAddressesFromFile() {
         const text = fs.readFileSync(this.#listOfWalletsFilePath)
         const listOfEthAddresses: Array<EthAddress> = JSON.parse(String(text))
-        this.#listOfEthAddresses = listOfEthAddresses
+        this.listOfEthAddresses = listOfEthAddresses
         return { listOfEthAddresses }
+    }
+    handleListOfEthAddresses() {
+        this.listOfEthAddresses.forEach((val: EthAddress) => {
+            val = new EthAddress({ address: val.address })
+        })
     }
 }
 

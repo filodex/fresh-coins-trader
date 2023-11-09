@@ -1,306 +1,1725 @@
 [
     {
-        "balance": {},
-        "address": "0x3e57efEf507b4db7aCFa2eE79CeCA6B19e18D106"
-    },
-    {
-        "balance": {},
-        "address": "0x0D260D8aD1CCAe73f0d53BE60Ff6Aa6ed94A01FC"
-    },
-    {
-        "balance": {},
-        "address": "0x3f7C536193a8BB51F4Ff5834793E05C030481A3d"
-    },
-    {
-        "balance": {},
-        "address": "0x42D78dDED2305E11914947b07B92F7E9675d9BCb"
-    },
-    {
-        "balance": {},
-        "address": "0x7CB6D73a687cA25e96A2Ebcc6A51f07b49857386"
-    },
-    {
-        "balance": {},
-        "address": "0xe9ccdf5612F6092EfF7D67B4Ec730B4432cA8CCF"
-    },
-    {
-        "balance": {},
-        "address": "0x37e38E229ecEBBf9a6F4B8479B71508Ece16D597"
-    },
-    {
-        "balance": {},
-        "address": "0x36A0EE3aFB54bfaAf132aeD59f6aaA675Fa1da33"
-    },
-    {
-        "balance": {},
-        "address": "0xE65f5AA38b867f9159b2f6aA658abF6F58A21C18"
-    },
-    {
-        "balance": {},
-        "address": "0xF1f890B43b463f3AEE993995d9eaB80a94A43958"
-    },
-    {
-        "balance": {},
-        "address": "0x42048942108a4C371e3B8252e01478128c2e8457"
-    },
-    {
-        "balance": {},
-        "address": "0x57d180bB8BFb5B021f96DD71Eb499f70294cE4AE"
-    },
-    {
-        "balance": {},
-        "address": "0x42048942108a4C371e3B8252e01478128c2e8457"
-    },
-    {
-        "balance": {},
-        "address": "0xDb5969f2bCF31051C89c69Cb47BB2AEf492579cE"
-    },
-    {
-        "balance": {},
-        "address": "0x86dd9393539D2413ABDD273Af7ab604A103f91FB"
-    },
-    {
-        "balance": {},
-        "address": "0xd4FFB9c0D616a7cBba0eBdB03fF60165edfD9e84"
-    },
-    {
-        "balance": {},
-        "address": "0xE68B9b33963347bA4E97150EFc7b4cF035458200"
-    },
-    {
-        "balance": {},
-        "address": "0x3754860e3B3AE40b3B9f195C8f1b34d718ebffB6"
-    },
-    {
-        "balance": {},
-        "address": "0x1071316b698da9947b2F267A02fD77e17ef2Fb5b"
-    },
-    {
-        "balance": {},
-        "address": "0xd9158d245d05cbEd496053641aAE09888994b2e9"
-    },
-    {
-        "balance": {},
-        "address": "0xC94782F82a18175F3402C0Bed1aaf59Cf1d15bB7"
-    },
-    {
-        "balance": {},
-        "address": "0xD9cB2313CE3dcba4e521497535F53a6616f06F85"
-    },
-    {
-        "balance": {},
-        "address": "0x5c1Ef9FDF2dC91eA2eFD2F21cD2AC24A243FDAF3"
-    },
-    {
-        "balance": {},
-        "address": "0x6B5bA6d2F7659eD400fbB2C4F43509e0Cc397777"
-    },
-    {
-        "balance": {},
-        "address": "0xA304131ecb56Cc6Ea33CCA0Ca90d5559C74C2e9f"
-    },
-    {
-        "balance": {},
-        "address": "0xd70A9dcD0753dD7aD9Cc49d434B91659A6165512"
-    },
-    {
-        "balance": {},
-        "address": "0xe54235FC70Dda5c1661cb179bF2a408aA1512D51"
-    },
-    {
-        "balance": {},
-        "address": "0xeC2C27d8b4Cc06b30cEF56413a7a0AbACE890f1d"
-    },
-    {
-        "balance": {},
-        "address": "0x717B882A78cB7bFAa53305769f67C65b6b1B5375"
-    },
-    {
-        "balance": {},
-        "address": "0x2e120B2626f32fc10b1E7f3576cb17b28eDBFaC3"
-    },
-    {
-        "balance": {},
-        "address": "0x6cdD2717F39E75808eeFE90B09065Cbaf392d504"
-    },
-    {
-        "balance": {},
-        "address": "0x77777E7a8f844B73F6269bbDA7f440Af16038d90"
-    },
-    {
-        "balance": {},
-        "address": "0xEFDD802C3472cD271B65caaEfe3820BDF833Bb52"
-    },
-    {
-        "balance": {},
-        "address": "0x31b47c9b70F6ed771457b99eD92585938e2C43cF"
-    },
-    {
-        "balance": {},
-        "address": "0xda346B125EA80C7d7C1270c61E2321Ba9099Cf36"
-    },
-    {
-        "balance": {},
-        "address": "0x26003CFF6bb26bF68Ab49622f18c8Ec247c083bF"
-    },
-    {
-        "balance": {},
-        "address": "0xB515cb43e414848b7078591D1493f2aa5F3a75c2"
-    },
-    {
-        "balance": {},
-        "address": "0x3eB81b24F5c89fe0119998bb8772413D32fEC77C"
-    },
-    {
-        "balance": {},
-        "address": "0xCA5cF7CDb2ae9A758d0c324aC00Ef5f5751ee7D3"
-    },
-    {
-        "balance": {},
-        "address": "0xcc8eCF9a61fEB4EF817ba445B5fA93181698B76a"
-    },
-    {
-        "balance": {},
-        "address": "0xae2Fc483527B8EF99EB5D9B44875F005ba1FaE13"
-    },
-    {
-        "balance": {},
-        "address": "0x02Cf562FA7503C4743AE6A38737CFbC227466deE"
-    },
-    {
-        "balance": {},
-        "address": "0x24Aa1f2b68D727eEF712bCbb8FA64816Ce6E18CB"
-    },
-    {
-        "balance": {},
-        "address": "0x5A0418A1f1A50a92e5Fa24857C1a91eFC3085453"
-    },
-    {
-        "balance": {},
-        "address": "0x41974bBf377F8cC95bD6401c3956c6bbE97b8c2C"
-    },
-    {
-        "balance": {},
-        "address": "0x860aEe3F919dDD9B687Acd4Ad200bF2B4AE00586"
-    },
-    {
-        "balance": {},
-        "address": "0x02248386220b43A7E4afDD0F49F01384b9127fc0"
-    },
-    {
-        "balance": {},
-        "address": "0x1101b5D720C7c1D461757967ef750a6315e75Cc0"
-    },
-    {
-        "balance": {},
-        "address": "0xd3B5F63Ec11ADBE30d0fe62b70aE5e2f3fD02083"
-    },
-    {
-        "balance": {},
-        "address": "0xBF7cf8b77f3EB998Caf9aa1d3b4a84c625802F7a"
-    },
-    {
-        "balance": {},
-        "address": "0xDEC0230b86881F7D0EaBBa191F176e7D9bC57429"
-    },
-    {
-        "balance": {},
-        "address": "0xB37FC112feBaE7a0c86A2564D6D85E8DD3ee7ee7"
-    },
-    {
-        "balance": {},
-        "address": "0xEE32F3f24c964330d4702212A096ae2377ed65ff"
-    },
-    {
-        "balance": {},
-        "address": "0xa4c0497D6630903fBC9b39985084E570628a1a32"
-    },
-    {
-        "balance": {},
-        "address": "0x66557b7cAAceD6215d206E78526F7b7eE6A1842a"
-    },
-    {
-        "balance": {},
-        "address": "0x473160736a2Bc85A6819ab5a0c51cF903d6eD631"
-    },
-    {
-        "balance": {},
-        "address": "0xDaed9258564d3854766f9Ef764682B19dE5c40BD"
-    },
-    {
-        "balance": {},
-        "address": "0x477a91914E47Da98Aa8F27c6a861E7ABC07aFDE0"
-    },
-    {
-        "balance": {},
-        "address": "0x22eb9b95C5c48Fb608FfAaC378621159b88D598E"
-    },
-    {
-        "balance": {},
-        "address": "0x3aeb330823485A0969AA8b8f9d2ED63BFDFa05Fb"
-    },
-    {
-        "balance": {},
-        "address": "0x89541D17B5E9DD752A7A46E2491DA60D61A35141"
-    },
-    {
-        "balance": {},
-        "address": "0x1dCFE7B6e326B075c7b2Ce660A6F3CdAe8a573E6"
-    },
-    {
-        "balance": {},
-        "address": "0xf4EE01A828C8F403336Bd6096c6732C8A9ecA56F"
-    },
-    {
-        "balance": {},
-        "address": "0x8e7DfC77CD457cd21160C77a076d7426213B89b6"
-    },
-    {
-        "balance": {},
-        "address": "0xC9f2e6A1401Edac830f9c746d01FbD57395FFdeC"
-    },
-    {
-        "balance": {},
-        "address": "0x0d4B93A26B5075c31C4AA576D5D6617e2Ef1b886"
-    },
-    {
-        "balance": {},
-        "address": "0x40505aeD7d57F474A70f9f238d7aF0431969Ec05"
-    },
-    {
-        "balance": {},
-        "address": "0x772f0bB499aD06490f988359b5a1dF96ac32b9E2"
-    },
-    {
-        "balance": {},
-        "address": "0x9d898899d5136763D26cEF393451b0296E28359F"
-    },
-    {
-        "balance": {},
-        "address": "0xc9D8a85e8BAcdCCE463A0F9315F1dCf8bB989F59"
-    },
-    {
-        "balance": {},
-        "address": "0x8ED54C24De86CDe7EEF73e8d8f3eD67860328d9d"
-    },
-    {
-        "balance": {},
-        "address": "0x93aCfba9658caE3dA4CeE96a6a59E71b65268963"
-    },
-    {
-        "balance": {},
-        "address": "0x79EFb61E74896B6CC2Df3D700D1B9DAb43680F0D"
-    },
-    {
-        "balance": {},
-        "address": "0x00001d300DDec34F9e6953bE3a251dC49112C57d"
-    },
-    {
-        "balance": {},
-        "address": "0xFD9C7B195462FC4A72b851046A1aAA0A52d3bc52"
-    },
-    {
-        "balance": {},
-        "address": "0x4de6C375A370a4fBB7c860BAb23D13e26281EF46"
+        "address": "0x3e57efEf507b4db7aCFa2eE79CeCA6B19e18D106",
+        "totalWalletPerformance": {
+            "wallet_address": "0x3e57efef507b4db7acfa2ee79ceca6b19e18d106",
+            "realized_profit": 25111.353794265375,
+            "realized_investment": 1011988.184532822,
+            "realized_return": 2.481388041685277,
+            "unrealized_profit": 49733.85936469177,
+            "unrealized_investment": 149573.37105165186,
+            "unrealized_return": 33.250477016739346,
+            "total_profit": 74845.21315895715,
+            "total_investment": 1161561.5555844738,
+            "total_return": 6.4434995114225,
+            "win_rate": 0.4263959390862944,
+            "total_trades": 1000,
+            "total_buys": 427,
+            "total_sells": 573,
+            "first_trade_timestamp": 1660683464,
+            "last_trade_timestamp": 1696097975
+        }
+    },
+    {
+        "address": "0x0D260D8aD1CCAe73f0d53BE60Ff6Aa6ed94A01FC",
+        "totalWalletPerformance": {
+            "wallet_address": "0x0d260d8ad1ccae73f0d53be60ff6aa6ed94a01fc",
+            "realized_profit": 16462.953059743206,
+            "realized_investment": 238490.51796576867,
+            "realized_return": 6.902980126910617,
+            "unrealized_profit": -2977.8819706548206,
+            "unrealized_investment": 17741.504070638384,
+            "unrealized_return": -16.78483379311182,
+            "total_profit": 13485.071089088386,
+            "total_investment": 256232.02203640706,
+            "total_return": 5.262835996030326,
+            "win_rate": 0.39469578783151327,
+            "total_trades": 1000,
+            "total_buys": 504,
+            "total_sells": 496,
+            "first_trade_timestamp": 1692850115,
+            "last_trade_timestamp": 1699522979
+        }
+    },
+    {
+        "address": "0x3f7C536193a8BB51F4Ff5834793E05C030481A3d",
+        "totalWalletPerformance": {
+            "error": "Rate limit of 2 per 1 second exceeded."
+        }
+    },
+    {
+        "address": "0x42D78dDED2305E11914947b07B92F7E9675d9BCb",
+        "totalWalletPerformance": {
+            "wallet_address": "0x42d78dded2305e11914947b07b92f7e9675d9bcb",
+            "realized_profit": 23477.376565887436,
+            "realized_investment": 650.0885309333065,
+            "realized_return": 3611.4122075314713,
+            "unrealized_profit": -580.0879340141483,
+            "unrealized_investment": 665.9206921260796,
+            "unrealized_return": -87.11066360802009,
+            "total_profit": 22897.28863187329,
+            "total_investment": 1316.0092230593862,
+            "total_return": 1739.9033555891747,
+            "win_rate": 0.7037037037037037,
+            "total_trades": 33,
+            "total_buys": 10,
+            "total_sells": 23,
+            "first_trade_timestamp": 1697406515,
+            "last_trade_timestamp": 1699384451
+        }
+    },
+    {
+        "address": "0x7CB6D73a687cA25e96A2Ebcc6A51f07b49857386",
+        "totalWalletPerformance": {
+            "wallet_address": "0x7cb6d73a687ca25e96a2ebcc6a51f07b49857386",
+            "realized_profit": 24716.26450293101,
+            "realized_investment": 56.40333102097697,
+            "realized_return": 43820.575940344344,
+            "unrealized_profit": 4347.037105076568,
+            "unrealized_investment": 12.718476662664044,
+            "unrealized_return": 34178.913248609344,
+            "total_profit": 29063.30160800758,
+            "total_investment": 69.12180768364101,
+            "total_return": 42046.50107101577,
+            "win_rate": 1,
+            "total_trades": 16,
+            "total_buys": 1,
+            "total_sells": 15,
+            "first_trade_timestamp": 1698362831,
+            "last_trade_timestamp": 1698392039
+        }
+    },
+    {
+        "address": "0xe9ccdf5612F6092EfF7D67B4Ec730B4432cA8CCF",
+        "totalWalletPerformance": {
+            "error": "Rate limit of 2 per 1 second exceeded."
+        }
+    },
+    {
+        "address": "0x37e38E229ecEBBf9a6F4B8479B71508Ece16D597",
+        "totalWalletPerformance": {
+            "wallet_address": "0x37e38e229ecebbf9a6f4b8479b71508ece16d597",
+            "realized_profit": 114015.38355087533,
+            "realized_investment": 154982.18535866268,
+            "realized_return": 73.56676723006504,
+            "unrealized_profit": -39817.96081313004,
+            "unrealized_investment": 80595.84074987248,
+            "unrealized_return": -49.40448594202802,
+            "total_profit": 74197.42273774528,
+            "total_investment": 235578.02610853518,
+            "total_return": 31.495901363721057,
+            "win_rate": 0.36351706036745407,
+            "total_trades": 1000,
+            "total_buys": 511,
+            "total_sells": 489,
+            "first_trade_timestamp": 1678099847,
+            "last_trade_timestamp": 1696099271
+        }
+    },
+    {
+        "address": "0x36A0EE3aFB54bfaAf132aeD59f6aaA675Fa1da33",
+        "totalWalletPerformance": {
+            "wallet_address": "0x36a0ee3afb54bfaaf132aed59f6aaa675fa1da33",
+            "realized_profit": 30447.112939365637,
+            "realized_investment": 1945.6004124446667,
+            "realized_return": 1564.9211803521634,
+            "unrealized_profit": -3672.472364395115,
+            "unrealized_investment": 4191.834428403146,
+            "unrealized_return": -87.61014842358937,
+            "total_profit": 26774.640574970523,
+            "total_investment": 6137.434840847813,
+            "total_return": 436.2513211019594,
+            "win_rate": 0.34210526315789475,
+            "total_trades": 53,
+            "total_buys": 27,
+            "total_sells": 26,
+            "first_trade_timestamp": 1698164303,
+            "last_trade_timestamp": 1699466927
+        }
+    },
+    {
+        "address": "0xE65f5AA38b867f9159b2f6aA658abF6F58A21C18",
+        "totalWalletPerformance": {
+            "error": "Rate limit of 2 per 1 second exceeded."
+        }
+    },
+    {
+        "address": "0xF1f890B43b463f3AEE993995d9eaB80a94A43958",
+        "totalWalletPerformance": {
+            "wallet_address": "0xf1f890b43b463f3aee993995d9eab80a94a43958",
+            "realized_profit": 13396.226848317892,
+            "realized_investment": 17855.79156770704,
+            "realized_return": 75.02454762378352,
+            "unrealized_profit": -1499.3271750109907,
+            "unrealized_investment": 4172.59154833626,
+            "unrealized_return": -35.93275684050164,
+            "total_profit": 11896.899673306902,
+            "total_investment": 22028.3831160433,
+            "total_return": 54.00713983697866,
+            "win_rate": 0.5891089108910891,
+            "total_trades": 267,
+            "total_buys": 116,
+            "total_sells": 151,
+            "first_trade_timestamp": 1698203627,
+            "last_trade_timestamp": 1699089683
+        }
+    },
+    {
+        "address": "0x42048942108a4C371e3B8252e01478128c2e8457",
+        "totalWalletPerformance": {
+            "wallet_address": "0x42048942108a4c371e3b8252e01478128c2e8457",
+            "realized_profit": 7937.159749815031,
+            "realized_investment": 76520.71610837469,
+            "realized_return": 10.372563344250201,
+            "unrealized_profit": -224.61934441258478,
+            "unrealized_investment": 6683.350073440768,
+            "unrealized_return": -3.360879528145751,
+            "total_profit": 7712.540405402447,
+            "total_investment": 83204.06618181546,
+            "total_return": 9.26942727600499,
+            "win_rate": 0.33620689655172414,
+            "total_trades": 160,
+            "total_buys": 74,
+            "total_sells": 86,
+            "first_trade_timestamp": 1698200291,
+            "last_trade_timestamp": 1698888563
+        }
+    },
+    {
+        "address": "0x57d180bB8BFb5B021f96DD71Eb499f70294cE4AE",
+        "totalWalletPerformance": {
+            "error": "Rate limit of 2 per 1 second exceeded."
+        }
+    },
+    {
+        "address": "0x42048942108a4C371e3B8252e01478128c2e8457",
+        "totalWalletPerformance": {
+            "wallet_address": "0x42048942108a4c371e3b8252e01478128c2e8457",
+            "realized_profit": 7937.159749815031,
+            "realized_investment": 76520.71610837469,
+            "realized_return": 10.372563344250201,
+            "unrealized_profit": -224.61934441258478,
+            "unrealized_investment": 6683.350073440768,
+            "unrealized_return": -3.360879528145751,
+            "total_profit": 7712.540405402447,
+            "total_investment": 83204.06618181546,
+            "total_return": 9.26942727600499,
+            "win_rate": 0.33620689655172414,
+            "total_trades": 160,
+            "total_buys": 74,
+            "total_sells": 86,
+            "first_trade_timestamp": 1698200291,
+            "last_trade_timestamp": 1698888563
+        }
+    },
+    {
+        "address": "0xDb5969f2bCF31051C89c69Cb47BB2AEf492579cE",
+        "totalWalletPerformance": {
+            "wallet_address": "0xdb5969f2bcf31051c89c69cb47bb2aef492579ce",
+            "realized_profit": 13159.955410721575,
+            "realized_investment": 733.8963229438858,
+            "realized_return": 1793.1627396541398,
+            "unrealized_profit": 869.34880484462,
+            "unrealized_investment": 180.20277435882528,
+            "unrealized_return": 482.4280913198073,
+            "total_profit": 14029.304215566195,
+            "total_investment": 914.0990973027111,
+            "total_return": 1534.76841372706,
+            "win_rate": 0.6956521739130435,
+            "total_trades": 24,
+            "total_buys": 6,
+            "total_sells": 18,
+            "first_trade_timestamp": 1692162887,
+            "last_trade_timestamp": 1699516487
+        }
+    },
+    {
+        "address": "0x86dd9393539D2413ABDD273Af7ab604A103f91FB",
+        "totalWalletPerformance": {
+            "error": "Rate limit of 2 per 1 second exceeded."
+        }
+    },
+    {
+        "address": "0xd4FFB9c0D616a7cBba0eBdB03fF60165edfD9e84",
+        "totalWalletPerformance": {
+            "wallet_address": "0xd4ffb9c0d616a7cbba0ebdb03ff60165edfd9e84",
+            "realized_profit": 14008.553053893162,
+            "realized_investment": 1370.4864949786647,
+            "realized_return": 1022.1591460564698,
+            "unrealized_profit": 361.7185614715629,
+            "unrealized_investment": 1346.0757959843527,
+            "unrealized_return": 26.8720797558838,
+            "total_profit": 14370.271615364725,
+            "total_investment": 2716.5622909630174,
+            "total_return": 528.9873772881713,
+            "win_rate": 0.6176470588235294,
+            "total_trades": 35,
+            "total_buys": 13,
+            "total_sells": 22,
+            "first_trade_timestamp": 1692162887,
+            "last_trade_timestamp": 1699492355
+        }
+    },
+    {
+        "address": "0xE68B9b33963347bA4E97150EFc7b4cF035458200",
+        "totalWalletPerformance": {
+            "wallet_address": "0xe68b9b33963347ba4e97150efc7b4cf035458200",
+            "realized_profit": 27334.080169344317,
+            "realized_investment": 14513.39780596762,
+            "realized_return": 188.33687696553793,
+            "unrealized_profit": -891.9752676904136,
+            "unrealized_investment": 941.0723652295103,
+            "unrealized_return": -94.78285630806693,
+            "total_profit": 26442.104901653904,
+            "total_investment": 15454.47017119713,
+            "total_return": 171.09680635273213,
+            "win_rate": 0.2857142857142857,
+            "total_trades": 15,
+            "total_buys": 9,
+            "total_sells": 6,
+            "first_trade_timestamp": 1698220139,
+            "last_trade_timestamp": 1698439955
+        }
+    },
+    {
+        "address": "0x3754860e3B3AE40b3B9f195C8f1b34d718ebffB6",
+        "totalWalletPerformance": {
+            "error": "Rate limit of 2 per 1 second exceeded."
+        }
+    },
+    {
+        "address": "0x1071316b698da9947b2F267A02fD77e17ef2Fb5b",
+        "totalWalletPerformance": {
+            "wallet_address": "0x1071316b698da9947b2f267a02fd77e17ef2fb5b",
+            "realized_profit": 45376.95722720929,
+            "realized_investment": 98567.94263709872,
+            "realized_return": 46.03622233881388,
+            "unrealized_profit": 39981.64999281332,
+            "unrealized_investment": 72224.87462355236,
+            "unrealized_return": 55.35717465929031,
+            "total_profit": 85358.60722002262,
+            "total_investment": 170792.8172606511,
+            "total_return": 49.97786709598845,
+            "win_rate": 0.5012722646310432,
+            "total_trades": 492,
+            "total_buys": 260,
+            "total_sells": 232,
+            "first_trade_timestamp": 1695666323,
+            "last_trade_timestamp": 1699498751
+        }
+    },
+    {
+        "address": "0xd9158d245d05cbEd496053641aAE09888994b2e9",
+        "totalWalletPerformance": {
+            "wallet_address": "0xd9158d245d05cbed496053641aae09888994b2e9",
+            "realized_profit": 9560.066704720843,
+            "realized_investment": 19248.85977409077,
+            "realized_return": 49.66562600029339,
+            "unrealized_profit": -2041.8046415517542,
+            "unrealized_investment": 2906.5647115173574,
+            "unrealized_return": -70.24803657255718,
+            "total_profit": 7518.262063169088,
+            "total_investment": 22155.424485608128,
+            "total_return": 33.9341819790131,
+            "win_rate": 0.3764705882352941,
+            "total_trades": 115,
+            "total_buys": 57,
+            "total_sells": 58,
+            "first_trade_timestamp": 1693436075,
+            "last_trade_timestamp": 1699479911
+        }
+    },
+    {
+        "address": "0x3e57efEf507b4db7aCFa2eE79CeCA6B19e18D106",
+        "totalWalletPerformance": {
+            "wallet_address": "0x3e57efef507b4db7acfa2ee79ceca6b19e18d106",
+            "realized_profit": 25111.353794265375,
+            "realized_investment": 1011988.184532822,
+            "realized_return": 2.481388041685277,
+            "unrealized_profit": 49916.50828376354,
+            "unrealized_investment": 149573.37105165186,
+            "unrealized_return": 33.37259027646437,
+            "total_profit": 75027.86207802892,
+            "total_investment": 1161561.5555844738,
+            "total_return": 6.459223940161866,
+            "win_rate": 0.4263959390862944,
+            "total_trades": 1000,
+            "total_buys": 427,
+            "total_sells": 573,
+            "first_trade_timestamp": 1660683464,
+            "last_trade_timestamp": 1696097975
+        }
+    },
+    {
+        "address": "0x0D260D8aD1CCAe73f0d53BE60Ff6Aa6ed94A01FC",
+        "totalWalletPerformance": {
+            "wallet_address": "0x0d260d8ad1ccae73f0d53be60ff6aa6ed94a01fc",
+            "realized_profit": 16462.953059743206,
+            "realized_investment": 238490.51796576867,
+            "realized_return": 6.902980126910617,
+            "unrealized_profit": -2984.5585860525125,
+            "unrealized_investment": 17741.504070638384,
+            "unrealized_return": -16.82246654043194,
+            "total_profit": 13478.394473690692,
+            "total_investment": 256232.02203640706,
+            "total_return": 5.260230304772601,
+            "win_rate": 0.39469578783151327,
+            "total_trades": 1000,
+            "total_buys": 504,
+            "total_sells": 496,
+            "first_trade_timestamp": 1692850115,
+            "last_trade_timestamp": 1699522979
+        }
+    },
+    {
+        "address": "0x3f7C536193a8BB51F4Ff5834793E05C030481A3d",
+        "totalWalletPerformance": {
+            "wallet_address": "0x3f7c536193a8bb51f4ff5834793e05c030481a3d",
+            "realized_profit": 29132.12699055802,
+            "realized_investment": 118124.69881703165,
+            "realized_return": 24.662180968335846,
+            "unrealized_profit": -23066.42164013941,
+            "unrealized_investment": 50448.87193925975,
+            "unrealized_return": -45.72237347132617,
+            "total_profit": 6065.705350418608,
+            "total_investment": 168573.5707562914,
+            "total_return": 3.5982540579791493,
+            "win_rate": 0.5178571428571429,
+            "total_trades": 76,
+            "total_buys": 35,
+            "total_sells": 41,
+            "first_trade_timestamp": 1698089423,
+            "last_trade_timestamp": 1699238939
+        }
+    },
+    {
+        "address": "0x42D78dDED2305E11914947b07B92F7E9675d9BCb",
+        "totalWalletPerformance": {
+            "wallet_address": "0x42d78dded2305e11914947b07b92f7e9675d9bcb",
+            "realized_profit": 23477.376565887436,
+            "realized_investment": 650.0885309333065,
+            "realized_return": 3611.4122075314713,
+            "unrealized_profit": -580.0879340141483,
+            "unrealized_investment": 665.9206921260796,
+            "unrealized_return": -87.11066360802009,
+            "total_profit": 22897.28863187329,
+            "total_investment": 1316.0092230593862,
+            "total_return": 1739.9033555891747,
+            "win_rate": 0.7037037037037037,
+            "total_trades": 33,
+            "total_buys": 10,
+            "total_sells": 23,
+            "first_trade_timestamp": 1697406515,
+            "last_trade_timestamp": 1699384451
+        }
+    },
+    {
+        "address": "0x7CB6D73a687cA25e96A2Ebcc6A51f07b49857386",
+        "totalWalletPerformance": {
+            "wallet_address": "0x7cb6d73a687ca25e96a2ebcc6a51f07b49857386",
+            "realized_profit": 24716.26450293101,
+            "realized_investment": 56.40333102097697,
+            "realized_return": 43820.575940344344,
+            "unrealized_profit": 4347.037105076568,
+            "unrealized_investment": 12.718476662664044,
+            "unrealized_return": 34178.913248609344,
+            "total_profit": 29063.30160800758,
+            "total_investment": 69.12180768364101,
+            "total_return": 42046.50107101577,
+            "win_rate": 1,
+            "total_trades": 16,
+            "total_buys": 1,
+            "total_sells": 15,
+            "first_trade_timestamp": 1698362831,
+            "last_trade_timestamp": 1698392039
+        }
+    },
+    {
+        "address": "0xe9ccdf5612F6092EfF7D67B4Ec730B4432cA8CCF",
+        "totalWalletPerformance": {
+            "wallet_address": "0xe9ccdf5612f6092eff7d67b4ec730b4432ca8ccf",
+            "realized_profit": 35375.01408083431,
+            "realized_investment": 394.85074286853387,
+            "realized_return": 8959.085102345236,
+            "unrealized_profit": 1947.2411360990668,
+            "unrealized_investment": 1437.8574391814143,
+            "unrealized_return": 135.42657867442333,
+            "total_profit": 37322.25521693338,
+            "total_investment": 1832.7081820499482,
+            "total_return": 2036.4537891235436,
+            "win_rate": 0.9230769230769231,
+            "total_trades": 15,
+            "total_buys": 2,
+            "total_sells": 13,
+            "first_trade_timestamp": 1698362843,
+            "last_trade_timestamp": 1699402355
+        }
+    },
+    {
+        "address": "0x37e38E229ecEBBf9a6F4B8479B71508Ece16D597",
+        "totalWalletPerformance": {
+            "wallet_address": "0x37e38e229ecebbf9a6f4b8479b71508ece16d597",
+            "realized_profit": 114015.38355087533,
+            "realized_investment": 154982.18535866268,
+            "realized_return": 73.56676723006504,
+            "unrealized_profit": -39815.20359833976,
+            "unrealized_investment": 80595.84074987248,
+            "unrealized_return": -49.40106490346743,
+            "total_profit": 74200.17995253557,
+            "total_investment": 235578.02610853518,
+            "total_return": 31.49707176778456,
+            "win_rate": 0.36351706036745407,
+            "total_trades": 1000,
+            "total_buys": 511,
+            "total_sells": 489,
+            "first_trade_timestamp": 1678099847,
+            "last_trade_timestamp": 1696099271
+        }
+    },
+    {
+        "address": "0x36A0EE3aFB54bfaAf132aeD59f6aaA675Fa1da33",
+        "totalWalletPerformance": {
+            "wallet_address": "0x36a0ee3afb54bfaaf132aed59f6aaa675fa1da33",
+            "realized_profit": 30447.112939365637,
+            "realized_investment": 1945.6004124446667,
+            "realized_return": 1564.9211803521634,
+            "unrealized_profit": -3672.472364395115,
+            "unrealized_investment": 4191.834428403146,
+            "unrealized_return": -87.61014842358937,
+            "total_profit": 26774.640574970523,
+            "total_investment": 6137.434840847813,
+            "total_return": 436.2513211019594,
+            "win_rate": 0.34210526315789475,
+            "total_trades": 53,
+            "total_buys": 27,
+            "total_sells": 26,
+            "first_trade_timestamp": 1698164303,
+            "last_trade_timestamp": 1699466927
+        }
+    },
+
+    {
+        "address": "0xF1f890B43b463f3AEE993995d9eaB80a94A43958",
+        "totalWalletPerformance": {
+            "wallet_address": "0xf1f890b43b463f3aee993995d9eab80a94a43958",
+            "realized_profit": 13396.226848317892,
+            "realized_investment": 17855.79156770704,
+            "realized_return": 75.02454762378352,
+            "unrealized_profit": -1499.3240469705006,
+            "unrealized_investment": 4172.59154833626,
+            "unrealized_return": -35.932681874129926,
+            "total_profit": 11896.90280134739,
+            "total_investment": 22028.3831160433,
+            "total_return": 54.00715403702445,
+            "win_rate": 0.5891089108910891,
+            "total_trades": 267,
+            "total_buys": 116,
+            "total_sells": 151,
+            "first_trade_timestamp": 1698203627,
+            "last_trade_timestamp": 1699089683
+        }
+    },
+    {
+        "address": "0x42048942108a4C371e3B8252e01478128c2e8457",
+        "totalWalletPerformance": {
+            "wallet_address": "0x42048942108a4c371e3b8252e01478128c2e8457",
+            "realized_profit": 7937.159749815031,
+            "realized_investment": 76520.71610837469,
+            "realized_return": 10.372563344250201,
+            "unrealized_profit": -224.61542888637138,
+            "unrealized_investment": 6683.350073440768,
+            "unrealized_return": -3.360820941865362,
+            "total_profit": 7712.5443209286595,
+            "total_investment": 83204.06618181546,
+            "total_return": 9.269431981936314,
+            "win_rate": 0.33620689655172414,
+            "total_trades": 160,
+            "total_buys": 74,
+            "total_sells": 86,
+            "first_trade_timestamp": 1698200291,
+            "last_trade_timestamp": 1698888563
+        }
+    },
+    {
+        "address": "0x57d180bB8BFb5B021f96DD71Eb499f70294cE4AE",
+        "totalWalletPerformance": {
+            "wallet_address": "0x57d180bb8bfb5b021f96dd71eb499f70294ce4ae",
+            "realized_profit": 200371.00227830556,
+            "realized_investment": 291647.4299522067,
+            "realized_return": 68.70316063170559,
+            "unrealized_profit": -29224.323481945004,
+            "unrealized_investment": 276285.7489420731,
+            "unrealized_return": -10.577571805222668,
+            "total_profit": 171146.67879636056,
+            "total_investment": 567933.1788942798,
+            "total_return": 30.135002700417925,
+            "win_rate": 0.513235294117647,
+            "total_trades": 1000,
+            "total_buys": 451,
+            "total_sells": 549,
+            "first_trade_timestamp": 1625252525,
+            "last_trade_timestamp": 1687480343
+        }
+    },
+    {
+        "address": "0x42048942108a4C371e3B8252e01478128c2e8457",
+        "totalWalletPerformance": {
+            "wallet_address": "0x42048942108a4c371e3b8252e01478128c2e8457",
+            "realized_profit": 7937.159749815031,
+            "realized_investment": 76520.71610837469,
+            "realized_return": 10.372563344250201,
+            "unrealized_profit": -233.53653466356587,
+            "unrealized_investment": 6683.350073440768,
+            "unrealized_return": -3.4943034869836618,
+            "total_profit": 7703.623215151465,
+            "total_investment": 83204.06618181546,
+            "total_return": 9.258710023038656,
+            "win_rate": 0.33620689655172414,
+            "total_trades": 160,
+            "total_buys": 74,
+            "total_sells": 86,
+            "first_trade_timestamp": 1698200291,
+            "last_trade_timestamp": 1698888563
+        }
+    },
+    {
+        "address": "0xDb5969f2bCF31051C89c69Cb47BB2AEf492579cE",
+        "totalWalletPerformance": {
+            "wallet_address": "0xdb5969f2bcf31051c89c69cb47bb2aef492579ce",
+            "realized_profit": 13159.955410721575,
+            "realized_investment": 733.8963229438858,
+            "realized_return": 1793.1627396541398,
+            "unrealized_profit": 869.34880484462,
+            "unrealized_investment": 180.20277435882528,
+            "unrealized_return": 482.4280913198073,
+            "total_profit": 14029.304215566195,
+            "total_investment": 914.0990973027111,
+            "total_return": 1534.76841372706,
+            "win_rate": 0.6956521739130435,
+            "total_trades": 24,
+            "total_buys": 6,
+            "total_sells": 18,
+            "first_trade_timestamp": 1692162887,
+            "last_trade_timestamp": 1699516487
+        }
+    },
+    {
+        "address": "0x86dd9393539D2413ABDD273Af7ab604A103f91FB",
+        "totalWalletPerformance": {
+            "wallet_address": "0x86dd9393539d2413abdd273af7ab604a103f91fb",
+            "realized_profit": 7813.041195879992,
+            "realized_investment": 823.8407863469863,
+            "realized_return": 948.3678552167829,
+            "unrealized_profit": 6045.780349356821,
+            "unrealized_investment": 141.51876771351198,
+            "unrealized_return": 4272.069667533983,
+            "total_profit": 13858.821545236813,
+            "total_investment": 965.3595540604983,
+            "total_return": 1435.612408552212,
+            "win_rate": 0.625,
+            "total_trades": 24,
+            "total_buys": 6,
+            "total_sells": 18,
+            "first_trade_timestamp": 1692162887,
+            "last_trade_timestamp": 1699532903
+        }
+    },
+    {
+        "address": "0xd4FFB9c0D616a7cBba0eBdB03fF60165edfD9e84",
+        "totalWalletPerformance": {
+            "wallet_address": "0xd4ffb9c0d616a7cbba0ebdb03ff60165edfd9e84",
+            "realized_profit": 14008.553053893162,
+            "realized_investment": 1370.4864949786647,
+            "realized_return": 1022.1591460564698,
+            "unrealized_profit": 361.7185614715629,
+            "unrealized_investment": 1346.0757959843527,
+            "unrealized_return": 26.8720797558838,
+            "total_profit": 14370.271615364725,
+            "total_investment": 2716.5622909630174,
+            "total_return": 528.9873772881713,
+            "win_rate": 0.6176470588235294,
+            "total_trades": 35,
+            "total_buys": 13,
+            "total_sells": 22,
+            "first_trade_timestamp": 1692162887,
+            "last_trade_timestamp": 1699492355
+        }
+    },
+    {
+        "address": "0xE68B9b33963347bA4E97150EFc7b4cF035458200",
+        "totalWalletPerformance": {
+            "wallet_address": "0xe68b9b33963347ba4e97150efc7b4cf035458200",
+            "realized_profit": 27334.080169344317,
+            "realized_investment": 14513.39780596762,
+            "realized_return": 188.33687696553793,
+            "unrealized_profit": -891.9752676904136,
+            "unrealized_investment": 941.0723652295103,
+            "unrealized_return": -94.78285630806693,
+            "total_profit": 26442.104901653904,
+            "total_investment": 15454.47017119713,
+            "total_return": 171.09680635273213,
+            "win_rate": 0.2857142857142857,
+            "total_trades": 15,
+            "total_buys": 9,
+            "total_sells": 6,
+            "first_trade_timestamp": 1698220139,
+            "last_trade_timestamp": 1698439955
+        }
+    },
+    {
+        "address": "0x3754860e3B3AE40b3B9f195C8f1b34d718ebffB6",
+        "totalWalletPerformance": {
+            "wallet_address": "0x3754860e3b3ae40b3b9f195c8f1b34d718ebffb6",
+            "realized_profit": 472.9271422418969,
+            "realized_investment": 1253.5802790678908,
+            "realized_return": 37.72611536243578,
+            "unrealized_profit": 0,
+            "unrealized_investment": 0,
+            "unrealized_return": null,
+            "total_profit": 472.9271422418969,
+            "total_investment": 1253.5802790678908,
+            "total_return": 37.72611536243578,
+            "win_rate": 1,
+            "total_trades": 11,
+            "total_buys": 2,
+            "total_sells": 9,
+            "first_trade_timestamp": 1698356027,
+            "last_trade_timestamp": 1699015787
+        }
+    },
+    {
+        "address": "0x1071316b698da9947b2F267A02fD77e17ef2Fb5b",
+        "totalWalletPerformance": {
+            "wallet_address": "0x1071316b698da9947b2f267a02fd77e17ef2fb5b",
+            "realized_profit": 45376.95722720929,
+            "realized_investment": 98567.94263709872,
+            "realized_return": 46.03622233881388,
+            "unrealized_profit": 39711.26437800508,
+            "unrealized_investment": 72224.87462355236,
+            "unrealized_return": 54.98280832606019,
+            "total_profit": 85088.22160521438,
+            "total_investment": 170792.8172606511,
+            "total_return": 49.81955504332431,
+            "win_rate": 0.5012722646310432,
+            "total_trades": 492,
+            "total_buys": 260,
+            "total_sells": 232,
+            "first_trade_timestamp": 1695666323,
+            "last_trade_timestamp": 1699498751
+        }
+    },
+    {
+        "address": "0xd9158d245d05cbEd496053641aAE09888994b2e9",
+        "totalWalletPerformance": {
+            "wallet_address": "0xd9158d245d05cbed496053641aae09888994b2e9",
+            "realized_profit": 9560.066704720843,
+            "realized_investment": 19248.85977409077,
+            "realized_return": 49.66562600029339,
+            "unrealized_profit": -2039.6919073254996,
+            "unrealized_investment": 2906.5647115173574,
+            "unrealized_return": -70.17534821238124,
+            "total_profit": 7520.374797395343,
+            "total_investment": 22155.424485608128,
+            "total_return": 33.94371794718029,
+            "win_rate": 0.3764705882352941,
+            "total_trades": 115,
+            "total_buys": 57,
+            "total_sells": 58,
+            "first_trade_timestamp": 1693436075,
+            "last_trade_timestamp": 1699479911
+        }
+    },
+    {
+        "address": "0xC94782F82a18175F3402C0Bed1aaf59Cf1d15bB7",
+        "totalWalletPerformance": {
+            "wallet_address": "0xc94782f82a18175f3402c0bed1aaf59cf1d15bb7",
+            "realized_profit": 61544.3393067472,
+            "realized_investment": 162009.62780206534,
+            "realized_return": 37.988075240774435,
+            "unrealized_profit": -16534.43790526432,
+            "unrealized_investment": 57512.7998840594,
+            "unrealized_return": -28.749144431493946,
+            "total_profit": 45009.90140148288,
+            "total_investment": 219522.42768612475,
+            "total_return": 20.503554864944583,
+            "win_rate": 0.3606770833333333,
+            "total_trades": 1000,
+            "total_buys": 484,
+            "total_sells": 516,
+            "first_trade_timestamp": 1685642543,
+            "last_trade_timestamp": 1696098779
+        }
+    },
+    {
+        "address": "0xD9cB2313CE3dcba4e521497535F53a6616f06F85",
+        "totalWalletPerformance": {
+            "wallet_address": "0xd9cb2313ce3dcba4e521497535f53a6616f06f85",
+            "realized_profit": 7904.9073502260335,
+            "realized_investment": 608.435733290636,
+            "realized_return": 1299.2181290000003,
+            "unrealized_profit": -11.876019702777226,
+            "unrealized_investment": 44.7468266056779,
+            "unrealized_return": -26.540473601473863,
+            "total_profit": 7893.031330523257,
+            "total_investment": 653.1825598963139,
+            "total_return": 1208.3959087603616,
+            "win_rate": 0.75,
+            "total_trades": 4,
+            "total_buys": 1,
+            "total_sells": 3,
+            "first_trade_timestamp": 1698355955,
+            "last_trade_timestamp": 1698426359
+        }
+    },
+    {
+        "address": "0x5c1Ef9FDF2dC91eA2eFD2F21cD2AC24A243FDAF3",
+        "totalWalletPerformance": {
+            "wallet_address": "0x5c1ef9fdf2dc91ea2efd2f21cd2ac24a243fdaf3",
+            "realized_profit": 8917.122450147004,
+            "realized_investment": 12909.719938897508,
+            "realized_return": 69.07293490759125,
+            "unrealized_profit": -771.6681208452618,
+            "unrealized_investment": 2037.5304341764004,
+            "unrealized_return": -37.872716299188994,
+            "total_profit": 8145.454329301742,
+            "total_investment": 14947.250373073908,
+            "total_return": 54.494667085894456,
+            "win_rate": 0.4339622641509434,
+            "total_trades": 74,
+            "total_buys": 37,
+            "total_sells": 37,
+            "first_trade_timestamp": 1697839463,
+            "last_trade_timestamp": 1699499567
+        }
+    },
+    {
+        "address": "0x6B5bA6d2F7659eD400fbB2C4F43509e0Cc397777",
+        "totalWalletPerformance": {
+            "wallet_address": "0x6b5ba6d2f7659ed400fbb2c4f43509e0cc397777",
+            "realized_profit": 1502.217830047671,
+            "realized_investment": 3529.343005229473,
+            "realized_return": 42.56366773707785,
+            "unrealized_profit": -185.70522501947215,
+            "unrealized_investment": 234.62986626393425,
+            "unrealized_return": -79.1481613046538,
+            "total_profit": 1316.5126050281988,
+            "total_investment": 3763.972871493407,
+            "total_return": 34.97667624012005,
+            "win_rate": 0.4318181818181818,
+            "total_trades": 67,
+            "total_buys": 30,
+            "total_sells": 37,
+            "first_trade_timestamp": 1698264383,
+            "last_trade_timestamp": 1698956951
+        }
+    },
+    {
+        "address": "0xA304131ecb56Cc6Ea33CCA0Ca90d5559C74C2e9f",
+        "totalWalletPerformance": {
+            "wallet_address": "0xa304131ecb56cc6ea33cca0ca90d5559c74c2e9f",
+            "realized_profit": 3795.638253954686,
+            "realized_investment": 24487.690602180755,
+            "realized_return": 15.500188709574209,
+            "unrealized_profit": -359.60271820688695,
+            "unrealized_investment": 1163.8923773654376,
+            "unrealized_return": -30.8965609879563,
+            "total_profit": 3436.0355357477993,
+            "total_investment": 25651.582979546194,
+            "total_return": 13.395023373362926,
+            "win_rate": 0.5112359550561798,
+            "total_trades": 275,
+            "total_buys": 148,
+            "total_sells": 127,
+            "first_trade_timestamp": 1694249159,
+            "last_trade_timestamp": 1698827639
+        }
+    },
+
+    {
+        "address": "0xe54235FC70Dda5c1661cb179bF2a408aA1512D51",
+        "totalWalletPerformance": {
+            "wallet_address": "0xe54235fc70dda5c1661cb179bf2a408aa1512d51",
+            "realized_profit": 6110.925704989453,
+            "realized_investment": 19903.891927121884,
+            "realized_return": 30.702164819647397,
+            "unrealized_profit": 3066.9578325760453,
+            "unrealized_investment": 12764.5773534287,
+            "unrealized_return": 24.02710052716495,
+            "total_profit": 9177.883537565498,
+            "total_investment": 32668.469280550584,
+            "total_return": 28.09401156432395,
+            "win_rate": 0.7241379310344828,
+            "total_trades": 41,
+            "total_buys": 20,
+            "total_sells": 21,
+            "first_trade_timestamp": 1698178019,
+            "last_trade_timestamp": 1699472087
+        }
+    },
+    {
+        "address": "0xeC2C27d8b4Cc06b30cEF56413a7a0AbACE890f1d",
+        "totalWalletPerformance": {
+            "wallet_address": "0xec2c27d8b4cc06b30cef56413a7a0abace890f1d",
+            "realized_profit": 5589.477771133858,
+            "realized_investment": 16218.868360814437,
+            "realized_return": 34.462809900093305,
+            "unrealized_profit": 1674.8991907415025,
+            "unrealized_investment": 7306.18137537801,
+            "unrealized_return": 22.92441296880405,
+            "total_profit": 7264.376961875361,
+            "total_investment": 23525.049736192446,
+            "total_return": 30.879326689368813,
+            "win_rate": 0.6666666666666666,
+            "total_trades": 25,
+            "total_buys": 13,
+            "total_sells": 12,
+            "first_trade_timestamp": 1696542683,
+            "last_trade_timestamp": 1699477295
+        }
+    },
+    {
+        "address": "0x717B882A78cB7bFAa53305769f67C65b6b1B5375",
+        "totalWalletPerformance": {
+            "wallet_address": "0x717b882a78cb7bfaa53305769f67c65b6b1b5375",
+            "realized_profit": 45368.622938432614,
+            "realized_investment": 16161.598319261584,
+            "realized_return": 280.7186643437472,
+            "unrealized_profit": 6226.714008052519,
+            "unrealized_investment": 25589.052645357337,
+            "unrealized_return": 24.333507357030825,
+            "total_profit": 51595.336946485135,
+            "total_investment": 41750.65096461892,
+            "total_return": 123.57971852991938,
+            "win_rate": 0.40955631399317405,
+            "total_trades": 330,
+            "total_buys": 201,
+            "total_sells": 129,
+            "first_trade_timestamp": 1693076291,
+            "last_trade_timestamp": 1699536815
+        }
+    },
+    {
+        "address": "0x2e120B2626f32fc10b1E7f3576cb17b28eDBFaC3",
+        "totalWalletPerformance": {
+            "wallet_address": "0x2e120b2626f32fc10b1e7f3576cb17b28edbfac3",
+            "realized_profit": 59889.45913590911,
+            "realized_investment": 19586.450989557583,
+            "realized_return": 305.76983634165714,
+            "unrealized_profit": -3567.7267801571575,
+            "unrealized_investment": 5019.083069721893,
+            "unrealized_return": -71.08323832454212,
+            "total_profit": 56321.73235575195,
+            "total_investment": 24605.534059279475,
+            "total_return": 228.89863808711502,
+            "win_rate": 0.6476190476190476,
+            "total_trades": 552,
+            "total_buys": 215,
+            "total_sells": 337,
+            "first_trade_timestamp": 1686922799,
+            "last_trade_timestamp": 1699496171
+        }
+    },
+    {
+        "address": "0x6cdD2717F39E75808eeFE90B09065Cbaf392d504",
+        "totalWalletPerformance": {
+            "wallet_address": "0x6cdd2717f39e75808eefe90b09065cbaf392d504",
+            "realized_profit": 14211.895783987937,
+            "realized_investment": 6259.067525166532,
+            "realized_return": 227.0609116588786,
+            "unrealized_profit": 1219.962673535077,
+            "unrealized_investment": 1628.7188589888485,
+            "unrealized_return": 74.90320792948036,
+            "total_profit": 15431.858457523014,
+            "total_investment": 7887.78638415538,
+            "total_return": 195.64244904656417,
+            "win_rate": 0.7575757575757576,
+            "total_trades": 132,
+            "total_buys": 58,
+            "total_sells": 74,
+            "first_trade_timestamp": 1696367675,
+            "last_trade_timestamp": 1699500167
+        }
+    },
+
+    {
+        "address": "0xEFDD802C3472cD271B65caaEfe3820BDF833Bb52",
+        "totalWalletPerformance": {
+            "wallet_address": "0xefdd802c3472cd271b65caaefe3820bdf833bb52",
+            "realized_profit": 10738.392122661697,
+            "realized_investment": 7896.005488451308,
+            "realized_return": 135.99777936283937,
+            "unrealized_profit": 29.843423338772755,
+            "unrealized_investment": 1502.5274484324832,
+            "unrealized_return": 1.9862148521750473,
+            "total_profit": 10768.23554600047,
+            "total_investment": 9398.532936883792,
+            "total_return": 114.57357885868961,
+            "win_rate": 0.7542372881355932,
+            "total_trades": 154,
+            "total_buys": 60,
+            "total_sells": 94,
+            "first_trade_timestamp": 1695849071,
+            "last_trade_timestamp": 1699496363
+        }
+    },
+    {
+        "address": "0x31b47c9b70F6ed771457b99eD92585938e2C43cF",
+        "totalWalletPerformance": {
+            "wallet_address": "0x31b47c9b70f6ed771457b99ed92585938e2c43cf",
+            "realized_profit": 984.5598469070206,
+            "realized_investment": 55653.38386355421,
+            "realized_return": 1.7690925125431238,
+            "unrealized_profit": 8783.143748688623,
+            "unrealized_investment": 54242.554886342434,
+            "unrealized_return": 16.192348916994142,
+            "total_profit": 9767.703595595643,
+            "total_investment": 109895.93874989665,
+            "total_return": 8.888138821785923,
+            "win_rate": 0.4451219512195122,
+            "total_trades": 1000,
+            "total_buys": 409,
+            "total_sells": 591,
+            "first_trade_timestamp": 1695410759,
+            "last_trade_timestamp": 1699536899
+        }
+    },
+    {
+        "address": "0xda346B125EA80C7d7C1270c61E2321Ba9099Cf36",
+        "totalWalletPerformance": {
+            "wallet_address": "0xda346b125ea80c7d7c1270c61e2321ba9099cf36",
+            "realized_profit": 1035.5720347173278,
+            "realized_investment": 1316.4567545542272,
+            "realized_return": 78.66358170405596,
+            "unrealized_profit": -434.0022426379188,
+            "unrealized_investment": 596.6537142594647,
+            "unrealized_return": -72.73938505127377,
+            "total_profit": 601.569792079409,
+            "total_investment": 1913.110468813692,
+            "total_return": 31.444592556771628,
+            "win_rate": 0.3181818181818182,
+            "total_trades": 62,
+            "total_buys": 31,
+            "total_sells": 31,
+            "first_trade_timestamp": 1699127615,
+            "last_trade_timestamp": 1699227635
+        }
+    },
+    {
+        "address": "0x26003CFF6bb26bF68Ab49622f18c8Ec247c083bF",
+        "totalWalletPerformance": {
+            "wallet_address": "0x26003cff6bb26bf68ab49622f18c8ec247c083bf",
+            "realized_profit": 12138.232248230057,
+            "realized_investment": 15666.782133067052,
+            "realized_return": 77.4775071557964,
+            "unrealized_profit": -1426.1772880177973,
+            "unrealized_investment": 3175.3385340871337,
+            "unrealized_return": -44.91418073089973,
+            "total_profit": 10712.05496021226,
+            "total_investment": 18842.120667154188,
+            "total_return": 56.85164185836917,
+            "win_rate": 0.46835443037974683,
+            "total_trades": 102,
+            "total_buys": 49,
+            "total_sells": 53,
+            "first_trade_timestamp": 1688859335,
+            "last_trade_timestamp": 1699503239
+        }
+    },
+    {
+        "address": "0xB515cb43e414848b7078591D1493f2aa5F3a75c2",
+        "totalWalletPerformance": {
+            "wallet_address": "0xb515cb43e414848b7078591d1493f2aa5f3a75c2",
+            "realized_profit": 3458.24913299253,
+            "realized_investment": 188.3381572489245,
+            "realized_return": 1836.1914460179196,
+            "unrealized_profit": 761.4089751149166,
+            "unrealized_investment": 31.837739895291087,
+            "unrealized_return": 2391.529604862221,
+            "total_profit": 4219.658108107446,
+            "total_investment": 220.17589714421558,
+            "total_return": 1916.4941134967028,
+            "win_rate": 0.6666666666666666,
+            "total_trades": 10,
+            "total_buys": 4,
+            "total_sells": 6,
+            "first_trade_timestamp": 1698884039,
+            "last_trade_timestamp": 1699154291
+        }
+    },
+    {
+        "address": "0x3eB81b24F5c89fe0119998bb8772413D32fEC77C",
+        "totalWalletPerformance": {
+            "wallet_address": "0x3eb81b24f5c89fe0119998bb8772413d32fec77c",
+            "realized_profit": 79662.66288790511,
+            "realized_investment": 148825.74022258222,
+            "realized_return": 53.5274763416345,
+            "unrealized_profit": 14674.731399010558,
+            "unrealized_investment": 25318.53295510087,
+            "unrealized_return": 57.96043327247392,
+            "total_profit": 94337.39428691567,
+            "total_investment": 174144.2731776831,
+            "total_return": 54.171976238725485,
+            "win_rate": 0.7337278106508875,
+            "total_trades": 246,
+            "total_buys": 66,
+            "total_sells": 180,
+            "first_trade_timestamp": 1698012995,
+            "last_trade_timestamp": 1699539179
+        }
+    },
+
+    {
+        "address": "0xcc8eCF9a61fEB4EF817ba445B5fA93181698B76a",
+        "totalWalletPerformance": {
+            "wallet_address": "0xcc8ecf9a61feb4ef817ba445b5fa93181698b76a",
+            "realized_profit": 29369.128105814365,
+            "realized_investment": 24633.796083812307,
+            "realized_return": 119.22290825941278,
+            "unrealized_profit": 5221.654983537007,
+            "unrealized_investment": 3290.101341261963,
+            "unrealized_return": 158.7080287786567,
+            "total_profit": 34590.783089351375,
+            "total_investment": 27923.89742507427,
+            "total_return": 123.87519751555374,
+            "win_rate": 0.5533980582524272,
+            "total_trades": 146,
+            "total_buys": 77,
+            "total_sells": 69,
+            "first_trade_timestamp": 1694794619,
+            "last_trade_timestamp": 1699449611
+        }
+    },
+
+    {
+        "address": "0x02Cf562FA7503C4743AE6A38737CFbC227466deE",
+        "totalWalletPerformance": {
+            "wallet_address": "0x02cf562fa7503c4743ae6a38737cfbc227466dee",
+            "realized_profit": 9588.658947075688,
+            "realized_investment": 6104.153473253212,
+            "realized_return": 157.0841720984025,
+            "unrealized_profit": -977.6704133149487,
+            "unrealized_investment": 1246.477717022193,
+            "unrealized_return": -78.43464828641953,
+            "total_profit": 8610.98853376074,
+            "total_investment": 7350.631190275405,
+            "total_return": 117.14624650401093,
+            "win_rate": 0.4966442953020134,
+            "total_trades": 226,
+            "total_buys": 101,
+            "total_sells": 125,
+            "first_trade_timestamp": 1692237215,
+            "last_trade_timestamp": 1699492259
+        }
+    },
+    {
+        "address": "0x24Aa1f2b68D727eEF712bCbb8FA64816Ce6E18CB",
+        "totalWalletPerformance": {
+            "wallet_address": "0x24aa1f2b68d727eef712bcbb8fa64816ce6e18cb",
+            "realized_profit": 7713.589947964772,
+            "realized_investment": 25442.443718247403,
+            "realized_return": 30.31780293349951,
+            "unrealized_profit": -3493.082661173599,
+            "unrealized_investment": 4632.597836824695,
+            "unrealized_return": -75.40224263386199,
+            "total_profit": 4220.507286791173,
+            "total_investment": 30075.041555072097,
+            "total_return": 14.033255046589929,
+            "win_rate": 0.4036697247706422,
+            "total_trades": 181,
+            "total_buys": 87,
+            "total_sells": 94,
+            "first_trade_timestamp": 1685270675,
+            "last_trade_timestamp": 1699459823
+        }
+    },
+
+    {
+        "address": "0x860aEe3F919dDD9B687Acd4Ad200bF2B4AE00586",
+        "totalWalletPerformance": {
+            "wallet_address": "0x860aee3f919ddd9b687acd4ad200bf2b4ae00586",
+            "realized_profit": 1003.8646240262291,
+            "realized_investment": 10883.093545315482,
+            "realized_return": 9.224074201386724,
+            "unrealized_profit": -782.2609879916909,
+            "unrealized_investment": 1594.5888437387082,
+            "unrealized_return": -49.05722193299587,
+            "total_profit": 221.60363603453823,
+            "total_investment": 12477.68238905419,
+            "total_return": 1.775999974393769,
+            "win_rate": 0.37988826815642457,
+            "total_trades": 242,
+            "total_buys": 127,
+            "total_sells": 115,
+            "first_trade_timestamp": 1690220279,
+            "last_trade_timestamp": 1699532531
+        }
+    },
+    {
+        "address": "0x02248386220b43A7E4afDD0F49F01384b9127fc0",
+        "totalWalletPerformance": {
+            "wallet_address": "0x02248386220b43a7e4afdd0f49f01384b9127fc0",
+            "realized_profit": 366.4360900711003,
+            "realized_investment": 64.35036617819082,
+            "realized_return": 569.4390130685694,
+            "unrealized_profit": 0,
+            "unrealized_investment": 0,
+            "unrealized_return": null,
+            "total_profit": 366.4360900711003,
+            "total_investment": 64.35036617819082,
+            "total_return": 569.4390130685694,
+            "win_rate": 1,
+            "total_trades": 3,
+            "total_buys": 1,
+            "total_sells": 2,
+            "first_trade_timestamp": 1699029383,
+            "last_trade_timestamp": 1699033979
+        }
+    },
+    {
+        "address": "0x1101b5D720C7c1D461757967ef750a6315e75Cc0",
+        "totalWalletPerformance": {
+            "wallet_address": "0x1101b5d720c7c1d461757967ef750a6315e75cc0",
+            "realized_profit": 1487.2505413540082,
+            "realized_investment": 4638.649671735339,
+            "realized_return": 32.06214408508287,
+            "unrealized_profit": -24.149272548765023,
+            "unrealized_investment": 27.765377498594223,
+            "unrealized_return": -86.97620822907132,
+            "total_profit": 1463.101268805243,
+            "total_investment": 4666.415049233933,
+            "total_return": 31.353860583949437,
+            "win_rate": 0.3902439024390244,
+            "total_trades": 48,
+            "total_buys": 22,
+            "total_sells": 26,
+            "first_trade_timestamp": 1698636779,
+            "last_trade_timestamp": 1699277963
+        }
+    },
+    {
+        "address": "0xd3B5F63Ec11ADBE30d0fe62b70aE5e2f3fD02083",
+        "totalWalletPerformance": {
+            "wallet_address": "0xd3b5f63ec11adbe30d0fe62b70ae5e2f3fd02083",
+            "realized_profit": 53917.95510643019,
+            "realized_investment": 105477.93318993945,
+            "realized_return": 51.11775845032667,
+            "unrealized_profit": 1731.291848434452,
+            "unrealized_investment": 98923.08908054333,
+            "unrealized_return": 1.7501392895493102,
+            "total_profit": 55649.24695486465,
+            "total_investment": 204401.0222704828,
+            "total_return": 27.225522816233422,
+            "win_rate": 0.45414847161572053,
+            "total_trades": 394,
+            "total_buys": 151,
+            "total_sells": 243,
+            "first_trade_timestamp": 1640295746,
+            "last_trade_timestamp": 1699509791
+        }
+    },
+    {
+        "address": "0xBF7cf8b77f3EB998Caf9aa1d3b4a84c625802F7a",
+        "totalWalletPerformance": {
+            "wallet_address": "0xbf7cf8b77f3eb998caf9aa1d3b4a84c625802f7a",
+            "realized_profit": 421.7470207281111,
+            "realized_investment": 443.8287439074925,
+            "realized_return": 95.02471989872204,
+            "unrealized_profit": -3.57072274679911,
+            "unrealized_investment": 5.384707627398449,
+            "unrealized_return": -66.31228645786769,
+            "total_profit": 418.176297981312,
+            "total_investment": 449.2134515348909,
+            "total_return": 93.09077823748825,
+            "win_rate": 0.5,
+            "total_trades": 5,
+            "total_buys": 2,
+            "total_sells": 3,
+            "first_trade_timestamp": 1699025375,
+            "last_trade_timestamp": 1699049411
+        }
+    },
+    {
+        "address": "0xDEC0230b86881F7D0EaBBa191F176e7D9bC57429",
+        "totalWalletPerformance": {
+            "wallet_address": "0xdec0230b86881f7d0eabba191f176e7d9bc57429",
+            "realized_profit": 593.1532594668217,
+            "realized_investment": 203.30554797379637,
+            "realized_return": 291.7545858331776,
+            "unrealized_profit": 0,
+            "unrealized_investment": 0,
+            "unrealized_return": null,
+            "total_profit": 593.1532594668217,
+            "total_investment": 203.30554797379637,
+            "total_return": 291.7545858331776,
+            "win_rate": 1,
+            "total_trades": 3,
+            "total_buys": 1,
+            "total_sells": 2,
+            "first_trade_timestamp": 1699025375,
+            "last_trade_timestamp": 1699025711
+        }
+    },
+    {
+        "address": "0xB37FC112feBaE7a0c86A2564D6D85E8DD3ee7ee7",
+        "totalWalletPerformance": {
+            "wallet_address": "0xb37fc112febae7a0c86a2564d6d85e8dd3ee7ee7",
+            "realized_profit": 1837.9111328494935,
+            "realized_investment": 10810.440705774432,
+            "realized_return": 17.00126001216368,
+            "unrealized_profit": -707.986413969708,
+            "unrealized_investment": 1336.7993591734923,
+            "unrealized_return": -52.96130710351606,
+            "total_profit": 1129.9247188797854,
+            "total_investment": 12147.240064947924,
+            "total_return": 9.301904900523834,
+            "win_rate": 0.33707865168539325,
+            "total_trades": 124,
+            "total_buys": 68,
+            "total_sells": 56,
+            "first_trade_timestamp": 1696433459,
+            "last_trade_timestamp": 1699487339
+        }
+    },
+    {
+        "address": "0xEE32F3f24c964330d4702212A096ae2377ed65ff",
+        "totalWalletPerformance": {
+            "wallet_address": "0xee32f3f24c964330d4702212a096ae2377ed65ff",
+            "realized_profit": 72103.34121032582,
+            "realized_investment": 24313.450563411494,
+            "realized_return": 296.5574179702479,
+            "unrealized_profit": 162619.6222806826,
+            "unrealized_investment": 16024.994152582294,
+            "unrealized_return": 1014.7874048021279,
+            "total_profit": 234722.96349100844,
+            "total_investment": 40338.444715993784,
+            "total_return": 581.8840194350457,
+            "win_rate": 0.5429141716566867,
+            "total_trades": 603,
+            "total_buys": 285,
+            "total_sells": 318,
+            "first_trade_timestamp": 1692723335,
+            "last_trade_timestamp": 1699502927
+        }
+    },
+    {
+        "address": "0xa4c0497D6630903fBC9b39985084E570628a1a32",
+        "totalWalletPerformance": {
+            "wallet_address": "0xa4c0497d6630903fbc9b39985084e570628a1a32",
+            "realized_profit": 194786.22479096113,
+            "realized_investment": 260437.41315614744,
+            "realized_return": 74.79195190522624,
+            "unrealized_profit": 24453.32686242362,
+            "unrealized_investment": 151724.4492609157,
+            "unrealized_return": 16.116932360961822,
+            "total_profit": 219239.55165338475,
+            "total_investment": 412161.8624170631,
+            "total_return": 53.19258564285555,
+            "win_rate": 0.39397590361445783,
+            "total_trades": 1000,
+            "total_buys": 536,
+            "total_sells": 464,
+            "first_trade_timestamp": 1690733735,
+            "last_trade_timestamp": 1695993479
+        }
+    },
+
+    {
+        "address": "0x473160736a2Bc85A6819ab5a0c51cF903d6eD631",
+        "totalWalletPerformance": {
+            "wallet_address": "0x473160736a2bc85a6819ab5a0c51cf903d6ed631",
+            "realized_profit": 6239.2994592261375,
+            "realized_investment": 17401.821249586446,
+            "realized_return": 35.854290017916455,
+            "unrealized_profit": -1487.1238976216684,
+            "unrealized_investment": 7714.447124910819,
+            "unrealized_return": -19.277128659286262,
+            "total_profit": 4752.175561604469,
+            "total_investment": 25116.268374497267,
+            "total_return": 18.92070705228555,
+            "win_rate": 0.6386554621848739,
+            "total_trades": 163,
+            "total_buys": 71,
+            "total_sells": 92,
+            "first_trade_timestamp": 1698199727,
+            "last_trade_timestamp": 1699535723
+        }
+    },
+    {
+        "address": "0xDaed9258564d3854766f9Ef764682B19dE5c40BD",
+        "totalWalletPerformance": {
+            "wallet_address": "0xdaed9258564d3854766f9ef764682b19de5c40bd",
+            "realized_profit": 34809.98603174589,
+            "realized_investment": 178333.8423639004,
+            "realized_return": 19.519562619367626,
+            "unrealized_profit": 31619.652520585518,
+            "unrealized_investment": 27078.868221316927,
+            "unrealized_return": 116.76873738649836,
+            "total_profit": 66429.63855233141,
+            "total_investment": 205412.7105852173,
+            "total_return": 32.33959493698053,
+            "win_rate": 0.4346764346764347,
+            "total_trades": 1000,
+            "total_buys": 433,
+            "total_sells": 567,
+            "first_trade_timestamp": 1681854515,
+            "last_trade_timestamp": 1696095887
+        }
+    },
+    {
+        "address": "0x477a91914E47Da98Aa8F27c6a861E7ABC07aFDE0",
+        "totalWalletPerformance": {
+            "wallet_address": "0x477a91914e47da98aa8f27c6a861e7abc07afde0",
+            "realized_profit": 248997.55883174945,
+            "realized_investment": 30317.313658055016,
+            "realized_return": 821.3048215292426,
+            "unrealized_profit": 156208.9788462937,
+            "unrealized_investment": 27476.803589943935,
+            "unrealized_return": 568.5121936944065,
+            "total_profit": 405206.5376780431,
+            "total_investment": 57794.11724799895,
+            "total_return": 701.1207316123042,
+            "win_rate": 0.41825613079019075,
+            "total_trades": 813,
+            "total_buys": 442,
+            "total_sells": 371,
+            "first_trade_timestamp": 1690392575,
+            "last_trade_timestamp": 1699495259
+        }
+    },
+    {
+        "address": "0x22eb9b95C5c48Fb608FfAaC378621159b88D598E",
+        "totalWalletPerformance": {
+            "wallet_address": "0x22eb9b95c5c48fb608ffaac378621159b88d598e",
+            "realized_profit": 5318.015535332575,
+            "realized_investment": 20700.281032636532,
+            "realized_return": 25.690547519369765,
+            "unrealized_profit": -618.5002592719561,
+            "unrealized_investment": 4316.409437637098,
+            "unrealized_return": -14.329045198514287,
+            "total_profit": 4699.51527606062,
+            "total_investment": 25016.69047027363,
+            "total_return": 18.785519538025515,
+            "win_rate": 0.4823529411764706,
+            "total_trades": 116,
+            "total_buys": 50,
+            "total_sells": 66,
+            "first_trade_timestamp": 1698199727,
+            "last_trade_timestamp": 1699518815
+        }
+    },
+    {
+        "address": "0x3aeb330823485A0969AA8b8f9d2ED63BFDFa05Fb",
+        "totalWalletPerformance": {
+            "wallet_address": "0x3aeb330823485a0969aa8b8f9d2ed63bfdfa05fb",
+            "realized_profit": 209772.22006671916,
+            "realized_investment": 35286.393956643864,
+            "realized_return": 594.4847193070076,
+            "unrealized_profit": 80518.20230864176,
+            "unrealized_investment": 26045.86432384327,
+            "unrealized_return": 309.1400665668547,
+            "total_profit": 290290.4223753609,
+            "total_investment": 61332.258280487134,
+            "total_return": 473.3078978566111,
+            "win_rate": 0.4101123595505618,
+            "total_trades": 790,
+            "total_buys": 434,
+            "total_sells": 356,
+            "first_trade_timestamp": 1690392575,
+            "last_trade_timestamp": 1699495259
+        }
+    },
+    {
+        "address": "0x89541D17B5E9DD752A7A46E2491DA60D61A35141",
+        "totalWalletPerformance": {
+            "wallet_address": "0x89541d17b5e9dd752a7a46e2491da60d61a35141",
+            "realized_profit": 22979.681313000452,
+            "realized_investment": 74798.88097248784,
+            "realized_return": 30.721958690067474,
+            "unrealized_profit": -1160.7131898675698,
+            "unrealized_investment": 7569.254153881719,
+            "unrealized_return": -15.334578100701304,
+            "total_profit": 21818.968123132883,
+            "total_investment": 82368.13512636955,
+            "total_return": 26.48957401992667,
+            "win_rate": 0.4513888888888889,
+            "total_trades": 535,
+            "total_buys": 260,
+            "total_sells": 275,
+            "first_trade_timestamp": 1698199727,
+            "last_trade_timestamp": 1699539191
+        }
+    },
+    {
+        "address": "0x1dCFE7B6e326B075c7b2Ce660A6F3CdAe8a573E6",
+        "totalWalletPerformance": {
+            "wallet_address": "0x1dcfe7b6e326b075c7b2ce660a6f3cdae8a573e6",
+            "realized_profit": 188142.4079260114,
+            "realized_investment": 38723.29839012502,
+            "realized_return": 485.8635905199396,
+            "unrealized_profit": 47335.04522742478,
+            "unrealized_investment": 38047.100391889195,
+            "unrealized_return": 124.41170217932185,
+            "total_profit": 235477.4531534362,
+            "total_investment": 76770.3987820142,
+            "total_return": 306.7294906492057,
+            "win_rate": 0.4163424124513619,
+            "total_trades": 865,
+            "total_buys": 473,
+            "total_sells": 392,
+            "first_trade_timestamp": 1690392575,
+            "last_trade_timestamp": 1699495259
+        }
+    },
+    {
+        "address": "0xf4EE01A828C8F403336Bd6096c6732C8A9ecA56F",
+        "totalWalletPerformance": {
+            "wallet_address": "0xf4ee01a828c8f403336bd6096c6732c8a9eca56f",
+            "realized_profit": 113444.32554817681,
+            "realized_investment": 441925.1006204032,
+            "realized_return": 25.670487009883868,
+            "unrealized_profit": -7339.9829829250575,
+            "unrealized_investment": 41852.11900211881,
+            "unrealized_return": -17.537900488511614,
+            "total_profit": 106104.34256525176,
+            "total_investment": 483777.219622522,
+            "total_return": 21.932480129602226,
+            "win_rate": 0.46038863976083705,
+            "total_trades": 1000,
+            "total_buys": 484,
+            "total_sells": 516,
+            "first_trade_timestamp": 1685397839,
+            "last_trade_timestamp": 1696099307
+        }
+    },
+    {
+        "address": "0x8e7DfC77CD457cd21160C77a076d7426213B89b6",
+        "totalWalletPerformance": {
+            "wallet_address": "0x8e7dfc77cd457cd21160c77a076d7426213b89b6",
+            "realized_profit": 55437.80638784415,
+            "realized_investment": 15981.584138646092,
+            "realized_return": 346.88555218869976,
+            "unrealized_profit": 55620.61815425556,
+            "unrealized_investment": 12389.775003499777,
+            "unrealized_return": 448.9235529986963,
+            "total_profit": 111058.4245420997,
+            "total_investment": 28371.35914214587,
+            "total_return": 391.44555601187807,
+            "win_rate": 0.5902004454342984,
+            "total_trades": 555,
+            "total_buys": 259,
+            "total_sells": 296,
+            "first_trade_timestamp": 1692723335,
+            "last_trade_timestamp": 1699502927
+        }
+    },
+    {
+        "address": "0xC9f2e6A1401Edac830f9c746d01FbD57395FFdeC",
+        "totalWalletPerformance": {
+            "wallet_address": "0xc9f2e6a1401edac830f9c746d01fbd57395ffdec",
+            "realized_profit": 9596.659953853561,
+            "realized_investment": 41027.03565454279,
+            "realized_return": 23.391063479846984,
+            "unrealized_profit": -1042.0387769618376,
+            "unrealized_investment": 4502.6273595683,
+            "unrealized_return": -23.142905102894094,
+            "total_profit": 8554.621176891724,
+            "total_investment": 45529.663014111095,
+            "total_return": 18.78911595335194,
+            "win_rate": 0.46846846846846846,
+            "total_trades": 450,
+            "total_buys": 190,
+            "total_sells": 260,
+            "first_trade_timestamp": 1692276659,
+            "last_trade_timestamp": 1699207559
+        }
+    },
+    {
+        "address": "0x772f0bB499aD06490f988359b5a1dF96ac32b9E2",
+        "totalWalletPerformance": {
+            "wallet_address": "0x772f0bb499ad06490f988359b5a1df96ac32b9e2",
+            "realized_profit": 35582.163810257814,
+            "realized_investment": 146944.718347802,
+            "realized_return": 24.21465991451203,
+            "unrealized_profit": -4326.000121227695,
+            "unrealized_investment": 10553.397066351623,
+            "unrealized_return": -40.991541339998314,
+            "total_profit": 31256.16368903012,
+            "total_investment": 157498.1154141536,
+            "total_return": 19.84542075747357,
+            "win_rate": 0.43409490333919154,
+            "total_trades": 924,
+            "total_buys": 389,
+            "total_sells": 535,
+            "first_trade_timestamp": 1694270111,
+            "last_trade_timestamp": 1699536815
+        }
+    },
+    {
+        "address": "0x9d898899d5136763D26cEF393451b0296E28359F",
+        "totalWalletPerformance": {
+            "wallet_address": "0x9d898899d5136763d26cef393451b0296e28359f",
+            "realized_profit": 116202.0568643458,
+            "realized_investment": 352859.75673451053,
+            "realized_return": 32.931513057686395,
+            "unrealized_profit": -24120.560641090466,
+            "unrealized_investment": 30953.340643306536,
+            "unrealized_return": -77.92554903538783,
+            "total_profit": 92081.49622325532,
+            "total_investment": 383813.0973778171,
+            "total_return": 23.99123345512421,
+            "win_rate": 0.4645776566757493,
+            "total_trades": 1000,
+            "total_buys": 486,
+            "total_sells": 514,
+            "first_trade_timestamp": 1691823263,
+            "last_trade_timestamp": 1696092611
+        }
+    },
+    {
+        "address": "0xc9D8a85e8BAcdCCE463A0F9315F1dCf8bB989F59",
+        "totalWalletPerformance": {
+            "wallet_address": "0xc9d8a85e8bacdcce463a0f9315f1dcf8bb989f59",
+            "realized_profit": 29263.847879636156,
+            "realized_investment": 57690.61868310078,
+            "realized_return": 50.72548803885226,
+            "unrealized_profit": -3272.789329449125,
+            "unrealized_investment": 8497.126139281043,
+            "unrealized_return": -38.516426328184906,
+            "total_profit": 25991.05855018703,
+            "total_investment": 66187.74482238182,
+            "total_return": 39.26868730749984,
+            "win_rate": 0.45368171021377673,
+            "total_trades": 668,
+            "total_buys": 277,
+            "total_sells": 391,
+            "first_trade_timestamp": 1694270111,
+            "last_trade_timestamp": 1699527407
+        }
+    },
+    {
+        "address": "0x8ED54C24De86CDe7EEF73e8d8f3eD67860328d9d",
+        "totalWalletPerformance": {
+            "wallet_address": "0x8ed54c24de86cde7eef73e8d8f3ed67860328d9d",
+            "realized_profit": 3146.474399321383,
+            "realized_investment": 730.563020954687,
+            "realized_return": 430.6917143451396,
+            "unrealized_profit": 186.49739897738922,
+            "unrealized_investment": 68.51565846100205,
+            "unrealized_return": 272.1967549703115,
+            "total_profit": 3332.9717982987722,
+            "total_investment": 799.0786794156891,
+            "total_return": 417.10183041499033,
+            "win_rate": 0.9230769230769231,
+            "total_trades": 24,
+            "total_buys": 7,
+            "total_sells": 17,
+            "first_trade_timestamp": 1699172195,
+            "last_trade_timestamp": 1699297175
+        }
+    },
+    {
+        "address": "0x93aCfba9658caE3dA4CeE96a6a59E71b65268963",
+        "totalWalletPerformance": {
+            "wallet_address": "0x93acfba9658cae3da4cee96a6a59e71b65268963",
+            "realized_profit": 15136.376131001995,
+            "realized_investment": 3314.3705930653095,
+            "realized_return": 456.6893081501503,
+            "unrealized_profit": 2087.687382646449,
+            "unrealized_investment": 993.7209878064007,
+            "unrealized_return": 210.0878826414782,
+            "total_profit": 17224.06351364844,
+            "total_investment": 4308.09158087171,
+            "total_return": 399.80727406364196,
+            "win_rate": 0.775,
+            "total_trades": 186,
+            "total_buys": 62,
+            "total_sells": 124,
+            "first_trade_timestamp": 1692272879,
+            "last_trade_timestamp": 1699527407
+        }
+    },
+    {
+        "address": "0x79EFb61E74896B6CC2Df3D700D1B9DAb43680F0D",
+        "totalWalletPerformance": {
+            "wallet_address": "0x79efb61e74896b6cc2df3d700d1b9dab43680f0d",
+            "realized_profit": 6935.8232181728545,
+            "realized_investment": 9742.961357205651,
+            "realized_return": 71.18803989757481,
+            "unrealized_profit": -895.8877907511205,
+            "unrealized_investment": 1154.96865805244,
+            "unrealized_return": -77.56814736962704,
+            "total_profit": 6039.935427421734,
+            "total_investment": 10897.93001525809,
+            "total_return": 55.422776793072416,
+            "win_rate": 0.5909090909090909,
+            "total_trades": 82,
+            "total_buys": 39,
+            "total_sells": 43,
+            "first_trade_timestamp": 1695643667,
+            "last_trade_timestamp": 1699375955
+        }
+    },
+    {
+        "address": "0x00001d300DDec34F9e6953bE3a251dC49112C57d",
+        "totalWalletPerformance": {
+            "wallet_address": "0x00001d300ddec34f9e6953be3a251dc49112c57d",
+            "realized_profit": 29308.62137840538,
+            "realized_investment": 195290.89815319917,
+            "realized_return": 15.007674016335235,
+            "unrealized_profit": -1699.7520156421317,
+            "unrealized_investment": 2616.8102778088096,
+            "unrealized_return": -64.95511081015097,
+            "total_profit": 27608.86936276325,
+            "total_investment": 197907.70843100798,
+            "total_return": 13.950375951317678,
+            "win_rate": 0.5369774919614148,
+            "total_trades": 489,
+            "total_buys": 243,
+            "total_sells": 246,
+            "first_trade_timestamp": 1686200843,
+            "last_trade_timestamp": 1699514963
+        }
+    },
+    {
+        "address": "0xFD9C7B195462FC4A72b851046A1aAA0A52d3bc52",
+        "totalWalletPerformance": {
+            "wallet_address": "0xfd9c7b195462fc4a72b851046a1aaa0a52d3bc52",
+            "realized_profit": 22018.8346311384,
+            "realized_investment": 42031.580649555166,
+            "realized_return": 52.38640634223075,
+            "unrealized_profit": -12685.2393704985,
+            "unrealized_investment": 13396.010562169577,
+            "unrealized_return": -94.69415772425339,
+            "total_profit": 9333.5952606399,
+            "total_investment": 55427.59121172474,
+            "total_return": 16.839258312682258,
+            "win_rate": 0.38095238095238093,
+            "total_trades": 617,
+            "total_buys": 393,
+            "total_sells": 224,
+            "first_trade_timestamp": 1684933571,
+            "last_trade_timestamp": 1699352591
+        }
+    },
+    {
+        "address": "0x4de6C375A370a4fBB7c860BAb23D13e26281EF46",
+        "totalWalletPerformance": {
+            "wallet_address": "0x4de6c375a370a4fbb7c860bab23d13e26281ef46",
+            "realized_profit": 75685.19951206233,
+            "realized_investment": 634446.808748829,
+            "realized_return": 11.929321492107203,
+            "unrealized_profit": -45443.628464534595,
+            "unrealized_investment": 391716.8028047544,
+            "unrealized_return": -11.601143514689952,
+            "total_profit": 30241.571047527737,
+            "total_investment": 1026163.6115535833,
+            "total_return": 2.947051591679697,
+            "win_rate": 0.34285714285714286,
+            "total_trades": 330,
+            "total_buys": 192,
+            "total_sells": 138,
+            "first_trade_timestamp": 1605243266,
+            "last_trade_timestamp": 1699221047
+        }
     }
 ]

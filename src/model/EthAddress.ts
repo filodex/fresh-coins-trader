@@ -4,8 +4,11 @@ import fs from 'fs'
 export default class EthAddress {
     address: string
     latestTokenTransfers: any
-    constructor({ address }: { address: string }) {
+    totalWalletPerformance: any
+
+    constructor({ address, totalWalletPerformance }: { address: string; totalWalletPerformance?: any }) {
         this.address = address
+        this.totalWalletPerformance = totalWalletPerformance
     }
 
     async updateBalance() {}
