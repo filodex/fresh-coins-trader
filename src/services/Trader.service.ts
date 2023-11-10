@@ -2,20 +2,39 @@ import etherscanApi from '../apis/EtherscanApi.js'
 import path from 'path'
 import fs from 'fs'
 import EthAddress from '../model/EthAddress.js'
+import dexScreenerApi from '../apis/DexScreenerApi.js'
+
+export interface ITokensTradedMoreThanOnce {
+    [key: string]: {
+        walletsCount: number
+        walletsBought: any[]
+        details: { [key: string]: any }
+        lastBuyDate: string
+        lastBuyTime: number
+        lastTransactionTime: number
+        lastTransactionDate: string
+        tokenDecimal: string
+        tokenName: string
+        tokenSymbol: string
+    }
+}
+
+// const a: ITokensTradedMoreThanOnce =
 
 export class TraderService {
     listOfEthAddresses: any
     constructor({} = {}) {}
     #listOfWalletsFilePath = path.join(path.resolve(), 'diff', 'goodWhales.json')
 
-    async findTokensTradedByGoodWhales({ transfersTime = 150 } = {}) {
+    async findTokensTradedMoreThanOnce({ transfersTime = 150 } = {}): Promise<{
+        tokensTradedMoreThanOnce: ITokensTradedMoreThanOnce
+    }> {
         // transfersTime in minutes
         const { tokensTradedSet } = await this.#getSetOfTokensTradedAndAddToEthAddress({
             listOfAddresses: this.listOfEthAddresses,
             transfersTime,
         })
-        console.log('set', tokensTradedSet)
-        console.log(this.listOfEthAddresses)
+        console.log('Токены, которые были сторгованы всеми кошельками из списка', tokensTradedSet)
 
         const { tokensTradedMoreThanOnce } = this.#findTokensTradedMoreThanOneWallet({
             tokensTradedSet,
@@ -24,7 +43,7 @@ export class TraderService {
 
         this.#detalizeTradesData({ tokensTradedMoreThanOnce })
 
-        return { tokensTradedByMoreThanOneWallet: tokensTradedMoreThanOnce }
+        return { tokensTradedMoreThanOnce }
     }
     async getLastPriceByContractAddress({ address }: { address: string }) {}
     #detalizeTradesData({ tokensTradedMoreThanOnce }: { tokensTradedMoreThanOnce: any }) {
@@ -190,19 +209,41 @@ export class TraderService {
         }
         return { tokensTradedSet }
     }
+
     updateListOfEthAddressesFromFile() {
         const text = fs.readFileSync(this.#listOfWalletsFilePath)
         const listOfEthAddresses: Array<EthAddress> = JSON.parse(String(text))
         this.listOfEthAddresses = listOfEthAddresses
         return { listOfEthAddresses }
     }
+
     handleListOfEthAddresses() {
         this.listOfEthAddresses.forEach((val: EthAddress) => {
             val = new EthAddress({ address: val.address })
         })
     }
+
+    async getTokenPrice({ tokenSymbol, tokenName }: { tokenSymbol: string; tokenName: string }) {
+        let tokenPrice
+        try {
+            const pairs = await dexScreenerApi.getPairsDataByName(tokenSymbol)
+
+            for (const pair of pairs) {
+                if (pair.pairCreatedAt || 0 > new Date().getTime() - 1000 * 60 * 60 * 24) {
+                    if (pair.baseToken.name == tokenName) {
+                        tokenPrice = pair.priceUsd
+                        break
+                    }
+                }
+            }
+        } catch (error) {
+            console.log(error)
+        }
+
+        return tokenPrice
+    }
 }
 
 const traderService = new TraderService()
-// traderService.updateListOfEthAddressesFromFile()
+traderService.updateListOfEthAddressesFromFile()
 export default traderService

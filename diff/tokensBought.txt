@@ -181,3 +181,11 @@
 {"tokenAddress":"0x4f5379d20af898fc2a613cef68b37e85c2ba6ee3","boughtAt":"2023-11-09T14:45:32.645Z","walletsCount":2,"lastBuy":"2023-11-09T14:34:35.000Z","tokenName":"Kopa","price":"0.0002058"}
 {"tokenAddress":"0x40f8a2088afb905fe9c9bc49902ad6bf2122412a","boughtAt":"2023-11-09T14:45:32.925Z","walletsCount":2,"lastBuy":"2023-11-09T13:34:59.000Z","tokenName":"Ravenous Bugblatter Beast Of Traal","price":"0.00004776"}
 {"tokenAddress":"0x212035a4fa861ffdd8614a62897e79b454b261d1","boughtAt":"2023-11-09T14:45:33.242Z","walletsCount":2,"lastBuy":"2023-11-09T13:04:11.000Z","tokenName":"BONK","price":"0.000006763"}
+{"tokenAddress":"0x2ddf882eece9737c52b44d99879509e919c0f18b","boughtAt":"2023-11-10T06:02:01.828Z","walletsCount":3,"lastBuy":null,"tokenName":"Rain Lõhmus","price":"0.02653"}
+{"tokenAddress":"0x15f99acea5f7077ac3d9959556adf318b4cd4ab3","boughtAt":"2023-11-10T06:02:02.176Z","walletsCount":3,"lastBuy":"2023-11-10T03:53:47.000Z","tokenName":"Y2K","price":"4.15"}
+{"tokenAddress":"0x6667a53bb66fe32280603d1d37bb821500672381","boughtAt":"2023-11-10T06:02:02.533Z","walletsCount":3,"lastBuy":"2023-11-10T05:38:11.000Z","tokenName":"Anime Bitcoin","price":"0.000004342"}
+{"tokenAddress":"0x15f99acea5f7077ac3d9959556adf318b4cd4ab3","boughtAt":"2023-11-10T06:08:40.395Z","walletsCount":3,"lastBuy":"2023-11-10T03:53:47.000Z","tokenName":"Y2K","price":"4.15"}
+{"tokenAddress":"0x6667a53bb66fe32280603d1d37bb821500672381","boughtAt":"2023-11-10T06:08:41.120Z","walletsCount":3,"lastBuy":"2023-11-10T05:38:11.000Z","tokenName":"Anime Bitcoin","price":"0.000002255"}
+{"tokenAddress":"0x6667a53bb66fe32280603d1d37bb821500672381","boughtAt":"2023-11-10T06:24:06.451Z","walletsCount":5,"lastBuy":"2023-11-10T06:14:59.000Z","tokenName":"Anime Bitcoin","price":"0.000004182"}
+{"tokenAddress":"0x6667a53bb66fe32280603d1d37bb821500672381","boughtAt":"2023-11-10T07:38:32.005Z","walletsCount":4,"lastBuy":"2023-11-10T06:14:59.000Z","tokenName":"Anime Bitcoin","price":"0.0000007074"}
+{"tokenAddress":"0xb2988fee61d99e870e3603a828351a036a698060","boughtAt":"2023-11-10T07:45:43.938Z","walletsCount":4,"lastBuy":"2023-11-10T07:43:59.000Z","tokenName":"Ethereum Trust Fund","price":"0.000003191"}

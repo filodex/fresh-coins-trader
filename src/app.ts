@@ -14,7 +14,11 @@ import statsService from './services/Stats.service.js'
 import traderService from './services/Trader.service.js'
 import EthAddress from './model/EthAddress.js'
 import syveApi from './apis/SyveApi.js'
-import whalesListService, { WhalesListService } from './services/WhalesList.service.js'
+import whalesListService, {
+    WhalesListService,
+} from './services/WhalesList.service.js'
+import { config } from 'dotenv'
+import configService from './services/Config.service.js'
 
 process.on('uncaughtException', async (err) => {
     console.log(err)
@@ -25,100 +29,87 @@ process.on('unhandledRejection', async (err) => {
     await sleep(5000)
 })
 
-const tokensBoughtSet = new Set()
+const tokensAreadyBoughtAndHandledSet = new Set()
 
 /**
  * MAIN
  */
-await writeGoodTrades()
-// await telegramBotService.handleBotCommands()
-
-// const candlesData = await getDayCandleData({
-//     browser,
-//     pairAddress: '0x88c119ee1d2be7a3f35a4c957361bc445a05d3d6',
-// })
-// console.log(candlesData)
-
-// const tokensBought = statsService.readTokensBought()
-// console.log(tokensBought)
-
-// statsService.writeStatsToFile()
-
-// statsService.calcSignalsStats()
-
-// traderService.updateListOfEthAddressesFromFile()
-// traderService.handleListOfEthAddresses()
-// console.log(traderService.listOfEthAddresses)
-// for (const ethad of traderService.listOfEthAddresses) {
-//     // const { totalWalletPerformance } = await syveApi.getLatestTotalPerformance({ address: ethad.address })
-//     // ethad.totalWalletPerformance = totalWalletPerformance
-//     // await ethad.appendToListInFile()
-// }
-
-// const { listOfEthAddresses } = whalesListService.getListOfEthAddresses()
-
-// for (const ethAddress of listOfEthAddresses) {
-//     console.log(ethAddress.totalWalletPerformance?.total_profit, ethAddress.totalWalletPerformance?.win_rate)
-// }
+thisShouldRunOnServer()
 
 setInterval(() => {}, 5000)
 
-async function writeGoodTrades() {
+async function thisShouldRunOnServer() {
+    await findAndHandleGoodTrades()
+}
+
+async function findAndHandleGoodTrades() {
     try {
         traderService.updateListOfEthAddressesFromFile()
 
-        const { tokensTradedByMoreThanOneWallet } = await traderService.findTokensTradedByGoodWhales()
-        console.log('tokensTradedByMoreThanOneWallet', tokensTradedByMoreThanOneWallet)
-        for (const key in tokensTradedByMoreThanOneWallet) {
-            if (tokensTradedByMoreThanOneWallet[key].walletsCount >= 2) {
-                if (tokensBoughtSet.has(key)) {
+        const { tokensTradedMoreThanOnce } =
+            await traderService.findTokensTradedMoreThanOnce()
+        console.log('tokensTradedMoreThanOnce', tokensTradedMoreThanOnce)
+
+        for (const contractAddress in tokensTradedMoreThanOnce) {
+            const walletsCountThreshold =
+                Number(configService.get('walletsCountThreshold')) ?? 3
+
+            if (
+                tokensTradedMoreThanOnce[contractAddress].walletsCount >=
+                walletsCountThreshold
+            ) {
+                if (tokensAreadyBoughtAndHandledSet.has(contractAddress)) {
                     continue
                 }
 
-                let tokenPrice
-                try {
-                    const pairs = await dexScreenerApi.getPairsDataByName(
-                        tokensTradedByMoreThanOneWallet[key]?.tokenSymbol
-                    )
+                let tokenPrice = await traderService.getTokenPrice({
+                    tokenSymbol:
+                        tokensTradedMoreThanOnce[contractAddress]?.tokenSymbol,
+                    tokenName:
+                        tokensTradedMoreThanOnce[contractAddress]?.tokenName,
+                })
 
-                    for (const pair of pairs) {
-                        if (pair.pairCreatedAt || 0 > new Date().getTime() - 1000 * 60 * 60 * 24) {
-                            tokenPrice = pair.priceUsd
-                            break
-                        }
-                    }
-                } catch (error) {
-                    console.log(error)
+                const walletsBoughtThisToken = []
+                for (const walletAddress in tokensTradedMoreThanOnce[
+                    contractAddress
+                ].details) {
+                    walletsBoughtThisToken.push(walletAddress)
                 }
 
                 try {
                     telegramBotService.sendMessageToMyChannel(
-                        `Вот хэш токена ${tokensTradedByMoreThanOneWallet[key]?.tokenName}, покупай\n${key}\nЕго купили ${tokensTradedByMoreThanOneWallet[key]?.walletsCount} кит(ов)`
+                        `Вот хэш токена ${tokensTradedMoreThanOnce[contractAddress]?.tokenName}, покупай\n${contractAddress}\nЕго купили ${tokensTradedMoreThanOnce[contractAddress]?.walletsCount} кит(ов)\nПо цене ${tokenPrice} WETH из tokenPrice\nКупили эти ребята:\n${walletsBoughtThisToken}\nПоследний кит купил: ${tokensTradedMoreThanOnce[contractAddress].lastBuyDate}`
                     )
                 } catch (error) {
                     console.log(error)
                 }
 
-                tokensBoughtSet.add(key)
+                tokensAreadyBoughtAndHandledSet.add(contractAddress)
+
                 const jsonToWrite = JSON.stringify({
-                    tokenAddress: key,
+                    tokenAddress: contractAddress,
                     boughtAt: new Date(),
-                    walletsCount: tokensTradedByMoreThanOneWallet[key]?.walletsCount,
-                    lastBuy: tokensTradedByMoreThanOneWallet[key]?.lastBuyDate,
-                    tokenName: tokensTradedByMoreThanOneWallet[key]?.tokenName,
+                    walletsCount:
+                        tokensTradedMoreThanOnce[contractAddress]?.walletsCount,
+                    lastBuy:
+                        tokensTradedMoreThanOnce[contractAddress]?.lastBuyDate,
+                    tokenName:
+                        tokensTradedMoreThanOnce[contractAddress]?.tokenName,
                     price: tokenPrice,
                 })
-                // console.log('jsonToWrite', jsonToWrite)
-                fs.appendFileSync(path.join(path.resolve(), 'diff', 'tokensBought.txt'), '\n' + jsonToWrite)
+                fs.appendFileSync(
+                    path.join(path.resolve(), 'diff', 'tokensBought.txt'),
+                    '\n' + jsonToWrite
+                )
             }
         }
         setTimeout(() => {
-            writeGoodTrades()
-        }, 20000)
+            findAndHandleGoodTrades()
+        }, 30000)
     } catch (error) {
         console.log(error)
         setTimeout(() => {
-            writeGoodTrades()
-        }, 20000)
+            findAndHandleGoodTrades()
+        }, 30000)
     }
 }
