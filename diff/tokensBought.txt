@@ -194,3 +194,5 @@
 {"tokenAddress":"0xc769a7c7f23917bba96f44dc00ddf387518a2f37","boughtAt":"2023-11-10T11:08:57.309Z","walletsCount":3,"lastBuy":"2023-11-10T11:07:11.000Z","tokenName":""}
 {"tokenAddress":"0x3ef9181c9b96baaafb3717a553e808ccc72be37d","boughtAt":"2023-11-10T11:13:15.807Z","walletsCount":3,"lastBuy":"2023-11-10T10:48:23.000Z","tokenName":"Meme Pepe","price":"0.0000000008947"}
 {"tokenAddress":"0xc769a7c7f23917bba96f44dc00ddf387518a2f37","boughtAt":"2023-11-10T11:13:16.147Z","walletsCount":3,"lastBuy":"2023-11-10T11:07:11.000Z","tokenName":"Poloniex Classic","price":"0.000003992"}
+{"tokenAddress":"0x3ef9181c9b96baaafb3717a553e808ccc72be37d","boughtAt":"2023-11-10T11:36:52.384Z","walletsCount":3,"lastBuy":"2023-11-10T10:48:23.000Z","tokenName":"Meme Pepe","price":"0.0000000008947"}
+{"tokenAddress":"0x3ef9181c9b96baaafb3717a553e808ccc72be37d","boughtAt":"2023-11-10T11:45:30.559Z","walletsCount":3,"lastBuy":"2023-11-10T11:42:59.000Z","tokenName":"Meme Pepe","price":"0.0000000009128"}
