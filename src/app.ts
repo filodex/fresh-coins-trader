@@ -55,7 +55,7 @@ async function findAndHandleGoodTrades() {
                 Number(configService.get('walletsCountThreshold')) ?? 3
 
             if (
-                tokensTradedMoreThanOnce[contractAddress].walletsCount >=
+                tokensTradedMoreThanOnce[contractAddress].walletsBoughtCount >=
                 walletsCountThreshold
             ) {
                 if (tokensAreadyBoughtAndHandledSet.has(contractAddress)) {

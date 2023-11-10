@@ -30,7 +30,7 @@ export class TraderService {
         'goodWhales.json'
     )
 
-    async findTokensTradedMoreThanOnce({ transfersTime = 60 } = {}): Promise<{
+    async findTokensTradedMoreThanOnce({ transfersTime = 120 } = {}): Promise<{
         tokensTradedMoreThanOnce: ITokensTradedMoreThanOnce
     }> {
         // transfersTime in minutes
@@ -167,6 +167,66 @@ export class TraderService {
             )
         }
     }
+
+    #detalzeTokenTradedInfo({
+        tokenAddress: tokenAddressFromSet,
+        tokensTradedMoreThanOnce,
+        listOfEthAddresses,
+    }: {
+        tokenAddress: string
+        tokensTradedMoreThanOnce: any
+        listOfEthAddresses: any
+    }) {
+        tokensTradedMoreThanOnce[tokenAddressFromSet] = {}
+        const tokenTMO = tokensTradedMoreThanOnce[tokenAddressFromSet]
+
+        tokenTMO.walletsBoughtCount = 0
+        tokenTMO.walletsBought = []
+        tokenTMO.walletsAddressesSet = new Set()
+
+        for (const ethAddress of listOfEthAddresses) {
+            let latestTokenTransferWithTokenFromSet =
+                ethAddress.latestTokenTransfers.find((value: any) => {
+                    if (
+                        value.contractAddress.toLowerCase() ===
+                        tokenAddressFromSet.toLowerCase()
+                    ) {
+                        return true
+                    }
+                })
+
+            let latestTokenBuyWithTokenFromSet =
+                ethAddress.latestTokenTransfers.find((value: any) => {
+                    if (
+                        value.contractAddress.toLowerCase() ===
+                        tokenAddressFromSet.toLowerCase()
+                        //   !!!!!!!!!!!!!!!!!!!!!!!!!!!!  //     &&
+                        // latestTokenTransferWithTokenFromSet.to.toLowerCase() ===
+                        //     ethAddress.address.toLowerCase()
+                    ) {
+                        return true
+                    }
+                })
+
+            if (latestTokenBuyWithTokenFromSet) {
+                tokenTMO.walletsAddressesSet.add(ethAddress.address)
+                tokenTMO.walletsBoughtCount = tokenTMO.walletsAddressesSet.size
+                tokenTMO.walletsBought.push(ethAddress)
+            }
+
+            // if (
+            //     ethAddress.address ===
+            //     '0x0474919515D83AeA81509e0a466D78a6e4BBfB47'
+            // ) {
+            //     console.log(ethAddress)
+            //     console.log('tokenTMO', tokenTMO)
+            // }
+        }
+        // tokensTradedMoreThanOnce[tokenAddressFromSet] = tokenTMO
+
+        // console.log('tokenTMO', tokenTMO)
+    }
+
     #findTokensTradedMoreThanOneWallet({
         tokensTradedSet,
         listOfEthAddresses,
@@ -175,53 +235,25 @@ export class TraderService {
         listOfEthAddresses: any
     }) {
         const tokensTradedMoreThanOnce: any = {}
+
         for (const tokenAddress of tokensTradedSet) {
-            tokensTradedMoreThanOnce[tokenAddress] = {
-                walletsCount: 0,
-                walletsBought: [],
-                tradesWithSells: 0,
-            }
+            // console.log('before detalizing', tokensTradedMoreThanOnce)
 
-            for (const ethAddress of listOfEthAddresses) {
-                let isLatestTokenTransferHasTokenFromSet =
-                    ethAddress.latestTokenTransfers.find((value: any) => {
-                        if (
-                            value.contractAddress.toLowerCase() ===
-                            tokenAddress.toLowerCase()
-                        ) {
-                            return true
-                        }
-                    })
-                let isLatestTokenBuyHasTokenFromSet =
-                    ethAddress.latestTokenTransfers.find((value: any) => {
-                        if (
-                            value.contractAddress.toLowerCase() ===
-                                tokenAddress.toLowerCase() &&
-                            isLatestTokenTransferHasTokenFromSet.to.toLowerCase() ===
-                                ethAddress.address.toLowerCase()
-                        ) {
-                            return true
-                        }
-                    })
-
-                if (isLatestTokenTransferHasTokenFromSet) {
-                    tokensTradedMoreThanOnce[tokenAddress].tradesWithSells += 1
-                }
-
-                if (isLatestTokenBuyHasTokenFromSet) {
-                    tokensTradedMoreThanOnce[tokenAddress].walletsCount += 1
-                    tokensTradedMoreThanOnce[tokenAddress].walletsBought.push(
-                        ethAddress
-                    )
-                }
-            }
+            this.#detalzeTokenTradedInfo({
+                tokenAddress,
+                tokensTradedMoreThanOnce,
+                listOfEthAddresses,
+            })
+            // console.log('after detalizing', tokensTradedMoreThanOnce)
         }
 
-        for (const address in tokensTradedMoreThanOnce) {
-            if (tokensTradedMoreThanOnce[address].walletsCount < 2) {
-                delete tokensTradedMoreThanOnce[address]
-            }
-        }
+        // for (const address in tokensTradedMoreThanOnce) {
+        //     if (
+        //         tokensTradedMoreThanOnce[address].walletsAddressesSet?.size < 1
+        //     ) {
+        //         delete tokensTradedMoreThanOnce[address]
+        //     }
+        // }
 
         return { tokensTradedMoreThanOnce }
     }
