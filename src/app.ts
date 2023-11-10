@@ -69,16 +69,37 @@ async function findAndHandleGoodTrades() {
                         tokensTradedMoreThanOnce[contractAddress]?.tokenName,
                 })
 
+                let detailsString = ''
                 const walletsBoughtThisToken = []
                 for (const walletAddress in tokensTradedMoreThanOnce[
                     contractAddress
                 ].details) {
+                    const details =
+                        tokensTradedMoreThanOnce[contractAddress].details[
+                            walletAddress
+                        ]
                     walletsBoughtThisToken.push(walletAddress)
+                    detailsString += `👨‍🦰 Вот этот ${walletAddress}\n👜 Всего купил ${
+                        details.boughtSummary
+                    }\n🌑 Всего продал ${
+                        details.soldSummary
+                    }\n📆 Последняя покупка была ${new Date(
+                        details.lastBuyDateWithThisToken
+                    ).toLocaleString()}\n\n`
                 }
 
                 try {
                     telegramBotService.sendMessageToMyChannel(
-                        `Вот хэш токена ${tokensTradedMoreThanOnce[contractAddress]?.tokenName}, покупай\n${contractAddress}\nЕго купили ${tokensTradedMoreThanOnce[contractAddress]?.walletsCount} кит(ов)\nПо цене ${tokenPrice} WETH из tokenPrice\nКупили эти ребята:\n${walletsBoughtThisToken}\nПоследний кит купил: ${tokensTradedMoreThanOnce[contractAddress].lastBuyDate}`
+                        `🥼 Вот хэш токена ${
+                            tokensTradedMoreThanOnce[contractAddress]?.tokenName
+                        }, покупай\n${contractAddress}\n👨‍👨‍👧 Его купили ${
+                            tokensTradedMoreThanOnce[contractAddress]
+                                ?.walletsCount
+                        } кит(ов)\n💰 По цене ${tokenPrice} WETH из tokenPrice\n🏛 Купили эти ребята:\n${walletsBoughtThisToken}\n📅 Последний кит купил: ${new Date(
+                            tokensTradedMoreThanOnce[
+                                contractAddress
+                            ].lastBuyDate
+                        ).toLocaleString()}\n\n${detailsString}`
                     )
                 } catch (error) {
                     console.log(error)
