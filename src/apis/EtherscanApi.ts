@@ -23,7 +23,9 @@ export class EtherscanApi implements IEtrescanApi {
         contractAddress: string | undefined
     }) {
         try {
-            const url = new URL('https://api.etherscan.io/api?module=account&action=tokenbalance&address')
+            const url = new URL(
+                'https://api.etherscan.io/api?module=account&action=tokenbalance&address'
+            )
             url.searchParams.append('apikey', this.apiToken)
             url.searchParams.append('address', address)
             url.searchParams.append('contractaddress', contractAddress ?? '')
@@ -33,12 +35,19 @@ export class EtherscanApi implements IEtrescanApi {
             const resJson = await res.json()
 
             if (resJson.message !== 'OK') {
-                console.log('Something wrong in getWalletBalanceForSingleAddress', resJson)
-                throw new Error(`resJson message: ${resJson.message}, resJson result: ${resJson.result}`)
+                console.log(
+                    'Something wrong in getWalletBalanceForSingleAddress',
+                    resJson
+                )
+                throw new Error(
+                    `resJson message: ${resJson.message}, resJson result: ${resJson.result}`
+                )
             }
             return { tokenBalance: resJson.result }
         } catch (error) {
-            throw new Error('Error in getWalletTokenBalanceForSingleAddress' + error)
+            throw new Error(
+                'Error in getWalletTokenBalanceForSingleAddress' + error
+            )
         }
     }
     async getWalletEtherBalanceForSingleAddress({
@@ -47,7 +56,9 @@ export class EtherscanApi implements IEtrescanApi {
         address: string
     }): Promise<returnValueOfGetWalletEtherBalanceForSingleAddress> {
         try {
-            const url = new URL('https://api.etherscan.io/api?module=account&action=balance')
+            const url = new URL(
+                'https://api.etherscan.io/api?module=account&action=balance'
+            )
             url.searchParams.append('apikey', this.apiToken)
             url.searchParams.append('address', address)
 
@@ -55,18 +66,26 @@ export class EtherscanApi implements IEtrescanApi {
             const resJson = await res.json()
 
             if (resJson.message !== 'OK') {
-                console.log('Something wrong in getWalletBalanceForSingleAddress', resJson)
-                throw new Error(`resJson message: ${resJson.message}, resJson result: ${resJson.result}`)
+                console.log(
+                    'Something wrong in getWalletBalanceForSingleAddress',
+                    resJson
+                )
+                throw new Error(
+                    `resJson message: ${resJson.message}, resJson result: ${resJson.result}`
+                )
             }
 
-            return { etherBalance: resJson.result / 10 ** 18, weiBalance: resJson.result }
+            return {
+                etherBalance: resJson.result / 10 ** 18,
+                weiBalance: resJson.result,
+            }
         } catch (error) {
             throw new Error('Error in getListOfTokenTransfers' + error)
         }
     }
     async getListOfTokenTransfers({
         address,
-        offset = 600,
+        offset = 300,
         page = 1,
         sort = 'desc',
     }: {
@@ -76,7 +95,9 @@ export class EtherscanApi implements IEtrescanApi {
         sort?: string
     }): Promise<returnGetListOfTokenTransfers> {
         try {
-            const url = new URL('https://api.etherscan.io/api?module=account&action=tokentx')
+            const url = new URL(
+                'https://api.etherscan.io/api?module=account&action=tokentx'
+            )
             url.searchParams.append('apikey', this.apiToken)
             url.searchParams.append('offset', String(offset))
             url.searchParams.append('page', String(page))
@@ -86,8 +107,13 @@ export class EtherscanApi implements IEtrescanApi {
             const res = await fetch(url)
             const resJson = await res.json()
             if (resJson.message !== 'OK') {
-                console.log('Something wrong in getListOfTokenTransfers', resJson)
-                throw new Error(`resJson message: ${resJson.message}, resJson result: ${resJson.result}`)
+                console.log(
+                    'Something wrong in getListOfTokenTransfers',
+                    resJson
+                )
+                throw new Error(
+                    `resJson message: ${resJson.message}, resJson result: ${resJson.result}`
+                )
             }
             return { listOfTokenTransfers: resJson.result }
         } catch (error) {

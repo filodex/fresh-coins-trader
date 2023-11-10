@@ -189,3 +189,8 @@
 {"tokenAddress":"0x6667a53bb66fe32280603d1d37bb821500672381","boughtAt":"2023-11-10T06:24:06.451Z","walletsCount":5,"lastBuy":"2023-11-10T06:14:59.000Z","tokenName":"Anime Bitcoin","price":"0.000004182"}
 {"tokenAddress":"0x6667a53bb66fe32280603d1d37bb821500672381","boughtAt":"2023-11-10T07:38:32.005Z","walletsCount":4,"lastBuy":"2023-11-10T06:14:59.000Z","tokenName":"Anime Bitcoin","price":"0.0000007074"}
 {"tokenAddress":"0xb2988fee61d99e870e3603a828351a036a698060","boughtAt":"2023-11-10T07:45:43.938Z","walletsCount":4,"lastBuy":"2023-11-10T07:43:59.000Z","tokenName":"Ethereum Trust Fund","price":"0.000003191"}
+{"tokenAddress":"0xc60ad4ef5c7b238103e435053f4f305bc659d88a","boughtAt":"2023-11-10T09:52:37.477Z","walletsCount":4,"lastBuy":null,"tokenName":"InternetsCoin.org","price":"0.000007672"}
+{"tokenAddress":"0x3ef9181c9b96baaafb3717a553e808ccc72be37d","boughtAt":"2023-11-10T11:05:03.675Z","walletsCount":3,"lastBuy":"2023-11-10T10:48:23.000Z","tokenName":"Meme Pepe","price":"0.0000000008947"}
+{"tokenAddress":"0xc769a7c7f23917bba96f44dc00ddf387518a2f37","boughtAt":"2023-11-10T11:08:57.309Z","walletsCount":3,"lastBuy":"2023-11-10T11:07:11.000Z","tokenName":""}
+{"tokenAddress":"0x3ef9181c9b96baaafb3717a553e808ccc72be37d","boughtAt":"2023-11-10T11:13:15.807Z","walletsCount":3,"lastBuy":"2023-11-10T10:48:23.000Z","tokenName":"Meme Pepe","price":"0.0000000008947"}
+{"tokenAddress":"0xc769a7c7f23917bba96f44dc00ddf387518a2f37","boughtAt":"2023-11-10T11:13:16.147Z","walletsCount":3,"lastBuy":"2023-11-10T11:07:11.000Z","tokenName":"Poloniex Classic","price":"0.000003992"}

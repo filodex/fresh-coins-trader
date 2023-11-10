@@ -24,36 +24,50 @@ export interface ITokensTradedMoreThanOnce {
 export class TraderService {
     listOfEthAddresses: any
     constructor({} = {}) {}
-    #listOfWalletsFilePath = path.join(path.resolve(), 'diff', 'goodWhales.json')
+    #listOfWalletsFilePath = path.join(
+        path.resolve(),
+        'diff',
+        'goodWhales.json'
+    )
 
-    async findTokensTradedMoreThanOnce({ transfersTime = 150 } = {}): Promise<{
+    async findTokensTradedMoreThanOnce({ transfersTime = 60 } = {}): Promise<{
         tokensTradedMoreThanOnce: ITokensTradedMoreThanOnce
     }> {
         // transfersTime in minutes
-        const { tokensTradedSet } = await this.#getSetOfTokensTradedAndAddToEthAddress({
-            listOfAddresses: this.listOfEthAddresses,
-            transfersTime,
-        })
-        console.log('Токены, которые были сторгованы всеми кошельками из списка', tokensTradedSet)
+        const { tokensTradedSet } =
+            await this.#getSetOfTokensTradedAndAddToEthAddress({
+                listOfAddresses: this.listOfEthAddresses,
+                transfersTime,
+            })
+        console.log(
+            'Токены, которые были сторгованы всеми кошельками из списка',
+            tokensTradedSet
+        )
 
-        const { tokensTradedMoreThanOnce } = this.#findTokensTradedMoreThanOneWallet({
-            tokensTradedSet,
-            listOfEthAddresses: this.listOfEthAddresses,
-        })
+        const { tokensTradedMoreThanOnce } =
+            this.#findTokensTradedMoreThanOneWallet({
+                tokensTradedSet,
+                listOfEthAddresses: this.listOfEthAddresses,
+            })
 
         this.#detalizeTradesData({ tokensTradedMoreThanOnce })
 
         return { tokensTradedMoreThanOnce }
     }
     async getLastPriceByContractAddress({ address }: { address: string }) {}
-    #detalizeTradesData({ tokensTradedMoreThanOnce }: { tokensTradedMoreThanOnce: any }) {
+    #detalizeTradesData({
+        tokensTradedMoreThanOnce,
+    }: {
+        tokensTradedMoreThanOnce: any
+    }) {
         /* Посчитать их статистику из имеющихся данных не получится, нужно делать еще запросы, т.к. в getListOfTokenTransfers не возвращаются данные по отправленным WETH
          * Посчитать, когда была последняя покупка, для каждого кошелька
          * Посчитать сколько всего купил каждый из кошельков
          * Посчитать сколько всего продал каждый
          */
         for (const contractAddressKey in tokensTradedMoreThanOnce) {
-            const contractAddressDetails = tokensTradedMoreThanOnce[contractAddressKey]
+            const contractAddressDetails =
+                tokensTradedMoreThanOnce[contractAddressKey]
             const walletsBoughtArr = contractAddressDetails.walletsBought
             contractAddressDetails.details = {}
             const allTransactionsTimeStamps: any = []
@@ -66,29 +80,48 @@ export class TraderService {
                 contractAddressDetails.details[ethAddress.address] = {}
 
                 ethAddress.latestTokenTransfers.find((transaction: any) => {
-                    if (transaction.contractAddress.toLowerCase() === contractAddressKey.toLowerCase()) {
-                        contractAddressDetails.details[ethAddress.address].lastTransactionDateWithThisToken =
-                            new Date(transaction.timeStamp * 1000)
-                        contractAddressDetails.details[ethAddress.address].lastTransactionTimeWithThisToken =
+                    if (
+                        transaction.contractAddress.toLowerCase() ===
+                        contractAddressKey.toLowerCase()
+                    ) {
+                        contractAddressDetails.details[
+                            ethAddress.address
+                        ].lastTransactionDateWithThisToken = new Date(
+                            transaction.timeStamp * 1000
+                        )
+                        contractAddressDetails.details[
+                            ethAddress.address
+                        ].lastTransactionTimeWithThisToken =
                             transaction.timeStamp * 1000
 
-                        allTransactionsTimeStamps.push(transaction.timeStamp * 1000)
+                        allTransactionsTimeStamps.push(
+                            transaction.timeStamp * 1000
+                        )
 
                         contractAddressDetails.tokenName = transaction.tokenName
-                        contractAddressDetails.tokenSymbol = transaction.tokenSymbol
-                        contractAddressDetails.tokenDecimal = transaction.tokenDecimal
+                        contractAddressDetails.tokenSymbol =
+                            transaction.tokenSymbol
+                        contractAddressDetails.tokenDecimal =
+                            transaction.tokenDecimal
 
                         return true
                     }
                 })
                 ethAddress.latestTokenTransfers.find((transaction: any) => {
                     if (
-                        transaction.contractAddress.toLowerCase() === contractAddressKey.toLowerCase() &&
-                        transaction.to.toLowerCase() === ethAddress.address.toLowerCase()
+                        transaction.contractAddress.toLowerCase() ===
+                            contractAddressKey.toLowerCase() &&
+                        transaction.to.toLowerCase() ===
+                            ethAddress.address.toLowerCase()
                     ) {
-                        contractAddressDetails.details[ethAddress.address].lastBuyDateWithThisToken =
-                            new Date(transaction.timeStamp * 1000)
-                        contractAddressDetails.details[ethAddress.address].lastBuyTimeWithThisToken =
+                        contractAddressDetails.details[
+                            ethAddress.address
+                        ].lastBuyDateWithThisToken = new Date(
+                            transaction.timeStamp * 1000
+                        )
+                        contractAddressDetails.details[
+                            ethAddress.address
+                        ].lastBuyTimeWithThisToken =
                             transaction.timeStamp * 1000
 
                         allBuysTimestamps.push(transaction.timeStamp * 1000)
@@ -100,8 +133,14 @@ export class TraderService {
                 let buyValueCounter = 0
                 let sellValueCounter = 0
                 ethAddress.latestTokenTransfers.forEach((transaction: any) => {
-                    if (transaction.contractAddress.toLowerCase() === contractAddressKey.toLowerCase()) {
-                        if (transaction.to.toLowerCase() === ethAddress.address.toLowerCase()) {
+                    if (
+                        transaction.contractAddress.toLowerCase() ===
+                        contractAddressKey.toLowerCase()
+                    ) {
+                        if (
+                            transaction.to.toLowerCase() ===
+                            ethAddress.address.toLowerCase()
+                        ) {
                             buyValueCounter += Number(transaction.value)
                         } else {
                             sellValueCounter += Number(transaction.value)
@@ -109,14 +148,23 @@ export class TraderService {
                     }
                 })
 
-                contractAddressDetails.details[ethAddress.address].boughtSummary = buyValueCounter
-                contractAddressDetails.details[ethAddress.address].soldSummary = sellValueCounter
+                contractAddressDetails.details[
+                    ethAddress.address
+                ].boughtSummary = buyValueCounter
+                contractAddressDetails.details[ethAddress.address].soldSummary =
+                    sellValueCounter
             }
 
-            contractAddressDetails.lastBuyDate = new Date(Math.max(...allBuysTimestamps))
+            contractAddressDetails.lastBuyDate = new Date(
+                Math.max(...allBuysTimestamps)
+            )
             contractAddressDetails.lastBuyTime = Math.max(...allBuysTimestamps)
-            contractAddressDetails.lastTransactionDate = new Date(Math.max(...allTransactionsTimeStamps))
-            contractAddressDetails.lastTransactionTime = Math.max(...allTransactionsTimeStamps)
+            contractAddressDetails.lastTransactionDate = new Date(
+                Math.max(...allTransactionsTimeStamps)
+            )
+            contractAddressDetails.lastTransactionTime = Math.max(
+                ...allTransactionsTimeStamps
+            )
         }
     }
     #findTokensTradedMoreThanOneWallet({
@@ -126,31 +174,56 @@ export class TraderService {
         tokensTradedSet: any
         listOfEthAddresses: any
     }) {
-        const tokensTradedCounter: any = {}
+        const tokensTradedMoreThanOnce: any = {}
         for (const tokenAddress of tokensTradedSet) {
-            tokensTradedCounter[tokenAddress] = { walletsCount: 0, walletsBought: [] }
+            tokensTradedMoreThanOnce[tokenAddress] = {
+                walletsCount: 0,
+                walletsBought: [],
+                tradesWithSells: 0,
+            }
 
             for (const ethAddress of listOfEthAddresses) {
-                if (
+                let isLatestTokenTransferHasTokenFromSet =
                     ethAddress.latestTokenTransfers.find((value: any) => {
-                        if (value.contractAddress === tokenAddress) {
+                        if (
+                            value.contractAddress.toLowerCase() ===
+                            tokenAddress.toLowerCase()
+                        ) {
                             return true
                         }
                     })
-                ) {
-                    tokensTradedCounter[tokenAddress].walletsCount += 1
-                    tokensTradedCounter[tokenAddress].walletsBought.push(ethAddress)
+                let isLatestTokenBuyHasTokenFromSet =
+                    ethAddress.latestTokenTransfers.find((value: any) => {
+                        if (
+                            value.contractAddress.toLowerCase() ===
+                                tokenAddress.toLowerCase() &&
+                            isLatestTokenTransferHasTokenFromSet.to.toLowerCase() ===
+                                ethAddress.address.toLowerCase()
+                        ) {
+                            return true
+                        }
+                    })
+
+                if (isLatestTokenTransferHasTokenFromSet) {
+                    tokensTradedMoreThanOnce[tokenAddress].tradesWithSells += 1
+                }
+
+                if (isLatestTokenBuyHasTokenFromSet) {
+                    tokensTradedMoreThanOnce[tokenAddress].walletsCount += 1
+                    tokensTradedMoreThanOnce[tokenAddress].walletsBought.push(
+                        ethAddress
+                    )
                 }
             }
         }
 
-        for (const address in tokensTradedCounter) {
-            if (tokensTradedCounter[address].walletsCount < 2) {
-                delete tokensTradedCounter[address]
+        for (const address in tokensTradedMoreThanOnce) {
+            if (tokensTradedMoreThanOnce[address].walletsCount < 2) {
+                delete tokensTradedMoreThanOnce[address]
             }
         }
 
-        return { tokensTradedMoreThanOnce: tokensTradedCounter }
+        return { tokensTradedMoreThanOnce }
     }
 
     #filterTransfersByLatest({
@@ -163,7 +236,10 @@ export class TraderService {
         const latestTokenTransfers: any[] = []
         for (const tokenTransfer of listOfTokenTransfers) {
             const transfer: any = tokenTransfer
-            if (new Date().getTime() / 1000 - tokenTransfer.timeStamp < transfersTime * 60) {
+            if (
+                new Date().getTime() / 1000 - tokenTransfer.timeStamp <
+                transfersTime * 60
+            ) {
                 latestTokenTransfers.push(transfer)
             } else {
                 break
@@ -182,26 +258,30 @@ export class TraderService {
         const tokensTradedSet = new Set()
         for (const ethAddress of listOfAddresses) {
             try {
-                const { listOfTokenTransfers } = await etherscanApi.getListOfTokenTransfers({
-                    address: ethAddress.address,
-                    offset: 100,
-                })
+                const { listOfTokenTransfers } =
+                    await etherscanApi.getListOfTokenTransfers({
+                        address: ethAddress.address,
+                        offset: 100,
+                    })
 
-                const { latestTokenTransfers }: { latestTokenTransfers: any } = this.#filterTransfersByLatest(
-                    {
+                const { latestTokenTransfers }: { latestTokenTransfers: any } =
+                    this.#filterTransfersByLatest({
                         listOfTokenTransfers,
                         transfersTime,
-                    }
-                )
+                    })
 
                 for (const transfer of latestTokenTransfers) {
                     tokensTradedSet.add(transfer.contractAddress)
                 }
                 ethAddress.latestTokenTransfers = latestTokenTransfers
-                Object.defineProperty(ethAddress.latestTokenTransfers, 'updated', {
-                    value: new Date(),
-                    enumerable: false,
-                })
+                Object.defineProperty(
+                    ethAddress.latestTokenTransfers,
+                    'updated',
+                    {
+                        value: new Date(),
+                        enumerable: false,
+                    }
+                )
             } catch (error) {
                 // throw new Error('Error in for of in getSetOfTokensTradedAndAddToEthAddress' + error)
                 console.log(error)
@@ -223,13 +303,22 @@ export class TraderService {
         })
     }
 
-    async getTokenPrice({ tokenSymbol, tokenName }: { tokenSymbol: string; tokenName: string }) {
+    async getTokenPrice({
+        tokenSymbol,
+        tokenName,
+    }: {
+        tokenSymbol: string
+        tokenName: string
+    }) {
         let tokenPrice
         try {
             const pairs = await dexScreenerApi.getPairsDataByName(tokenSymbol)
 
             for (const pair of pairs) {
-                if (pair.pairCreatedAt || 0 > new Date().getTime() - 1000 * 60 * 60 * 24) {
+                if (
+                    pair.pairCreatedAt ||
+                    0 > new Date().getTime() - 1000 * 60 * 60 * 24
+                ) {
                     if (pair.baseToken.name == tokenName) {
                         tokenPrice = pair.priceUsd
                         break

@@ -105,11 +105,11 @@ async function findAndHandleGoodTrades() {
         }
         setTimeout(() => {
             findAndHandleGoodTrades()
-        }, 30000)
+        }, 20000)
     } catch (error) {
         console.log(error)
         setTimeout(() => {
             findAndHandleGoodTrades()
-        }, 30000)
+        }, 20000)
     }
 }
