@@ -1,3 +1,4 @@
+import { sleep } from '../utils/utils.js'
 import {
     IEtrescanApi,
     returnValueOfGetWalletTokenBalanceForSingleAddressByContractAddress,
@@ -80,6 +81,7 @@ export class EtherscanApi implements IEtrescanApi {
                 weiBalance: resJson.result,
             }
         } catch (error) {
+            await sleep(500)
             throw new Error('Error in getListOfTokenTransfers' + error)
         }
     }

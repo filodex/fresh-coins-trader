@@ -5,19 +5,19 @@ import { sleep } from './utils/utils.js'
 import path from 'path'
 // import traderService from './services/Trader.service.js'
 import fs from 'fs'
-import dexScreenerApi from './apis/DexScreenerApi.js'
+// import dexScreenerApi from './apis/DexScreenerApi.js'
 import telegramBotService from './services/TelegramBot.service.js'
-import { fetchCandles } from './test/fetchcandles.js'
-import { getCandles, getDayCandleData } from './test/getCandlesData.js'
-import puppeteer from 'puppeteer'
-import statsService from './services/Stats.service.js'
+// import { fetchCandles } from './test/fetchcandles.js'
+// import { getCandles, getDayCandleData } from './test/getCandlesData.js'
+// import puppeteer from 'puppeteer'
+// import statsService from './services/Stats.service.js'
 import traderService from './services/Trader.service.js'
-import EthAddress from './model/EthAddress.js'
-import syveApi from './apis/SyveApi.js'
-import whalesListService, {
-    WhalesListService,
-} from './services/WhalesList.service.js'
-import { config } from 'dotenv'
+// import EthAddress from './model/EthAddress.js'
+// import syveApi from './apis/SyveApi.js'
+// import whalesListService, {
+//     WhalesListService,
+// } from './services/WhalesList.service.js'
+// import { config } from 'dotenv'
 import configService from './services/Config.service.js'
 
 process.on('uncaughtException', async (err) => {
@@ -55,7 +55,7 @@ async function findAndHandleGoodTrades() {
                 Number(configService.get('walletsCountThreshold')) ?? 3
 
             if (
-                tokensTradedMoreThanOnce[contractAddress].walletsBoughtCount >=
+                tokensTradedMoreThanOnce[contractAddress]?.walletsBoughtCount >=
                 walletsCountThreshold
             ) {
                 if (tokensAreadyBoughtAndHandledSet.has(contractAddress)) {
@@ -94,7 +94,7 @@ async function findAndHandleGoodTrades() {
                             tokensTradedMoreThanOnce[contractAddress]?.tokenName
                         }, покупай\n${contractAddress}\n👨‍👨‍👧 Его купили ${
                             tokensTradedMoreThanOnce[contractAddress]
-                                ?.walletsCount
+                                ?.walletsBoughtCount
                         } кит(ов)\n💰 По цене ${tokenPrice} WETH из tokenPrice\n🏛 Купили эти ребята:\n${walletsBoughtThisToken}\n📅 Последний кит купил: ${new Date(
                             tokensTradedMoreThanOnce[
                                 contractAddress

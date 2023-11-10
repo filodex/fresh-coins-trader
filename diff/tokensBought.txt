@@ -198,3 +198,45 @@
 {"tokenAddress":"0x3ef9181c9b96baaafb3717a553e808ccc72be37d","boughtAt":"2023-11-10T11:45:30.559Z","walletsCount":3,"lastBuy":"2023-11-10T11:42:59.000Z","tokenName":"Meme Pepe","price":"0.0000000009128"}
 {"tokenAddress":"0xcc5dc1e3e417114b17c00541e38b38e5ba5062d4","boughtAt":"2023-11-10T12:53:16.038Z","walletsCount":3,"lastBuy":"2023-11-10T12:51:59.000Z","tokenName":"DOGE GoGo","price":"0.00005140"}
 {"tokenAddress":"0xcc5dc1e3e417114b17c00541e38b38e5ba5062d4","boughtAt":"2023-11-10T13:36:05.195Z","walletsCount":4,"lastBuy":"2023-11-10T12:51:59.000Z","tokenName":"DOGE GoGo","price":"0.0001041"}
+{"tokenAddress":"0x944fce540e2d94cc870e442d8af65293c82285a4","boughtAt":"2023-11-10T17:50:35.742Z","lastBuy":"2023-11-10T17:42:35.000Z","tokenName":"pixlAI","price":"0.00003195"}
+{"tokenAddress":"0x0b99edb904fda75c44a6a1e26f51a1076a261778","boughtAt":"2023-11-10T17:50:36.016Z","lastBuy":"2023-11-10T17:34:11.000Z","tokenName":"GROKTIMUS","price":"0.00004203"}
+{"tokenAddress":"0xf1097d132fb7c0717987469501060b992e6ca143","boughtAt":"2023-11-10T17:50:36.382Z","lastBuy":"2023-11-10T16:32:35.000Z","tokenName":"Jank Boteko","price":"0.00001394"}
+{"tokenAddress":"0x303b66db8339dde42c9da2adf98b2dd0726b7732","boughtAt":"2023-11-10T17:50:36.649Z","lastBuy":"2023-11-10T16:39:59.000Z","tokenName":"ADRENOCHROME SHADOW CABAL","price":"0.000000000000000000002687"}
+{"tokenAddress":"0x70f09167a2b696c28498b31d1b5deb2ea13f28dd","boughtAt":"2023-11-10T18:09:19.374Z","lastBuy":"2023-11-10T18:02:35.000Z","tokenName":"AI"}
+{"tokenAddress":"0x944fce540e2d94cc870e442d8af65293c82285a4","boughtAt":"2023-11-10T18:09:19.647Z","lastBuy":"2023-11-10T17:42:35.000Z","tokenName":"pixlAI","price":"0.00003788"}
+{"tokenAddress":"0x2b2217dd049fb08436d1e455db5728045d7c1242","boughtAt":"2023-11-10T18:09:19.942Z","lastBuy":"2023-11-10T18:05:35.000Z","tokenName":"GrokLord","price":"0.000006150"}
+{"tokenAddress":"0x0b99edb904fda75c44a6a1e26f51a1076a261778","boughtAt":"2023-11-10T18:09:20.221Z","lastBuy":"2023-11-10T17:34:11.000Z","tokenName":"GROKTIMUS","price":"0.00003527"}
+{"tokenAddress":"0xf1097d132fb7c0717987469501060b992e6ca143","boughtAt":"2023-11-10T18:09:20.471Z","lastBuy":"2023-11-10T16:32:35.000Z","tokenName":"Jank Boteko","price":"0.00001394"}
+{"tokenAddress":"0xfbb11b01b2d471a5758d540f41a368b0d96f6be9","boughtAt":"2023-11-10T18:09:20.793Z","lastBuy":"2023-11-10T17:55:47.000Z","tokenName":"Inu"}
+{"tokenAddress":"0x303b66db8339dde42c9da2adf98b2dd0726b7732","boughtAt":"2023-11-10T18:09:21.172Z","lastBuy":"2023-11-10T16:39:59.000Z","tokenName":"ADRENOCHROME SHADOW CABAL","price":"0.000000000000000000002687"}
+{"tokenAddress":"0x70f09167a2b696c28498b31d1b5deb2ea13f28dd","boughtAt":"2023-11-10T18:10:59.904Z","lastBuy":"2023-11-10T18:02:35.000Z","tokenName":"AI"}
+{"tokenAddress":"0x944fce540e2d94cc870e442d8af65293c82285a4","boughtAt":"2023-11-10T18:11:00.162Z","lastBuy":"2023-11-10T17:42:35.000Z","tokenName":"pixlAI","price":"0.00004074"}
+{"tokenAddress":"0x2b2217dd049fb08436d1e455db5728045d7c1242","boughtAt":"2023-11-10T18:11:00.438Z","lastBuy":"2023-11-10T18:05:35.000Z","tokenName":"GrokLord","price":"0.000006872"}
+{"tokenAddress":"0x0b99edb904fda75c44a6a1e26f51a1076a261778","boughtAt":"2023-11-10T18:11:00.785Z","lastBuy":"2023-11-10T17:34:11.000Z","tokenName":"GROKTIMUS","price":"0.00004220"}
+{"tokenAddress":"0xf1097d132fb7c0717987469501060b992e6ca143","boughtAt":"2023-11-10T18:11:01.088Z","lastBuy":"2023-11-10T16:32:35.000Z","tokenName":"Jank Boteko","price":"0.00001394"}
+{"tokenAddress":"0xfbb11b01b2d471a5758d540f41a368b0d96f6be9","boughtAt":"2023-11-10T18:11:01.390Z","lastBuy":"2023-11-10T17:55:47.000Z","tokenName":"Inu"}
+{"tokenAddress":"0x303b66db8339dde42c9da2adf98b2dd0726b7732","boughtAt":"2023-11-10T18:11:01.753Z","lastBuy":"2023-11-10T16:39:59.000Z","tokenName":"ADRENOCHROME SHADOW CABAL","price":"0.000000000000000000002687"}
+{"tokenAddress":"0x70f09167a2b696c28498b31d1b5deb2ea13f28dd","boughtAt":"2023-11-10T18:12:34.829Z","lastBuy":"2023-11-10T18:02:35.000Z","tokenName":"AI"}
+{"tokenAddress":"0x944fce540e2d94cc870e442d8af65293c82285a4","boughtAt":"2023-11-10T18:12:35.103Z","lastBuy":"2023-11-10T17:42:35.000Z","tokenName":"pixlAI","price":"0.00003025"}
+{"tokenAddress":"0x2b2217dd049fb08436d1e455db5728045d7c1242","boughtAt":"2023-11-10T18:12:35.365Z","lastBuy":"2023-11-10T18:05:35.000Z","tokenName":"GrokLord","price":"0.000006682"}
+{"tokenAddress":"0x0b99edb904fda75c44a6a1e26f51a1076a261778","boughtAt":"2023-11-10T18:12:35.696Z","lastBuy":"2023-11-10T17:34:11.000Z","tokenName":"GROKTIMUS","price":"0.00004040"}
+{"tokenAddress":"0xf1097d132fb7c0717987469501060b992e6ca143","boughtAt":"2023-11-10T18:12:35.948Z","lastBuy":"2023-11-10T16:32:35.000Z","tokenName":"Jank Boteko","price":"0.00001394"}
+{"tokenAddress":"0xfbb11b01b2d471a5758d540f41a368b0d96f6be9","boughtAt":"2023-11-10T18:12:36.502Z","lastBuy":"2023-11-10T17:55:47.000Z","tokenName":"Inu"}
+{"tokenAddress":"0x303b66db8339dde42c9da2adf98b2dd0726b7732","boughtAt":"2023-11-10T18:12:36.806Z","lastBuy":"2023-11-10T16:39:59.000Z","tokenName":"ADRENOCHROME SHADOW CABAL","price":"0.000000000000000000002687"}
+{"tokenAddress":"0x70f09167a2b696c28498b31d1b5deb2ea13f28dd","boughtAt":"2023-11-10T18:15:42.053Z","lastBuy":"2023-11-10T18:15:23.000Z","tokenName":"AI"}
+{"tokenAddress":"0x944fce540e2d94cc870e442d8af65293c82285a4","boughtAt":"2023-11-10T18:15:42.350Z","lastBuy":"2023-11-10T17:42:35.000Z","tokenName":"pixlAI","price":"0.00002826"}
+{"tokenAddress":"0x2b2217dd049fb08436d1e455db5728045d7c1242","boughtAt":"2023-11-10T18:15:42.633Z","lastBuy":"2023-11-10T18:05:35.000Z","tokenName":"GrokLord","price":"0.000007734"}
+{"tokenAddress":"0x0b99edb904fda75c44a6a1e26f51a1076a261778","boughtAt":"2023-11-10T18:15:42.935Z","lastBuy":"2023-11-10T17:34:11.000Z","tokenName":"GROKTIMUS","price":"0.00004283"}
+{"tokenAddress":"0xf1097d132fb7c0717987469501060b992e6ca143","boughtAt":"2023-11-10T18:15:43.387Z","lastBuy":"2023-11-10T16:32:35.000Z","tokenName":"Jank Boteko","price":"0.00001394"}
+{"tokenAddress":"0xfbb11b01b2d471a5758d540f41a368b0d96f6be9","boughtAt":"2023-11-10T18:15:43.687Z","lastBuy":"2023-11-10T17:55:47.000Z","tokenName":"Inu"}
+{"tokenAddress":"0x303b66db8339dde42c9da2adf98b2dd0726b7732","boughtAt":"2023-11-10T18:15:43.990Z","lastBuy":"2023-11-10T16:39:59.000Z","tokenName":"ADRENOCHROME SHADOW CABAL","price":"0.000000000000000000002687"}
+{"tokenAddress":"0xe2110b3f82ad6e1bdff91238765b8360ff0dfa78","boughtAt":"2023-11-10T18:21:03.896Z","lastBuy":"2023-11-10T18:19:23.000Z","tokenName":"MetaGrok","price":"0.0000003208"}
+{"tokenAddress":"0xb3791ea01e7c4f5415dc8e04c9e81fad64f45738","boughtAt":"2023-11-10T18:49:23.719Z","lastBuy":"2023-11-10T18:48:35.000Z","tokenName":""}
+{"tokenAddress":"0x8fdb4b64200407b31a82c6c1d50cd10f5f749ca7","boughtAt":"2023-11-10T18:53:01.628Z","lastBuy":"2023-11-10T18:52:11.000Z","tokenName":"FrensPerp","price":"0.005653"}
+{"tokenAddress":"0x09389bf2914d74e952419f1c0a60b34f0d9a5dcc","boughtAt":"2023-11-10T18:58:46.853Z","lastBuy":"2023-11-10T18:58:11.000Z","tokenName":"Cybertruck","price":"0.002226"}
+{"tokenAddress":"0x324b37e7197d5c535c13169290ad5b5ded18f047","boughtAt":"2023-11-10T19:18:56.019Z","lastBuy":"2023-11-10T19:18:23.000Z","tokenName":"ChatGPT-5","price":"0.0001741"}
+{"tokenAddress":"0x631a956dffab519f2d2d8895fd25f356b718abbf","boughtAt":"2023-11-10T19:44:04.366Z","lastBuy":"2023-11-10T19:43:11.000Z","tokenName":""}
+{"tokenAddress":"0x653849548334b5c46386897e033b992d6f6f6c02","boughtAt":"2023-11-10T20:06:57.083Z","lastBuy":"2023-11-10T20:06:11.000Z","tokenName":"Grok.CEO","price":"0.001164"}
+{"tokenAddress":"0xde9fe6939f7dbb5424734d3527c3718b4a7934ee","boughtAt":"2023-11-10T20:07:43.290Z","lastBuy":"2023-11-10T20:06:47.000Z","tokenName":"Tesla Dojo","price":"0.000003474"}
+{"tokenAddress":"0x4cb2a7026db92ea3dd9aa31d23deef3a811c59ce","boughtAt":"2023-11-10T20:33:21.730Z","lastBuy":"2023-11-10T20:32:35.000Z","tokenName":"Axiomatic","price":"0.00001094"}
+{"tokenAddress":"0xb28996156a95ce388c3b6a0a64c7c6b819f88090","boughtAt":"2023-11-10T20:45:47.932Z","lastBuy":"2023-11-10T20:45:35.000Z","tokenName":"FOREVER","price":"0.00007388"}

@@ -8,6 +8,7 @@ export interface ITokensTradedMoreThanOnce {
     [key: string]: {
         walletsCount: number
         walletsBought: any[]
+        walletsBoughtCount: any
         details: { [key: string]: any }
         lastBuyDate: string
         lastBuyTime: number
@@ -30,7 +31,7 @@ export class TraderService {
         'goodWhales.json'
     )
 
-    async findTokensTradedMoreThanOnce({ transfersTime = 120 } = {}): Promise<{
+    async findTokensTradedMoreThanOnce({ transfersTime = 60 } = {}): Promise<{
         tokensTradedMoreThanOnce: ITokensTradedMoreThanOnce
     }> {
         // transfersTime in minutes
@@ -185,6 +186,11 @@ export class TraderService {
         tokenTMO.walletsAddressesSet = new Set()
 
         for (const ethAddress of listOfEthAddresses) {
+            if (!Array.isArray(ethAddress.latestTokenTransfers)) {
+                console.log('Не массив')
+                continue
+            }
+
             let latestTokenTransferWithTokenFromSet =
                 ethAddress.latestTokenTransfers.find((value: any) => {
                     if (
