@@ -240,3 +240,31 @@
 {"tokenAddress":"0xde9fe6939f7dbb5424734d3527c3718b4a7934ee","boughtAt":"2023-11-10T20:07:43.290Z","lastBuy":"2023-11-10T20:06:47.000Z","tokenName":"Tesla Dojo","price":"0.000003474"}
 {"tokenAddress":"0x4cb2a7026db92ea3dd9aa31d23deef3a811c59ce","boughtAt":"2023-11-10T20:33:21.730Z","lastBuy":"2023-11-10T20:32:35.000Z","tokenName":"Axiomatic","price":"0.00001094"}
 {"tokenAddress":"0xb28996156a95ce388c3b6a0a64c7c6b819f88090","boughtAt":"2023-11-10T20:45:47.932Z","lastBuy":"2023-11-10T20:45:35.000Z","tokenName":"FOREVER","price":"0.00007388"}
+{"tokenAddress":"0x522bd74e3c88efcd16cb00ca750d76469bd128a6","boughtAt":"2023-11-11T16:04:39.112Z","lastBuy":"2023-11-11T15:40:35.000Z","tokenName":"Dragon Docks","price":"0.00009695"}
+{"tokenAddress":"0x522bd74e3c88efcd16cb00ca750d76469bd128a6","boughtAt":"2023-11-11T16:05:36.676Z","lastBuy":"2023-11-11T15:40:35.000Z","tokenName":"Dragon Docks","price":"0.00009695"}
+{"tokenAddress":"0x0c0c45293b0edeebd349d378e73bf89381243ddd","boughtAt":"2023-11-11T16:05:36.994Z","lastBuy":"2023-11-11T15:28:23.000Z","tokenName":"Windows Microsoft 9800","price":"0.00007722"}
+{"tokenAddress":"0xe7152a11493d3bccffb1a0fbcf571ba7b158b5ed","boughtAt":"2023-11-11T16:05:37.329Z","lastBuy":"2023-11-11T15:42:59.000Z","tokenName":"X-Grok","price":"0.00007929"}
+{"tokenAddress":"0x24ef1b034cc61282230863a9946f9bb7e68b3318","boughtAt":"2023-11-11T16:05:37.690Z","lastBuy":"2023-11-11T15:53:11.000Z","tokenName":"GROK CHAIN","price":"0.000009101"}
+{"tokenAddress":"0x522bd74e3c88efcd16cb00ca750d76469bd128a6","boughtAt":"2023-11-11T16:16:56.089Z","lastBuy":"2023-11-11T15:40:35.000Z","tokenName":"Dragon Docks","price":"0.0001201"}
+{"tokenAddress":"0x0c0c45293b0edeebd349d378e73bf89381243ddd","boughtAt":"2023-11-11T16:16:56.396Z","lastBuy":"2023-11-11T15:28:23.000Z","tokenName":"Windows Microsoft 9800","price":"0.00006639"}
+{"tokenAddress":"0xe7152a11493d3bccffb1a0fbcf571ba7b158b5ed","boughtAt":"2023-11-11T16:16:56.775Z","lastBuy":"2023-11-11T15:42:59.000Z","tokenName":"X-Grok","price":"0.00008360"}
+{"tokenAddress":"0x24ef1b034cc61282230863a9946f9bb7e68b3318","boughtAt":"2023-11-11T16:16:57.176Z","lastBuy":"2023-11-11T15:53:11.000Z","tokenName":"GROK CHAIN","price":"0.000008307"}
+{"tokenAddress":"0xa93a02e88e3e43514488abe37973aeb8903ef1a2","boughtAt":"2023-11-11T16:20:58.010Z","lastBuy":"2023-11-11T16:19:35.000Z","tokenName":""}
+{"tokenAddress":"0x5516a00e1cd649c15a369bea9a2d18ce237018d7","boughtAt":"2023-11-11T16:48:38.845Z","lastBuy":"2023-11-11T16:47:11.000Z","tokenName":"Grok Simpson","price":"0.00000000000003943"}
+{"tokenAddress":"0x00008110c8c2a752903249537ff625a489c25000","boughtAt":"2023-11-11T17:11:25.994Z","lastBuy":"2023-11-11T17:10:23.000Z","tokenName":"Spectrum","price":"84199023030917100645.33"}
+{"tokenAddress":"0x07ea3d5363c68830c30828e178295a83e130837f","boughtAt":"2023-11-11T17:23:33.403Z","lastBuy":"2023-11-11T17:22:59.000Z","tokenName":"Olympus AI","price":"0.0004955"}
+{"tokenAddress":"0x22d1dd7ff59c3230ebf4cfb61edd3f2012c1ed2b","boughtAt":"2023-11-11T17:44:10.843Z","lastBuy":"2023-11-11T17:42:23.000Z","tokenName":"Aibo","price":"0.00001380"}
+{"tokenAddress":"0x51f2af161604f90ee5666517a6ae76d92863bdb6","boughtAt":"2023-11-11T18:19:28.078Z","lastBuy":"2023-11-11T18:19:11.000Z","tokenName":"Sun"}
+{"tokenAddress":"0x67be9d79e2a18c9d16210058bd789aac52b5f930","boughtAt":"2023-11-11T18:38:19.480Z","lastBuy":"2023-11-11T18:37:35.000Z","tokenName":"PUMP AI","price":"0.001383"}
+{"tokenAddress":"0xf07acd465c0495c423f06b49de075c0ff2f57ff1","boughtAt":"2023-11-11T19:16:02.606Z","lastBuy":"2023-11-11T19:14:11.000Z","tokenName":"NO","price":"0.0000006942"}
+{"tokenAddress":"0x9c224b1b18f52073aa9aafd215937822d628e252","boughtAt":"2023-11-11T19:17:25.595Z","lastBuy":"2023-11-11T19:15:59.000Z","tokenName":"𝕏Ð","price":"0.0005575"}
+{"tokenAddress":"0x9a6dcdd0929c0786680bd3844e1773724e7bcf99","boughtAt":"2023-11-11T19:40:31.048Z","lastBuy":"2023-11-11T19:39:59.000Z","tokenName":""}
+{"tokenAddress":"0xf21b00ae074355ef6c615ada82804e643db8fe6c","boughtAt":"2023-11-11T19:40:31.485Z","lastBuy":"2023-11-11T19:39:35.000Z","tokenName":"PLANET XORG","price":"0.01778"}
+{"tokenAddress":"0x5b36e639f4c74af48e5cfe738aac860771464175","boughtAt":"2023-11-11T19:45:58.818Z","lastBuy":"2023-11-11T19:44:23.000Z","tokenName":"❤️ᗩIYᗩᑎᗩᐯIᒪᒪE❤️","price":"0.000000000000000000000000001853"}
+{"tokenAddress":"0x1f06de13a5a12fea72f7b84677eaf42e973a0d2a","boughtAt":"2023-11-11T19:55:31.985Z","lastBuy":"2023-11-11T19:54:23.000Z","tokenName":"MYRO","price":"0.0000003626"}
+{"tokenAddress":"0x4f19d1f7d4263d974e3199f1c2b3036c07f90152","boughtAt":"2023-11-11T20:07:46.479Z","lastBuy":"2023-11-11T20:07:11.000Z","tokenName":"Prism","price":"208521713205630150843.61"}
+{"tokenAddress":"0x42069badc2d3e9a4adca665af3c79087dff53572","boughtAt":"2023-11-11T20:39:51.506Z","lastBuy":"2023-11-11T20:38:59.000Z","tokenName":"0x42069 is bad","price":"0.00000002493"}
+{"tokenAddress":"0x53fb61fc26f5a1c45c184aa9c27e10d9c1562d50","boughtAt":"2023-11-11T20:47:53.054Z","lastBuy":"2023-11-11T20:46:11.000Z","tokenName":"GAMEZ Arcade","price":"0.01754"}
+{"tokenAddress":"0xf68b737f82318f7ecf6467c0eff7df47c24f4e7c","boughtAt":"2023-11-11T20:53:15.394Z","lastBuy":"2023-11-11T20:52:23.000Z","tokenName":"BeHappyProtocol","price":"0.0001228"}
+{"tokenAddress":"0xf944c9d1a86e6e1d0e139a4fdc3e009e24ec810a","boughtAt":"2023-11-11T21:02:44.514Z","lastBuy":"2023-11-11T21:01:23.000Z","tokenName":"Autist Inu"}
+{"tokenAddress":"0x4370332680e4215f866142895989a3f5d2a8101b","boughtAt":"2023-11-11T21:11:32.076Z","lastBuy":"2023-11-11T21:08:47.000Z","tokenName":"Joy Of Missing Out"}

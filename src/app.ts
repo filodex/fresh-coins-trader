@@ -52,7 +52,7 @@ async function findAndHandleGoodTrades() {
 
         for (const contractAddress in tokensTradedMoreThanOnce) {
             const walletsCountThreshold =
-                Number(configService.get('walletsCountThreshold')) ?? 3
+                Number(configService.get('walletsCountThreshold')) ?? 2
 
             if (
                 tokensTradedMoreThanOnce[contractAddress]?.walletsBoughtCount >=

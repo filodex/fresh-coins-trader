@@ -97,6 +97,7 @@ export class EtherscanApi implements IEtrescanApi {
         sort?: string
     }): Promise<returnGetListOfTokenTransfers> {
         try {
+            await sleep(300)
             const url = new URL(
                 'https://api.etherscan.io/api?module=account&action=tokentx'
             )
