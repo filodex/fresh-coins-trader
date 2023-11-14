@@ -34,22 +34,17 @@ const tokensAreadyBoughtAndHandledSet = new Set()
 /**
  * MAIN
  */
-telegramBotService.sendMessageToMyChannel('test 1')
 
 thisShouldRunOnServer()
 
 setInterval(() => {}, 5000)
 
 async function thisShouldRunOnServer() {
-    telegramBotService.sendMessageToMyChannel('test 2')
-
     await findAndHandleGoodTrades()
 }
 
 async function findAndHandleGoodTrades() {
     try {
-        telegramBotService.sendMessageToMyChannel('test 3')
-
         traderService.updateListOfEthAddressesFromFile()
 
         const { tokensTradedMoreThanOnce } =
@@ -57,10 +52,6 @@ async function findAndHandleGoodTrades() {
         console.log('tokensTradedMoreThanOnce', tokensTradedMoreThanOnce)
 
         const walletsCountThreshold = 2
-
-        telegramBotService.sendMessageToMyChannel(
-            'test 1, walletsCountThreshold' + String(walletsCountThreshold)
-        )
 
         console.log('walletsCountThreshold', walletsCountThreshold)
 
@@ -98,9 +89,6 @@ async function findAndHandleGoodTrades() {
                         details.lastBuyDateWithThisToken
                     ).toLocaleString()}\n\n`
                 }
-
-                console.log('Details', detailsString)
-                telegramBotService.sendMessageToMyChannel(detailsString)
 
                 try {
                     await telegramBotService.sendMessageToMyChannel(
