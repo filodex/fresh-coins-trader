@@ -268,3 +268,8 @@
 {"tokenAddress":"0xf68b737f82318f7ecf6467c0eff7df47c24f4e7c","boughtAt":"2023-11-11T20:53:15.394Z","lastBuy":"2023-11-11T20:52:23.000Z","tokenName":"BeHappyProtocol","price":"0.0001228"}
 {"tokenAddress":"0xf944c9d1a86e6e1d0e139a4fdc3e009e24ec810a","boughtAt":"2023-11-11T21:02:44.514Z","lastBuy":"2023-11-11T21:01:23.000Z","tokenName":"Autist Inu"}
 {"tokenAddress":"0x4370332680e4215f866142895989a3f5d2a8101b","boughtAt":"2023-11-11T21:11:32.076Z","lastBuy":"2023-11-11T21:08:47.000Z","tokenName":"Joy Of Missing Out"}
+{"tokenAddress":"0x3ef9181c9b96baaafb3717a553e808ccc72be37d","boughtAt":"2023-11-14T11:14:15.679Z","lastBuy":"2023-11-14T11:11:35.000Z","tokenName":"Meme Pepe","price":"0.000000001238"}
+{"tokenAddress":"0x2b81945875f892aff04af0a298d35fb2cf848c7b","boughtAt":"2023-11-14T12:24:05.015Z","lastBuy":"2023-11-14T12:22:11.000Z","tokenName":"Web","price":"0.000003385"}
+{"tokenAddress":"0xfe168bf19da9f206b7e3720109e5df747f6d3e13","boughtAt":"2023-11-14T12:25:34.867Z","lastBuy":"2023-11-14T12:23:47.000Z","tokenName":"The Return of Plasma","price":"0.002478"}
+{"tokenAddress":"0x91be752d438d5f804345b5acb18de0c431ad470f","boughtAt":"2023-11-14T13:07:40.744Z","lastBuy":"2023-11-14T13:05:47.000Z","tokenName":"ETH ETF Token","price":"0.01305"}
+{"tokenAddress":"0xa6c25acd40b3f3f6596465942ce479b837a30a24","boughtAt":"2023-11-14T13:15:38.709Z","lastBuy":"2023-11-14T13:13:35.000Z","tokenName":""}
