@@ -56,8 +56,7 @@ async function findAndHandleGoodTrades() {
             await traderService.findTokensTradedMoreThanOnce()
         console.log('tokensTradedMoreThanOnce', tokensTradedMoreThanOnce)
 
-        const walletsCountThreshold =
-            Number(configService.get('walletsCountThreshold')) || 2
+        const walletsCountThreshold = 2
 
         telegramBotService.sendMessageToMyChannel(
             'test 1, walletsCountThreshold' + String(walletsCountThreshold)
