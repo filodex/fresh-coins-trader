@@ -282,3 +282,7 @@
 {"tokenAddress":"0xb897a64bf158e66d6431df86c3126961ffc03b2a","boughtAt":"2023-11-14T17:40:01.521Z","lastBuy":"2023-11-14T17:07:23.000Z","tokenName":"ELIZA"}
 {"tokenAddress":"0x06bf69f9170684d5661f461cef59312883d23851","boughtAt":"2023-11-14T17:40:02.316Z","lastBuy":"2023-11-14T17:39:11.000Z","tokenName":"CO"}
 {"tokenAddress":"0x4518db6b7012d26fb58bb124ba2600f185cb6078","boughtAt":"2023-11-14T17:40:02.587Z","lastBuy":"2023-11-14T17:18:35.000Z","tokenName":"DISCORD MOD","price":"0.00000001629"}
+{"tokenAddress":"0x06bf69f9170684d5661f461cef59312883d23851","boughtAt":"2023-11-14T18:17:50.067Z","lastBuy":"2023-11-14T17:39:11.000Z","tokenName":"CO"}
+{"tokenAddress":"0x4518db6b7012d26fb58bb124ba2600f185cb6078","boughtAt":"2023-11-14T18:17:50.342Z","lastBuy":"2023-11-14T17:18:35.000Z","tokenName":"DISCORD MOD","price":"0.000000002832"}
+{"tokenAddress":"0xe884271731b21237d77b866c19474f47354ddcd5","boughtAt":"2023-11-14T18:17:50.645Z","lastBuy":"2023-11-14T18:03:59.000Z","tokenName":"Meme St","price":"0.0000007899"}
+{"tokenAddress":"0x79cde088e9ee404af5b8a21a5b6277a637e90c91","boughtAt":"2023-11-14T18:17:50.894Z","lastBuy":"2023-11-14T17:54:23.000Z","tokenName":"hu.ma.ne","price":"0.00000003022"}
