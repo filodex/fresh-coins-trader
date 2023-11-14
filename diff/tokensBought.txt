@@ -273,3 +273,8 @@
 {"tokenAddress":"0xfe168bf19da9f206b7e3720109e5df747f6d3e13","boughtAt":"2023-11-14T12:25:34.867Z","lastBuy":"2023-11-14T12:23:47.000Z","tokenName":"The Return of Plasma","price":"0.002478"}
 {"tokenAddress":"0x91be752d438d5f804345b5acb18de0c431ad470f","boughtAt":"2023-11-14T13:07:40.744Z","lastBuy":"2023-11-14T13:05:47.000Z","tokenName":"ETH ETF Token","price":"0.01305"}
 {"tokenAddress":"0xa6c25acd40b3f3f6596465942ce479b837a30a24","boughtAt":"2023-11-14T13:15:38.709Z","lastBuy":"2023-11-14T13:13:35.000Z","tokenName":""}
+{"tokenAddress":"0x474021845c4643113458ea4414bdb7fb74a01a77","boughtAt":"2023-11-14T17:24:01.286Z","lastBuy":"2023-11-14T16:59:11.000Z","tokenName":"UnoRe","price":"0.03970"}
+{"tokenAddress":"0xb1bd0ea9375d5a1ffc6a77e74890e3b647d0b6d1","boughtAt":"2023-11-14T17:24:01.578Z","lastBuy":"2023-11-14T16:44:47.000Z","tokenName":"Splash","price":"0.002549"}
+{"tokenAddress":"0xb897a64bf158e66d6431df86c3126961ffc03b2a","boughtAt":"2023-11-14T17:24:01.837Z","lastBuy":"2023-11-14T17:07:23.000Z","tokenName":"ELIZA"}
+{"tokenAddress":"0x06bf69f9170684d5661f461cef59312883d23851","boughtAt":"2023-11-14T17:24:02.170Z","lastBuy":"2023-11-14T17:17:59.000Z","tokenName":"CO"}
+{"tokenAddress":"0x4518db6b7012d26fb58bb124ba2600f185cb6078","boughtAt":"2023-11-14T17:24:02.500Z","lastBuy":"2023-11-14T17:18:35.000Z","tokenName":"DISCORD MOD","price":"0.00000004300"}
