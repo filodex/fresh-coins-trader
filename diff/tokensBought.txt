@@ -278,3 +278,7 @@
 {"tokenAddress":"0xb897a64bf158e66d6431df86c3126961ffc03b2a","boughtAt":"2023-11-14T17:24:01.837Z","lastBuy":"2023-11-14T17:07:23.000Z","tokenName":"ELIZA"}
 {"tokenAddress":"0x06bf69f9170684d5661f461cef59312883d23851","boughtAt":"2023-11-14T17:24:02.170Z","lastBuy":"2023-11-14T17:17:59.000Z","tokenName":"CO"}
 {"tokenAddress":"0x4518db6b7012d26fb58bb124ba2600f185cb6078","boughtAt":"2023-11-14T17:24:02.500Z","lastBuy":"2023-11-14T17:18:35.000Z","tokenName":"DISCORD MOD","price":"0.00000004300"}
+{"tokenAddress":"0x474021845c4643113458ea4414bdb7fb74a01a77","boughtAt":"2023-11-14T17:40:01.248Z","lastBuy":"2023-11-14T16:59:11.000Z","tokenName":"UnoRe","price":"0.03292"}
+{"tokenAddress":"0xb897a64bf158e66d6431df86c3126961ffc03b2a","boughtAt":"2023-11-14T17:40:01.521Z","lastBuy":"2023-11-14T17:07:23.000Z","tokenName":"ELIZA"}
+{"tokenAddress":"0x06bf69f9170684d5661f461cef59312883d23851","boughtAt":"2023-11-14T17:40:02.316Z","lastBuy":"2023-11-14T17:39:11.000Z","tokenName":"CO"}
+{"tokenAddress":"0x4518db6b7012d26fb58bb124ba2600f185cb6078","boughtAt":"2023-11-14T17:40:02.587Z","lastBuy":"2023-11-14T17:18:35.000Z","tokenName":"DISCORD MOD","price":"0.00000001629"}
