@@ -34,26 +34,38 @@ const tokensAreadyBoughtAndHandledSet = new Set()
 /**
  * MAIN
  */
+telegramBotService.sendMessageToMyChannel('test 1')
+
 thisShouldRunOnServer()
 
 setInterval(() => {}, 5000)
 
 async function thisShouldRunOnServer() {
+    telegramBotService.sendMessageToMyChannel('test 2')
+
     await findAndHandleGoodTrades()
 }
 
 async function findAndHandleGoodTrades() {
     try {
+        telegramBotService.sendMessageToMyChannel('test 3')
+
         traderService.updateListOfEthAddressesFromFile()
 
         const { tokensTradedMoreThanOnce } =
             await traderService.findTokensTradedMoreThanOnce()
         console.log('tokensTradedMoreThanOnce', tokensTradedMoreThanOnce)
 
-        for (const contractAddress in tokensTradedMoreThanOnce) {
-            const walletsCountThreshold =
-                Number(configService.get('walletsCountThreshold')) ?? 2
+        const walletsCountThreshold =
+            Number(configService.get('walletsCountThreshold')) ?? 2
 
+        telegramBotService.sendMessageToMyChannel(
+            'test 1, walletsCountThreshold' + String(walletsCountThreshold)
+        )
+
+        console.log('walletsCountThreshold', walletsCountThreshold)
+
+        for (const contractAddress in tokensTradedMoreThanOnce) {
             if (
                 tokensTradedMoreThanOnce[contractAddress]?.walletsBoughtCount >=
                 walletsCountThreshold
@@ -88,21 +100,25 @@ async function findAndHandleGoodTrades() {
                     ).toLocaleString()}\n\n`
                 }
 
+                console.log('Details', detailsString)
+                telegramBotService.sendMessageToMyChannel(detailsString)
+
                 try {
-                    telegramBotService.sendMessageToMyChannel(
+                    await telegramBotService.sendMessageToMyChannel(
                         `🥼 Вот хэш токена ${
                             tokensTradedMoreThanOnce[contractAddress]?.tokenName
                         }, покупай\n${contractAddress}\n👨‍👨‍👧 Его купили ${
                             tokensTradedMoreThanOnce[contractAddress]
                                 ?.walletsBoughtCount
-                        } кит(ов)\n💰 По цене ${tokenPrice} WETH из tokenPrice\n🏛 Купили эти ребята:\n${walletsBoughtThisToken}\n📅 Последний кит купил: ${new Date(
+                        } кит(ов)\n💰 По цене ${tokenPrice} WETH из tokenPrice\n📅 Последний кит купил: ${new Date(
                             tokensTradedMoreThanOnce[
                                 contractAddress
                             ].lastBuyDate
                         ).toLocaleString()}\n\n${detailsString}`
                     )
                 } catch (error) {
-                    console.log(error)
+                    console.log('Error while sending message' + error)
+                    throw error
                 }
 
                 tokensAreadyBoughtAndHandledSet.add(contractAddress)
