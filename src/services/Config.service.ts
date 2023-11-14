@@ -3,10 +3,12 @@ import path from 'path'
 import { IConfigService } from './IConfig.service.js'
 
 export class ConfigService implements IConfigService {
-    configPath: PathLike = path.join(path.resolve(), 'src', 'config', 'config.cfg')
+    configPath: PathLike = path.join(path.resolve(), 'config', 'config.cfg')
 
     get(settingName: string) {
-        const configFileText = fs.readFileSync(this.configPath, { encoding: 'utf8' })
+        const configFileText = fs.readFileSync(this.configPath, {
+            encoding: 'utf8',
+        })
         const allSettingsArray = configFileText.split('\r\n')
         for (const setting of allSettingsArray) {
             const settingSplitted: Array<string> = setting.split('=')
