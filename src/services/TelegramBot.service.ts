@@ -17,8 +17,13 @@ export class TelegramBotService {
         if (!text || text.length === 0) {
             return
         }
-
-        this.bot.telegram.sendMessage(this.channelId, text, { disable_web_page_preview: true })
+        try {
+            this.bot.telegram.sendMessage(this.channelId, text, {
+                disable_web_page_preview: true,
+            })
+        } catch (error) {
+            console.log('Error in sendMessageToMyChannel', error)
+        }
     }
 
     async handleBotCommands() {
