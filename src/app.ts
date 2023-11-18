@@ -20,6 +20,7 @@ import traderService from './services/Trader.service.js'
 // import { config } from 'dotenv'
 import configService from './services/Config.service.js'
 import { fetchCandles } from './test/fetchCandlesDexTools.js'
+import statsV2Service from './services/StatsV2.service.js'
 
 process.on('uncaughtException', async (err) => {
     console.log(err)
@@ -35,7 +36,9 @@ const tokensAreadyBoughtAndHandledSet = new Set()
 /**
  * MAIN
  */
-fetchCandles()
+
+const telegramSignals =
+    statsV2Service.parseTelegramSignalsFromFile().messages[1]?.details?.price
 
 // thisShouldRunOnServer()
 
