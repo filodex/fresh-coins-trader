@@ -2,11 +2,10 @@ import puppeteer from 'puppeteer'
 
 export async function fetchCandles() {
     /**
+     * pairAddress LOWER CASE!!!
      * Сначала перейти на страницу с графиком
      * В браузере открыть это 'https://www.dextools.io/app/ru/ether/pair-explorer/$pairAddress'
      * При этом не важно на какой странице я нахожусь
-     *
-     * Оттуда фетчить данные
      *
      * v3?latest вернет последние 6 свечей с не нулевым объемом
      * res=1d дает дневки
