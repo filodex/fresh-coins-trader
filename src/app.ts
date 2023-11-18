@@ -19,6 +19,7 @@ import traderService from './services/Trader.service.js'
 // } from './services/WhalesList.service.js'
 // import { config } from 'dotenv'
 import configService from './services/Config.service.js'
+import { fetchCandles } from './test/fetchCandlesDexTools.js'
 
 process.on('uncaughtException', async (err) => {
     console.log(err)
@@ -34,8 +35,9 @@ const tokensAreadyBoughtAndHandledSet = new Set()
 /**
  * MAIN
  */
+fetchCandles()
 
-thisShouldRunOnServer()
+// thisShouldRunOnServer()
 
 setInterval(() => {}, 5000)
 
