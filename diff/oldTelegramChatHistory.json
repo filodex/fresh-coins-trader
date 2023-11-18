@@ -1,0 +1,2081 @@
+{
+ "name": "CryptoGigaMegaSignals",
+ "type": "public_channel",
+ "id": 2060792907,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2023-11-06T10:41:25",
+   "date_unixtime": "1699256485",
+   "actor": "CryptoGigaMegaSignals",
+   "actor_id": "channel2060792907",
+   "action": "create_channel",
+   "title": "CryptoGigaMegaSignals",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 2,
+   "type": "message",
+   "date": "2023-11-06T10:51:59",
+   "date_unixtime": "1699257119",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "1",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "1"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "message",
+   "date": "2023-11-06T10:52:35",
+   "date_unixtime": "1699257155",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "hehe hoho",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "hehe hoho"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "message",
+   "date": "2023-11-06T10:53:30",
+   "date_unixtime": "1699257210",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "hehe hoho",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "hehe hoho"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "message",
+   "date": "2023-11-06T10:55:20",
+   "date_unixtime": "1699257320",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "hehe hoho",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "hehe hoho"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "type": "service",
+   "date": "2023-11-06T10:57:16",
+   "date_unixtime": "1699257436",
+   "actor": "CryptoGigaMegaSignals",
+   "actor_id": "channel2060792907",
+   "action": "edit_group_photo",
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 640,
+   "height": 640,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 7,
+   "type": "message",
+   "date": "2023-11-06T11:59:12",
+   "date_unixtime": "1699261152",
+   "edited": "2023-11-08T11:06:58",
+   "edited_unixtime": "1699430818",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена SmugGpt, покупай\n0x6898bab99d7bd1cb636d2b48873dc7343fa8e59e\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена SmugGpt, покупай\n0x6898bab99d7bd1cb636d2b48873dc7343fa8e59e\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "message",
+   "date": "2023-11-06T11:59:12",
+   "date_unixtime": "1699261152",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена SmugGPT, покупай\n0xdc1b4783eef29dec8ad9a8865591496c5332b2cc\nЕго купили 5 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена SmugGPT, покупай\n0xdc1b4783eef29dec8ad9a8865591496c5332b2cc\nЕго купили 5 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "type": "message",
+   "date": "2023-11-06T13:55:50",
+   "date_unixtime": "1699268150",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена CityBoys, покупай\n0x792833b894775bd769b3c602ba7172e59a83ab3f\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена CityBoys, покупай\n0x792833b894775bd769b3c602ba7172e59a83ab3f\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "type": "message",
+   "date": "2023-11-06T14:18:59",
+   "date_unixtime": "1699269539",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена GrokDogeX, покупай\n0x0c21638d4bcb88568f88bc84a50e317715f8de8a\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена GrokDogeX, покупай\n0x0c21638d4bcb88568f88bc84a50e317715f8de8a\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "type": "message",
+   "date": "2023-11-06T14:20:23",
+   "date_unixtime": "1699269623",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена SpringfieldPunks, покупай\n0xd1fcf84b08d0b1c585a20cc40290c319ad2065b4\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена SpringfieldPunks, покупай\n0xd1fcf84b08d0b1c585a20cc40290c319ad2065b4\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "type": "message",
+   "date": "2023-11-06T14:22:47",
+   "date_unixtime": "1699269767",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 30,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 811,
+   "height": 448,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 32,
+   "type": "message",
+   "date": "2023-11-06T14:57:35",
+   "date_unixtime": "1699271855",
+   "edited": "2023-11-08T11:08:38",
+   "edited_unixtime": "1699430918",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена MousePlane, покупай\n0x07dc4e59583cbd95b3dae3ddaaba95f61f6c19b2\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена MousePlane, покупай\n0x07dc4e59583cbd95b3dae3ddaaba95f61f6c19b2\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "type": "message",
+   "date": "2023-11-06T14:58:31",
+   "date_unixtime": "1699271911",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 32,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 815,
+   "height": 454,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 34,
+   "type": "message",
+   "date": "2023-11-06T16:08:47",
+   "date_unixtime": "1699276127",
+   "edited": "2023-11-08T11:12:33",
+   "edited_unixtime": "1699431153",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена CHAT GPT VS GROK, покупай\n0x3ad9d01c8a0bb9130a3e021304b81e1294dc53a8\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена CHAT GPT VS GROK, покупай\n0x3ad9d01c8a0bb9130a3e021304b81e1294dc53a8\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "type": "message",
+   "date": "2023-11-06T16:08:48",
+   "date_unixtime": "1699276128",
+   "edited": "2023-11-08T11:13:48",
+   "edited_unixtime": "1699431228",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена , покупай\n0xb93bbb00827c627817b2192296480b0bce729f82\nЕго купили 3 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена , покупай\n0xb93bbb00827c627817b2192296480b0bce729f82\nЕго купили 3 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "type": "message",
+   "date": "2023-11-06T16:14:29",
+   "date_unixtime": "1699276469",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 34,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 819,
+   "height": 408,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 37,
+   "type": "message",
+   "date": "2023-11-06T16:15:19",
+   "date_unixtime": "1699276519",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 35,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 818,
+   "height": 451,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 38,
+   "type": "message",
+   "date": "2023-11-06T17:14:37",
+   "date_unixtime": "1699280077",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Bart Simpson, покупай\n0x6599aba27698e12ac3a253ec6d8c51a2002c6e67\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Bart Simpson, покупай\n0x6599aba27698e12ac3a253ec6d8c51a2002c6e67\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "type": "message",
+   "date": "2023-11-06T17:31:26",
+   "date_unixtime": "1699281086",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена EthereLeaf, покупай\n0x6680c07830c2f39169c35934c7c8137b8c217581\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена EthereLeaf, покупай\n0x6680c07830c2f39169c35934c7c8137b8c217581\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "type": "message",
+   "date": "2023-11-06T17:48:09",
+   "date_unixtime": "1699282089",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена d'oh!, покупай\n0x0eae70026fd2958ff0f4bcc0dde364c782071757\nЕго купили 5 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена d'oh!, покупай\n0x0eae70026fd2958ff0f4bcc0dde364c782071757\nЕго купили 5 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "type": "message",
+   "date": "2023-11-06T18:21:43",
+   "date_unixtime": "1699284103",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена LarryFinkShortLongBtcETFBlackCock, покупай\n0x178a20a90ac4914f1a09254b64233564afdacf5a\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена LarryFinkShortLongBtcETFBlackCock, покупай\n0x178a20a90ac4914f1a09254b64233564afdacf5a\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "type": "message",
+   "date": "2023-11-06T18:48:39",
+   "date_unixtime": "1699285719",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Meme Pepe, покупай\n0x3ef9181c9b96baaafb3717a553e808ccc72be37d\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Meme Pepe, покупай\n0x3ef9181c9b96baaafb3717a553e808ccc72be37d\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "type": "message",
+   "date": "2023-11-06T19:15:00",
+   "date_unixtime": "1699287300",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Homer, покупай\n0xa1675bb65832510df596f93ee90eb713df31e7ce\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Homer, покупай\n0xa1675bb65832510df596f93ee90eb713df31e7ce\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "type": "message",
+   "date": "2023-11-06T19:31:57",
+   "date_unixtime": "1699288317",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Swiper, покупай\n0x3a6c544a4f26e9027dc499dfeafe07778b7cb67d\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Swiper, покупай\n0x3a6c544a4f26e9027dc499dfeafe07778b7cb67d\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "type": "message",
+   "date": "2023-11-06T20:04:22",
+   "date_unixtime": "1699290262",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена AVERAGE JOE, покупай\n0xa40c15d6a65de962e6d31750ac221f5818560d0f\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена AVERAGE JOE, покупай\n0xa40c15d6a65de962e6d31750ac221f5818560d0f\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "type": "message",
+   "date": "2023-11-06T20:05:04",
+   "date_unixtime": "1699290304",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена I'm a good dev, покупай\n0xda69113dc993eaa48ef9dc2e82b541eabba7559a\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена I'm a good dev, покупай\n0xda69113dc993eaa48ef9dc2e82b541eabba7559a\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "type": "message",
+   "date": "2023-11-06T20:28:32",
+   "date_unixtime": "1699291712",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена USDC, покупай\n0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена USDC, покупай\n0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "type": "message",
+   "date": "2023-11-06T20:41:02",
+   "date_unixtime": "1699292462",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Wagmicatgirl, покупай\n0x4bcd2a79ea0b55e45d0ee5a14da1db82f6996e2f\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Wagmicatgirl, покупай\n0x4bcd2a79ea0b55e45d0ee5a14da1db82f6996e2f\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 49,
+   "type": "message",
+   "date": "2023-11-06T20:43:30",
+   "date_unixtime": "1699292610",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена PUMPKIN, покупай\n0x07a594fed78683a550c9f6e1a11765b8af4e97bd\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена PUMPKIN, покупай\n0x07a594fed78683a550c9f6e1a11765b8af4e97bd\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 50,
+   "type": "message",
+   "date": "2023-11-06T21:05:03",
+   "date_unixtime": "1699293903",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Wagmicatgirl, покупай\n0xbbeaf9fbe442547a1e9574010c48ca7516a7ece8\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Wagmicatgirl, покупай\n0xbbeaf9fbe442547a1e9574010c48ca7516a7ece8\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "type": "message",
+   "date": "2023-11-06T21:11:04",
+   "date_unixtime": "1699294264",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 38,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 936,
+   "height": 502,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 52,
+   "type": "message",
+   "date": "2023-11-06T21:12:07",
+   "date_unixtime": "1699294327",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 39,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 921,
+   "height": 523,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 53,
+   "type": "message",
+   "date": "2023-11-06T21:13:28",
+   "date_unixtime": "1699294408",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 41,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 956,
+   "height": 540,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 54,
+   "type": "message",
+   "date": "2023-11-06T21:14:52",
+   "date_unixtime": "1699294492",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 43,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 937,
+   "height": 535,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 55,
+   "type": "message",
+   "date": "2023-11-06T21:15:37",
+   "date_unixtime": "1699294537",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 44,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 957,
+   "height": 546,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 56,
+   "type": "message",
+   "date": "2023-11-06T21:16:26",
+   "date_unixtime": "1699294586",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 45,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 938,
+   "height": 542,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 57,
+   "type": "message",
+   "date": "2023-11-06T21:18:10",
+   "date_unixtime": "1699294690",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена GPT4Turbo, покупай\n0xac18798e7da44d55160904b9cd5e191ec3ec3352\nЕго купили 5 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена GPT4Turbo, покупай\n0xac18798e7da44d55160904b9cd5e191ec3ec3352\nЕго купили 5 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 58,
+   "type": "message",
+   "date": "2023-11-06T21:23:53",
+   "date_unixtime": "1699295033",
+   "edited": "2023-11-08T11:18:52",
+   "edited_unixtime": "1699431532",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена GPT4 Turbo, покупай\n0x8b37ee83f6b2424a90b4f683feb8e41a8082e287\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена GPT4 Turbo, покупай\n0x8b37ee83f6b2424a90b4f683feb8e41a8082e287\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "type": "message",
+   "date": "2023-11-06T21:24:34",
+   "date_unixtime": "1699295074",
+   "edited": "2023-11-08T11:22:14",
+   "edited_unixtime": "1699431734",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена , покупай\n0x61a21e9a16f2025832e8578b65ce240f7a603bc9\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена , покупай\n0x61a21e9a16f2025832e8578b65ce240f7a603bc9\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 60,
+   "type": "message",
+   "date": "2023-11-06T21:35:11",
+   "date_unixtime": "1699295711",
+   "edited": "2023-11-08T11:23:43",
+   "edited_unixtime": "1699431823",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Unlock Satoshi's Dream, покупай\n0x985c7869c3e56863648f1320a2fe3c8f31d87238\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Unlock Satoshi's Dream, покупай\n0x985c7869c3e56863648f1320a2fe3c8f31d87238\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 61,
+   "type": "message",
+   "date": "2023-11-06T21:43:33",
+   "date_unixtime": "1699296213",
+   "edited": "2023-11-08T11:24:55",
+   "edited_unixtime": "1699431895",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Gordon Ramsay, покупай\n0x5dc0524f906b2292fbc26dade46440af77ec7663\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Gordon Ramsay, покупай\n0x5dc0524f906b2292fbc26dade46440af77ec7663\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 62,
+   "type": "message",
+   "date": "2023-11-06T22:03:23",
+   "date_unixtime": "1699297403",
+   "edited": "2023-11-08T11:25:42",
+   "edited_unixtime": "1699431942",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена BUNNYGIRL, покупай\n0x2f5a1c1b00201e92caae1957ef383a97d97f50cb\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена BUNNYGIRL, покупай\n0x2f5a1c1b00201e92caae1957ef383a97d97f50cb\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 63,
+   "type": "message",
+   "date": "2023-11-06T22:47:32",
+   "date_unixtime": "1699300052",
+   "edited": "2023-11-08T11:26:30",
+   "edited_unixtime": "1699431990",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена AIcoinX, покупай\n0xe2885b74b93379087e772568b47d573284fd184c\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена AIcoinX, покупай\n0xe2885b74b93379087e772568b47d573284fd184c\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 64,
+   "type": "message",
+   "date": "2023-11-06T23:33:25",
+   "date_unixtime": "1699302805",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Mario, покупай\n0x30f166321a0c34402e6b3fa1db90fc7fe3b64916\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Mario, покупай\n0x30f166321a0c34402e6b3fa1db90fc7fe3b64916\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 65,
+   "type": "message",
+   "date": "2023-11-06T23:57:05",
+   "date_unixtime": "1699304225",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": [
+    "Вот хэш токена TICKER IS ",
+    {
+     "type": "cashtag",
+     "text": "$T"
+    },
+    ", покупай\n0x8de6c6a28dc767e45cced9b64177e0675c7522b6\nЕго купили 2 кит(ов)"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена TICKER IS "
+    },
+    {
+     "type": "cashtag",
+     "text": "$T"
+    },
+    {
+     "type": "plain",
+     "text": ", покупай\n0x8de6c6a28dc767e45cced9b64177e0675c7522b6\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 66,
+   "type": "message",
+   "date": "2023-11-07T00:06:13",
+   "date_unixtime": "1699304773",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена BuilderFeedingCompany, покупай\n0x5bbb916497904f99a19cd7cd0d3fe580bce118dd\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена BuilderFeedingCompany, покупай\n0x5bbb916497904f99a19cd7cd0d3fe580bce118dd\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 67,
+   "type": "message",
+   "date": "2023-11-07T00:09:25",
+   "date_unixtime": "1699304965",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена ShitcoinETF, покупай\n0x2b078142752f76e458b3afb946cb446160e78a37\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена ShitcoinETF, покупай\n0x2b078142752f76e458b3afb946cb446160e78a37\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 68,
+   "type": "message",
+   "date": "2023-11-07T00:23:37",
+   "date_unixtime": "1699305817",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена THE Protocol 2.0, покупай\n0x5a1dc1f80ad32e1ab83d086377336e68e8f310f7\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена THE Protocol 2.0, покупай\n0x5a1dc1f80ad32e1ab83d086377336e68e8f310f7\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 69,
+   "type": "message",
+   "date": "2023-11-07T01:20:44",
+   "date_unixtime": "1699309244",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Real Pepe, покупай\n0xb1d3b83b0e4d3ec6f2573ad64e8cb9ebc5480ba8\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Real Pepe, покупай\n0xb1d3b83b0e4d3ec6f2573ad64e8cb9ebc5480ba8\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 70,
+   "type": "message",
+   "date": "2023-11-07T02:00:06",
+   "date_unixtime": "1699311606",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена ObeyTheCult, покупай\n0x3ee519744e8d1d565db44145179490a9d0bf8fa8\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена ObeyTheCult, покупай\n0x3ee519744e8d1d565db44145179490a9d0bf8fa8\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 71,
+   "type": "message",
+   "date": "2023-11-07T02:11:57",
+   "date_unixtime": "1699312317",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Long Live Crack, покупай\n0x7aa8fb879394e855714aa7a9c856979a8a84eb56\nЕго купили 4 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Long Live Crack, покупай\n0x7aa8fb879394e855714aa7a9c856979a8a84eb56\nЕго купили 4 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 72,
+   "type": "message",
+   "date": "2023-11-07T02:20:32",
+   "date_unixtime": "1699312832",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена MEMEPAD, покупай\n0xb9a0f682a0c8238fda1e3e7a5433ab5e0e470388\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена MEMEPAD, покупай\n0xb9a0f682a0c8238fda1e3e7a5433ab5e0e470388\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 73,
+   "type": "message",
+   "date": "2023-11-07T02:35:37",
+   "date_unixtime": "1699313737",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена , покупай\n0xb687e9d486dfb3af51ab078effac193f8181dad4\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена , покупай\n0xb687e9d486dfb3af51ab078effac193f8181dad4\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 74,
+   "type": "message",
+   "date": "2023-11-07T02:53:59",
+   "date_unixtime": "1699314839",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена BLACKROCK6900, покупай\n0x5b093501e321e8430d6e260798453c408c7d1c0b\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена BLACKROCK6900, покупай\n0x5b093501e321e8430d6e260798453c408c7d1c0b\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 75,
+   "type": "message",
+   "date": "2023-11-07T03:38:27",
+   "date_unixtime": "1699317507",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Zhang Coin, покупай\n0xb3874a97fdac3c5312f02102c1e409ecc0331d46\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Zhang Coin, покупай\n0xb3874a97fdac3c5312f02102c1e409ecc0331d46\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 76,
+   "type": "message",
+   "date": "2023-11-07T03:39:47",
+   "date_unixtime": "1699317587",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена WIZZARD KING, покупай\n0x9d4287f7176b743e848409e2afa4f6f8d98f0b42\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена WIZZARD KING, покупай\n0x9d4287f7176b743e848409e2afa4f6f8d98f0b42\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 77,
+   "type": "message",
+   "date": "2023-11-07T03:52:30",
+   "date_unixtime": "1699318350",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена LOTTOGOLD, покупай\n0x0389b0ef4303c96130d946c205ff7514f147aa4e\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена LOTTOGOLD, покупай\n0x0389b0ef4303c96130d946c205ff7514f147aa4e\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 78,
+   "type": "message",
+   "date": "2023-11-07T04:48:37",
+   "date_unixtime": "1699321717",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена HomerCoin, покупай\n0xa9ce99e4a3ce933cc431e81e351181a2f9dedad6\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена HomerCoin, покупай\n0xa9ce99e4a3ce933cc431e81e351181a2f9dedad6\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 79,
+   "type": "message",
+   "date": "2023-11-07T06:27:07",
+   "date_unixtime": "1699327627",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Real Bitcoin, покупай\n0xf5fd84f8e09bd215b7ebb6fc17ce975cfae45323\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Real Bitcoin, покупай\n0xf5fd84f8e09bd215b7ebb6fc17ce975cfae45323\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 80,
+   "type": "message",
+   "date": "2023-11-07T06:49:41",
+   "date_unixtime": "1699328981",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Snoopy, покупай\n0x34ff2b0ff7be56936e66974e996067b4b706c028\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Snoopy, покупай\n0x34ff2b0ff7be56936e66974e996067b4b706c028\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 81,
+   "type": "message",
+   "date": "2023-11-07T06:56:48",
+   "date_unixtime": "1699329408",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена GRUG, покупай\n0x9b739beae027ac187b59d6d670319dd41342e00b\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена GRUG, покупай\n0x9b739beae027ac187b59d6d670319dd41342e00b\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 82,
+   "type": "message",
+   "date": "2023-11-07T07:22:24",
+   "date_unixtime": "1699330944",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена OxDead, покупай\n0x7b5c8906ea65b7e379fee70d49bb0287338fd53e\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена OxDead, покупай\n0x7b5c8906ea65b7e379fee70d49bb0287338fd53e\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 83,
+   "type": "message",
+   "date": "2023-11-07T07:30:32",
+   "date_unixtime": "1699331432",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Vampire Survivors, покупай\n0x000461704d04097c1794bc241beffa6a3d62b76a\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Vampire Survivors, покупай\n0x000461704d04097c1794bc241beffa6a3d62b76a\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 84,
+   "type": "message",
+   "date": "2023-11-07T08:01:25",
+   "date_unixtime": "1699333285",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Mika Ai, покупай\n0xdc386fe6f2f8707f9a7ec7a4bf29fa77c267da12\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Mika Ai, покупай\n0xdc386fe6f2f8707f9a7ec7a4bf29fa77c267da12\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 85,
+   "type": "message",
+   "date": "2023-11-07T08:18:05",
+   "date_unixtime": "1699334285",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена FISHFUCKER, покупай\n0xd84db80c7b8aa5dfc2d6e18ccdf7ce6fbf6246c4\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена FISHFUCKER, покупай\n0xd84db80c7b8aa5dfc2d6e18ccdf7ce6fbf6246c4\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 86,
+   "type": "message",
+   "date": "2023-11-07T08:37:44",
+   "date_unixtime": "1699335464",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена , покупай\n0x63f435ff710a1ad81d1cac6c0e59f22fca97c0ad\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена , покупай\n0x63f435ff710a1ad81d1cac6c0e59f22fca97c0ad\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 87,
+   "type": "message",
+   "date": "2023-11-07T10:32:11",
+   "date_unixtime": "1699342331",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена ARTIFICIAL INTELLIGENCE, покупай\n0x527e6c1a3d53576c7ca75bc09406b0cc4e8f8f19\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена ARTIFICIAL INTELLIGENCE, покупай\n0x527e6c1a3d53576c7ca75bc09406b0cc4e8f8f19\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 88,
+   "type": "message",
+   "date": "2023-11-07T16:19:20",
+   "date_unixtime": "1699363160",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена SAB Coin, покупай\n0x8c7c5edcbe89736dddc2077e133aaac2823d08cd\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена SAB Coin, покупай\n0x8c7c5edcbe89736dddc2077e133aaac2823d08cd\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 89,
+   "type": "message",
+   "date": "2023-11-07T18:21:59",
+   "date_unixtime": "1699370519",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена , покупай\n0x5b16be2c828f3b18b72461f201ce2584ce871c9d\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена , покупай\n0x5b16be2c828f3b18b72461f201ce2584ce871c9d\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 90,
+   "type": "message",
+   "date": "2023-11-07T18:58:51",
+   "date_unixtime": "1699372731",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена MONKEY PUPPET, покупай\n0xe9c17202159566086b03640ba16050bd1e15aaae\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена MONKEY PUPPET, покупай\n0xe9c17202159566086b03640ba16050bd1e15aaae\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 91,
+   "type": "message",
+   "date": "2023-11-07T19:28:27",
+   "date_unixtime": "1699374507",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена TAIKAI Token, покупай\n0x7c5b267ed81009aa7374b5ca7e5137da47045ba8\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена TAIKAI Token, покупай\n0x7c5b267ed81009aa7374b5ca7e5137da47045ba8\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 92,
+   "type": "message",
+   "date": "2023-11-07T19:40:30",
+   "date_unixtime": "1699375230",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Dino, покупай\n0x133103df7f294a754c3f44e54f2201c4e646e4a0\nЕго купили 5 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Dino, покупай\n0x133103df7f294a754c3f44e54f2201c4e646e4a0\nЕго купили 5 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 93,
+   "type": "message",
+   "date": "2023-11-07T20:01:53",
+   "date_unixtime": "1699376513",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Ordinals, покупай\n0xce45b5c429fae4a04069b21cd18fd2527715ab34\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Ordinals, покупай\n0xce45b5c429fae4a04069b21cd18fd2527715ab34\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 94,
+   "type": "message",
+   "date": "2023-11-07T20:03:10",
+   "date_unixtime": "1699376590",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена DANCE DANCE REVOLUTION, покупай\n0x28f61600a3f8c447e7f74980ea3f43e90b87391f\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена DANCE DANCE REVOLUTION, покупай\n0x28f61600a3f8c447e7f74980ea3f43e90b87391f\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 95,
+   "type": "message",
+   "date": "2023-11-07T20:06:24",
+   "date_unixtime": "1699376784",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Conspiracy Coin, покупай\n0x1262b3992e5e5d89751d87bab21aeb7cfa5206b8\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Conspiracy Coin, покупай\n0x1262b3992e5e5d89751d87bab21aeb7cfa5206b8\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 96,
+   "type": "message",
+   "date": "2023-11-07T20:18:24",
+   "date_unixtime": "1699377504",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Dogecoin, покупай\n0x2d837eba079ec9231ba051ff94122b816214b6c6\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Dogecoin, покупай\n0x2d837eba079ec9231ba051ff94122b816214b6c6\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 97,
+   "type": "message",
+   "date": "2023-11-07T20:25:34",
+   "date_unixtime": "1699377934",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена JOEjr, покупай\n0x214bddec8aa4e8b0961ce77f1b571f3ecd54cc2b\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена JOEjr, покупай\n0x214bddec8aa4e8b0961ce77f1b571f3ecd54cc2b\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 98,
+   "type": "message",
+   "date": "2023-11-07T20:40:27",
+   "date_unixtime": "1699378827",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Bishop, покупай\n0x9047b76d7fb3d8bc3342616c56028430ebc74290\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Bishop, покупай\n0x9047b76d7fb3d8bc3342616c56028430ebc74290\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 99,
+   "type": "message",
+   "date": "2023-11-07T21:08:54",
+   "date_unixtime": "1699380534",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена SMURFCAT9000, покупай\n0xc50e9712ed8a6dd3ac0f62ed340728e1b03edf4b\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена SMURFCAT9000, покупай\n0xc50e9712ed8a6dd3ac0f62ed340728e1b03edf4b\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 100,
+   "type": "message",
+   "date": "2023-11-07T22:15:15",
+   "date_unixtime": "1699384515",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена EXCEL FINANCE, покупай\n0xd431b103f7d626b7942aad621d123202a5d14a8d\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена EXCEL FINANCE, покупай\n0xd431b103f7d626b7942aad621d123202a5d14a8d\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 101,
+   "type": "message",
+   "date": "2023-11-07T22:16:52",
+   "date_unixtime": "1699384612",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 100,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 898,
+   "height": 512,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 102,
+   "type": "message",
+   "date": "2023-11-07T22:38:19",
+   "date_unixtime": "1699385899",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Assburgers, покупай\n0xd31abc354b71e5adec30ae17b949f08cce4aff11\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Assburgers, покупай\n0xd31abc354b71e5adec30ae17b949f08cce4aff11\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 103,
+   "type": "message",
+   "date": "2023-11-07T22:39:39",
+   "date_unixtime": "1699385979",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "reply_to_message_id": 102,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 650,
+   "height": 344,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 104,
+   "type": "message",
+   "date": "2023-11-07T23:20:36",
+   "date_unixtime": "1699388436",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Duff Coin, покупай\n0xfef888afa1fbd75cf9f6264b54fe1aa99adb1ae9\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Duff Coin, покупай\n0xfef888afa1fbd75cf9f6264b54fe1aa99adb1ae9\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 105,
+   "type": "message",
+   "date": "2023-11-07T23:32:49",
+   "date_unixtime": "1699389169",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Asakusa, покупай\n0xd9aa397ed2833362fd839c7f8c68d3cae661785c\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Asakusa, покупай\n0xd9aa397ed2833362fd839c7f8c68d3cae661785c\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 106,
+   "type": "message",
+   "date": "2023-11-07T23:39:18",
+   "date_unixtime": "1699389558",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена BRC20DAO, покупай\n0xcc88ad0d0379c490467679145335ce26e52bc32c\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена BRC20DAO, покупай\n0xcc88ad0d0379c490467679145335ce26e52bc32c\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 107,
+   "type": "message",
+   "date": "2023-11-07T23:53:49",
+   "date_unixtime": "1699390429",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена , покупай\n0xc0c18bf10467615403a2abb427d8b21dda101d29\nЕго купили 3 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена , покупай\n0xc0c18bf10467615403a2abb427d8b21dda101d29\nЕго купили 3 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 108,
+   "type": "message",
+   "date": "2023-11-08T00:08:33",
+   "date_unixtime": "1699391313",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Verify Authentificator Bot, покупай\n0x13c4aa5c3f5bb1109c267e520a87c89684d3e73c\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Verify Authentificator Bot, покупай\n0x13c4aa5c3f5bb1109c267e520a87c89684d3e73c\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 109,
+   "type": "message",
+   "date": "2023-11-08T00:29:34",
+   "date_unixtime": "1699392574",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Integrated Development Environment, покупай\n0x851e5d452a049f1b7051002045ee90fe6e88741e\nЕго купили 6 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Integrated Development Environment, покупай\n0x851e5d452a049f1b7051002045ee90fe6e88741e\nЕго купили 6 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 110,
+   "type": "message",
+   "date": "2023-11-08T00:30:58",
+   "date_unixtime": "1699392658",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Moe, покупай\n0xe53c3ba27fac14e7a09dab1f1bd2547793d9053b\nЕго купили 5 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Moe, покупай\n0xe53c3ba27fac14e7a09dab1f1bd2547793d9053b\nЕго купили 5 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 111,
+   "type": "message",
+   "date": "2023-11-08T00:43:49",
+   "date_unixtime": "1699393429",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Rook, покупай\n0xd8974dbf1d873e0c6f48ad91a70c19886e6dc078\nЕго купили 5 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Rook, покупай\n0xd8974dbf1d873e0c6f48ad91a70c19886e6dc078\nЕго купили 5 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 112,
+   "type": "message",
+   "date": "2023-11-08T01:11:13",
+   "date_unixtime": "1699395073",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена EXCEL FINANCE, покупай\n0x0fbf80e624aabd974facf10b620684de5ab2db6c\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена EXCEL FINANCE, покупай\n0x0fbf80e624aabd974facf10b620684de5ab2db6c\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 113,
+   "type": "message",
+   "date": "2023-11-08T01:44:08",
+   "date_unixtime": "1699397048",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена DORK, покупай\n0xae3359ed3c567482fb0102c584c23daa2693eacf\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена DORK, покупай\n0xae3359ed3c567482fb0102c584c23daa2693eacf\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 114,
+   "type": "message",
+   "date": "2023-11-08T02:00:33",
+   "date_unixtime": "1699398033",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Woolter White, покупай\n0x015d3aa461dfb4036f2a4f1e86a679450a01be38\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Woolter White, покупай\n0x015d3aa461dfb4036f2a4f1e86a679450a01be38\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 115,
+   "type": "message",
+   "date": "2023-11-08T02:30:31",
+   "date_unixtime": "1699399831",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Bidenflation, покупай\n0x6ba0488f6cf917c47c69186f4743d648f521a681\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Bidenflation, покупай\n0x6ba0488f6cf917c47c69186f4743d648f521a681\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 116,
+   "type": "message",
+   "date": "2023-11-08T02:59:45",
+   "date_unixtime": "1699401585",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена FOMOMETER, покупай\n0xa7d8c422bba493f93a62b62410021ed4f3e74226\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена FOMOMETER, покупай\n0xa7d8c422bba493f93a62b62410021ed4f3e74226\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 117,
+   "type": "message",
+   "date": "2023-11-08T03:02:50",
+   "date_unixtime": "1699401770",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена SentinelBot, покупай\n0x801010ab3dea1a5555e5d59b89897193e0065f26\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена SentinelBot, покупай\n0x801010ab3dea1a5555e5d59b89897193e0065f26\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 118,
+   "type": "message",
+   "date": "2023-11-08T03:33:23",
+   "date_unixtime": "1699403603",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена GrookGrockGrowk6900, покупай\n0x4c83b2c18d3a55d4654ca8eb5d8d69b45db3efe5\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена GrookGrockGrowk6900, покупай\n0x4c83b2c18d3a55d4654ca8eb5d8d69b45db3efe5\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 119,
+   "type": "message",
+   "date": "2023-11-08T03:50:50",
+   "date_unixtime": "1699404650",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена PINGU, покупай\n0x782b278925a1a4d5132105b03c5df105fa9816f3\nЕго купили 3 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена PINGU, покупай\n0x782b278925a1a4d5132105b03c5df105fa9816f3\nЕго купили 3 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 120,
+   "type": "message",
+   "date": "2023-11-08T04:32:36",
+   "date_unixtime": "1699407156",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена film01, покупай\n0x1a78999cb89a9d2a6f63a31337869f71781bce61\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена film01, покупай\n0x1a78999cb89a9d2a6f63a31337869f71781bce61\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 121,
+   "type": "message",
+   "date": "2023-11-08T04:48:53",
+   "date_unixtime": "1699408133",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Fumblers Group, покупай\n0x6d826f2958dccbbbe8e27b5f7337b78870f3a030\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Fumblers Group, покупай\n0x6d826f2958dccbbbe8e27b5f7337b78870f3a030\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 122,
+   "type": "message",
+   "date": "2023-11-08T04:50:52",
+   "date_unixtime": "1699408252",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена GARBAGE, покупай\n0xc358990ce78c5629ec18f277416ab9417f60a5ad\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена GARBAGE, покупай\n0xc358990ce78c5629ec18f277416ab9417f60a5ad\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 123,
+   "type": "message",
+   "date": "2023-11-08T05:16:33",
+   "date_unixtime": "1699409793",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Douglas Adams, покупай\n0xee3c722d177559f73288cec91fa3e4bbfd8c27fc\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Douglas Adams, покупай\n0xee3c722d177559f73288cec91fa3e4bbfd8c27fc\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 124,
+   "type": "message",
+   "date": "2023-11-08T05:59:30",
+   "date_unixtime": "1699412370",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена MILK, покупай\n0xf538296e7dd856af7044deec949489e2f25705bc\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена MILK, покупай\n0xf538296e7dd856af7044deec949489e2f25705bc\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 125,
+   "type": "message",
+   "date": "2023-11-08T06:20:15",
+   "date_unixtime": "1699413615",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена BlurMagicEdenLooksRareInu, покупай\n0x1566bfb122456903a97c63e3b6360db999dfb48e\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена BlurMagicEdenLooksRareInu, покупай\n0x1566bfb122456903a97c63e3b6360db999dfb48e\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 126,
+   "type": "message",
+   "date": "2023-11-08T07:00:42",
+   "date_unixtime": "1699416042",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена DevWentToSleepButChinaWakingUpSoonBigNamesBehindThisAndEveryoneLookingForSomethingToApeRightNowThisM, покупай\n0x25184b6e1f24b0d9e9c6ef6814149c9e5fc738d1\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена DevWentToSleepButChinaWakingUpSoonBigNamesBehindThisAndEveryoneLookingForSomethingToApeRightNowThisM, покупай\n0x25184b6e1f24b0d9e9c6ef6814149c9e5fc738d1\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 127,
+   "type": "message",
+   "date": "2023-11-08T07:20:35",
+   "date_unixtime": "1699417235",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена GTA 6, покупай\n0x194779473b9964afd1ba05618d38ba8807c93f95\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена GTA 6, покупай\n0x194779473b9964afd1ba05618d38ba8807c93f95\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 128,
+   "type": "message",
+   "date": "2023-11-08T08:14:32",
+   "date_unixtime": "1699420472",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена , покупай\n0x5e9205407469eff2e948613bfd6c302aead6a944\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена , покупай\n0x5e9205407469eff2e948613bfd6c302aead6a944\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 129,
+   "type": "message",
+   "date": "2023-11-08T09:04:17",
+   "date_unixtime": "1699423457",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена , покупай\n0xbee15bc00a2ab54eb8ac59472632419eee29f63a\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена , покупай\n0xbee15bc00a2ab54eb8ac59472632419eee29f63a\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 130,
+   "type": "message",
+   "date": "2023-11-08T11:07:42",
+   "date_unixtime": "1699430862",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена This Entire City Must Be Purged, покупай\n0x1fc6e3a575e34e0637bd4eff0f6d034ca48b4297\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена This Entire City Must Be Purged, покупай\n0x1fc6e3a575e34e0637bd4eff0f6d034ca48b4297\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 131,
+   "type": "message",
+   "date": "2023-11-08T11:15:29",
+   "date_unixtime": "1699431329",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "🤔 до 100\n👍 100\n🔥 От 500",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🤔 до 100\n👍 100\n🔥 От 500"
+    }
+   ]
+  },
+  {
+   "id": 132,
+   "type": "message",
+   "date": "2023-11-08T11:15:56",
+   "date_unixtime": "1699431356",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена CHARIZARD, покупай\n0x0452e97ff9c1f0812c76ef851411ff6d8e9b09c0\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена CHARIZARD, покупай\n0x0452e97ff9c1f0812c76ef851411ff6d8e9b09c0\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 133,
+   "type": "message",
+   "date": "2023-11-08T11:35:37",
+   "date_unixtime": "1699432537",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Chat GPT, покупай\n0xf79402f5028b282a0c7ae4a0474339acb753389f\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Chat GPT, покупай\n0xf79402f5028b282a0c7ae4a0474339acb753389f\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 134,
+   "type": "message",
+   "date": "2023-11-08T14:11:46",
+   "date_unixtime": "1699441906",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена GROK, покупай\n0x8390a1da07e376ef7add4be859ba74fb83aa02d5\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена GROK, покупай\n0x8390a1da07e376ef7add4be859ba74fb83aa02d5\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 135,
+   "type": "message",
+   "date": "2023-11-08T15:13:27",
+   "date_unixtime": "1699445607",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Eliza AI, покупай\n0xc162cc4fcce69c10dab92175de1d34387e3f9d1d\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Eliza AI, покупай\n0xc162cc4fcce69c10dab92175de1d34387e3f9d1d\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 136,
+   "type": "message",
+   "date": "2023-11-08T15:50:53",
+   "date_unixtime": "1699447853",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена BARD AI, покупай\n0x87d92b8b0752d151c7777ece88c5de883fb82b65\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена BARD AI, покупай\n0x87d92b8b0752d151c7777ece88c5de883fb82b65\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 137,
+   "type": "message",
+   "date": "2023-11-08T16:09:14",
+   "date_unixtime": "1699448954",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена THE AI KILLER, покупай\n0xcc20cc56bd5b3f0e3c2a4e29589836694ac4bc25\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена THE AI KILLER, покупай\n0xcc20cc56bd5b3f0e3c2a4e29589836694ac4bc25\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 138,
+   "type": "message",
+   "date": "2023-11-08T16:17:58",
+   "date_unixtime": "1699449478",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена THUG Coin, покупай\n0xffd12f9687e524e080f0590057faed94c22ffa67\nЕго купили 3 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена THUG Coin, покупай\n0xffd12f9687e524e080f0590057faed94c22ffa67\nЕго купили 3 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 139,
+   "type": "message",
+   "date": "2023-11-08T16:21:44",
+   "date_unixtime": "1699449704",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Worm GPT, покупай\n0x03fb72bbaa036dbec4bd642b3bf80a0ca1609991\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Worm GPT, покупай\n0x03fb72bbaa036dbec4bd642b3bf80a0ca1609991\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 140,
+   "type": "message",
+   "date": "2023-11-08T16:29:41",
+   "date_unixtime": "1699450181",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена BumbleC AI, покупай\n0xda6bcf40b93f274f0e877de18392324f3a9cc433\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена BumbleC AI, покупай\n0xda6bcf40b93f274f0e877de18392324f3a9cc433\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 141,
+   "type": "message",
+   "date": "2023-11-08T16:38:23",
+   "date_unixtime": "1699450703",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Simon AI, покупай\n0x970309cadb3691c5c019ca93c7d1df3d7340c051\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Simon AI, покупай\n0x970309cadb3691c5c019ca93c7d1df3d7340c051\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 142,
+   "type": "message",
+   "date": "2023-11-08T17:31:01",
+   "date_unixtime": "1699453861",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Alice AI, покупай\n0x649b824a634fabf3a5347ed9ddf11703485bcb6c\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Alice AI, покупай\n0x649b824a634fabf3a5347ed9ddf11703485bcb6c\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 143,
+   "type": "message",
+   "date": "2023-11-08T18:02:56",
+   "date_unixtime": "1699455776",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Froge Coin, покупай\n0x562b2311514e326ab06728bf24ff47c7731b5ef2\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Froge Coin, покупай\n0x562b2311514e326ab06728bf24ff47c7731b5ef2\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 144,
+   "type": "message",
+   "date": "2023-11-08T18:22:45",
+   "date_unixtime": "1699456965",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Cryptoboy, покупай\n0x7d94b2602dab0a3d24a20e7ff9b63c0623fd3b3e\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Cryptoboy, покупай\n0x7d94b2602dab0a3d24a20e7ff9b63c0623fd3b3e\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 145,
+   "type": "message",
+   "date": "2023-11-08T18:24:09",
+   "date_unixtime": "1699457049",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Bard AI, покупай\n0x107a3337d63c6370f8569febf7f692a304e9bc3b\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Bard AI, покупай\n0x107a3337d63c6370f8569febf7f692a304e9bc3b\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 146,
+   "type": "message",
+   "date": "2023-11-08T18:40:04",
+   "date_unixtime": "1699458004",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена grokcoin, покупай\n0x88ebf9a131e651c65ef6bbe3d6f3e6354303cc0d\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена grokcoin, покупай\n0x88ebf9a131e651c65ef6bbe3d6f3e6354303cc0d\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 147,
+   "type": "message",
+   "date": "2023-11-08T18:48:21",
+   "date_unixtime": "1699458501",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Internet Money Babies, покупай\n0xdcd41c11d444dc34ac573a35761d65487912a101\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Internet Money Babies, покупай\n0xdcd41c11d444dc34ac573a35761d65487912a101\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 148,
+   "type": "message",
+   "date": "2023-11-08T18:54:21",
+   "date_unixtime": "1699458861",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена SURYA, покупай\n0xa9ac33f76cb2587a2797f871eac36251add08a47\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена SURYA, покупай\n0xa9ac33f76cb2587a2797f871eac36251add08a47\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 149,
+   "type": "message",
+   "date": "2023-11-08T19:06:45",
+   "date_unixtime": "1699459605",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена GatesSorosJones2049lnu, покупай\n0x4dec0449208e8eae75e216577a8492714fdb2660\nЕго купили 3 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена GatesSorosJones2049lnu, покупай\n0x4dec0449208e8eae75e216577a8492714fdb2660\nЕго купили 3 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 150,
+   "type": "message",
+   "date": "2023-11-08T19:11:17",
+   "date_unixtime": "1699459877",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена HairyPlotterFTX, покупай\n0xb1a822ce8c799b0777ed1f260113819247e1bf26\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена HairyPlotterFTX, покупай\n0xb1a822ce8c799b0777ed1f260113819247e1bf26\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 151,
+   "type": "message",
+   "date": "2023-11-08T19:18:31",
+   "date_unixtime": "1699460311",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Chat GPT, покупай\n0xf7822220ac71d8e312a69f6faa28742a2d489260\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Chat GPT, покупай\n0xf7822220ac71d8e312a69f6faa28742a2d489260\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 152,
+   "type": "message",
+   "date": "2023-11-08T19:20:43",
+   "date_unixtime": "1699460443",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена RandomAutisticMeme, покупай\n0x6db1545820469a627330490591fbc28009712eef\nЕго купили 4 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена RandomAutisticMeme, покупай\n0x6db1545820469a627330490591fbc28009712eef\nЕго купили 4 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 153,
+   "type": "message",
+   "date": "2023-11-08T19:20:43",
+   "date_unixtime": "1699460443",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Wallet Buddy, покупай\n0x038cdc9cb41659fbec44aeae8d5d3b87dc9c6f89\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Wallet Buddy, покупай\n0x038cdc9cb41659fbec44aeae8d5d3b87dc9c6f89\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 154,
+   "type": "message",
+   "date": "2023-11-08T19:48:24",
+   "date_unixtime": "1699462104",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена ALPHA, покупай\n0x81ff9049e81b6b9fd549e296284daeedf9207ad4\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена ALPHA, покупай\n0x81ff9049e81b6b9fd549e296284daeedf9207ad4\nЕго купили 2 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 155,
+   "type": "message",
+   "date": "2023-11-08T19:58:54",
+   "date_unixtime": "1699462734",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена OLYMPUS, покупай\n0x0a266778c113a8f0d3d7aeacd12b74a7da5037a0\nЕго купили 3 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена OLYMPUS, покупай\n0x0a266778c113a8f0d3d7aeacd12b74a7da5037a0\nЕго купили 3 кит(ов)"
+    }
+   ]
+  },
+  {
+   "id": 156,
+   "type": "message",
+   "date": "2023-11-08T20:09:55",
+   "date_unixtime": "1699463395",
+   "from": "CryptoGigaMegaSignals",
+   "from_id": "channel2060792907",
+   "text": "Вот хэш токена Choices, покупай\n0xcfe940bbcfc8e8226d2ad47bc49ccb003525ec73\nЕго купили 2 кит(ов)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Вот хэш токена Choices, покупай\n0xcfe940bbcfc8e8226d2ad47bc49ccb003525ec73\nЕго купили 2 кит(ов)"
+    }
+   ]
+  }
+ ]
+}
