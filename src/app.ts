@@ -37,8 +37,10 @@ const tokensAreadyBoughtAndHandledSet = new Set()
  * MAIN
  */
 
-const telegramSignals =
-    statsV2Service.parseTelegramSignalsFromFile().messages[1]?.details?.price
+const telegramSignals = statsV2Service.parseTelegramSignalsFromFile()
+const browser = await statsV2Service.launchBrowser({ headless: false })
+
+statsV2Service.calcStatsAndWriteToFile({ telegramSignals, browser })
 
 // thisShouldRunOnServer()
 
