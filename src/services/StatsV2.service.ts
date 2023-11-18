@@ -46,7 +46,9 @@ export class StatsV2Service {
     }) {
         for (const message of telegramSignals.messages) {
             // Получить все возможные данные и записать в переменную
-            const signalData = await this.#getAllDataForSignal()
+            const signalData = await this.#getAllDataForSignal({ message })
+
+            return
 
             // Сделать расчеты и записать в signalStats
             // Записать в новую переменную все вместе и сделать запись в файл
@@ -119,7 +121,13 @@ export class StatsV2Service {
         signal.details = detailsToAdd
     }
 
-    async #getAllDataForSignal() {}
+    async #getAllDataForSignal({
+        message,
+    }: {
+        message: IMessageFromTelegramSignal
+    }) {
+        // Получить цену хорошую и плохую
+    }
 }
 
 const statsV2Service = new StatsV2Service()
