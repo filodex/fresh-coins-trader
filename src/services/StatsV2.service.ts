@@ -26,6 +26,23 @@ export interface ITelegramSignals {
     messages: IMessageFromTelegramSignal[]
 }
 
+export interface IGetCandlesResponse {
+    code: string
+    data: {
+        candles: {
+            close: number
+            high: number
+            low: number
+            open: number
+            time: number
+            volume: number
+        }[]
+        oldestTs: string
+        symbol: string
+        version: number
+    }
+}
+
 export class StatsV2Service {
     telegramSignalsFilePath: string
 
@@ -46,7 +63,7 @@ export class StatsV2Service {
     }) {
         for (const message of telegramSignals.messages) {
             // Получить все возможные данные и записать в переменную
-            const signalData = await this.#getAllDataForSignal({ message })
+            // const { signalData } = await this.#getAllDataForSignal({ message })
 
             return
 
@@ -62,9 +79,59 @@ export class StatsV2Service {
         return browser
     }
 
-    async getHistoryCandles() {}
+    async createDexToolsPage({
+        browser,
+    }: {
+        browser: puppeteer.Browser
+    }): Promise<puppeteer.Page> {
+        const page = await browser.newPage()
 
-    async getLatestCandles() {}
+        await page.goto(
+            'https://www.dextools.io/app/ru/ether/pair-explorer/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+        )
+
+        return page
+    }
+
+    // Плохо возвращает дневки
+    async getHistoryCandles({
+        page,
+        res, // 1m 5m 15m 30m 1d
+        pair,
+        ts, // Примет new Date('2023-11-20T07:30') и вернет именно для этого времени нулевую свечу
+    }: {
+        page: puppeteer.Page
+        res: string
+        pair: string
+        ts: number
+    }): Promise<IGetCandlesResponse> {
+        const url = new URL(
+            'https://www.dextools.io/chain-ethereum/api/generic/history/candles/v3?sym=usd&span=month&timezone=3'
+        )
+
+        url.searchParams.append('res', res)
+        url.searchParams.append('pair', pair.toLowerCase())
+        url.searchParams.append('ts', String(ts))
+
+        const response = await page.evaluate(async (url) => {
+            try {
+                const res = await fetch(url)
+                const resJson = await res.json()
+
+                return resJson
+            } catch (error) {
+                return error
+            }
+        }, url)
+
+        if (response.__proro__ === Error.prototype || response.code !== 'OK') {
+            throw new Error('Cant get candles', response)
+        }
+
+        return response
+    }
+
+    async getLatestCandles({ page }: { page: puppeteer.Page }) {}
 
     parseTelegramSignalsFromFile(): ITelegramSignals {
         const text = String(fs.readFileSync(this.telegramSignalsFilePath))
@@ -121,13 +188,13 @@ export class StatsV2Service {
         signal.details = detailsToAdd
     }
 
-    async #getAllDataForSignal({
-        message,
-    }: {
-        message: IMessageFromTelegramSignal
-    }) {
-        // Получить цену хорошую и плохую
-    }
+    // async #getAllDataForSignal({
+    //     message,
+    // }: {
+    //     message: IMessageFromTelegramSignal
+    // }): Promise<{ signalData: any }> {
+    //     // Получить цену хорошую и плохую
+    // }
 }
 
 const statsV2Service = new StatsV2Service()
