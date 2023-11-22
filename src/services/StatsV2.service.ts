@@ -46,6 +46,15 @@ export interface IGetCandlesResponse {
     }
 }
 
+export interface ISignalData {
+    pairAddress: string
+    dayCandles: IGetCandlesResponse
+    minuteCandles: IGetCandlesResponse
+    worstBuyPrice: number
+    goodBuyPrice: number
+    highestPrice: number
+}
+
 export class StatsV2Service {
     telegramSignalsFilePath: string
     signalsStatsFilePath: string
@@ -99,6 +108,14 @@ export class StatsV2Service {
 
             await sleep(10000)
         }
+    }
+
+    readSignalsStats() {
+        const text = String(fs.readFileSync(this.signalsStatsFilePath))
+        const signalsStats:ISignalData[] = []
+        const splitted = text.split('******').forEach((el) => {
+            el.trim()
+        })
     }
 
     async launchBrowser({ headless = true }): Promise<puppeteer.Browser> {
@@ -285,7 +302,7 @@ export class StatsV2Service {
         message: IMessageFromTelegramSignal
         browser: puppeteer.Browser
         dexToolsPage: puppeteer.Page
-    }): Promise<{ signalData: any }> {
+    }) {
         // Получить цену хорошую и плохую
 
         let signalData
