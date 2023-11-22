@@ -1,6 +1,9 @@
 import puppeteer from 'puppeteer'
 import fs from 'fs'
 import path from 'path'
+import syveApi from '../apis/SyveApi.js'
+import dexScreenerApi from '../apis/DexScreenerApi.js'
+import { sleep } from '../utils/utils.js'
 
 export interface IMessageFromTelegramSignal {
     details: {
@@ -45,6 +48,7 @@ export interface IGetCandlesResponse {
 
 export class StatsV2Service {
     telegramSignalsFilePath: string
+    signalsStatsFilePath: string
 
     constructor() {
         this.telegramSignalsFilePath = path.join(
@@ -52,26 +56,49 @@ export class StatsV2Service {
             'diff',
             'chatHistory.json'
         )
+        this.signalsStatsFilePath = path.join(
+            path.resolve(),
+            'diff',
+            'signalsStats.txt'
+        )
     }
 
-    async calcStatsAndWriteToFile({
-        browser,
+    async getStatsAndWriteToFile({
         telegramSignals,
+        dexToolsPage,
+        browser,
     }: {
-        browser: puppeteer.Browser
         telegramSignals: ITelegramSignals
+        dexToolsPage: puppeteer.Page
+        browser: puppeteer.Browser
     }) {
         for (const message of telegramSignals.messages) {
-            // Получить все возможные данные и записать в переменную
-            // const { signalData } = await this.#getAllDataForSignal({ message })
+            try {
+                // Получить все возможные данные и записать в переменную
+                const { signalData } = await this.#getAllDataForSignal({
+                    message,
+                    browser,
+                    dexToolsPage,
+                })
 
-            return
+                console.log(message, signalData)
 
-            // Сделать расчеты и записать в signalStats
-            // Записать в новую переменную все вместе и сделать запись в файл
+                const dataToWrite = { message, signalData }
+
+                fs.appendFileSync(
+                    this.signalsStatsFilePath,
+                    JSON.stringify(dataToWrite, null, 2) + '\n******'
+                )
+            } catch (error) {
+                console.log(
+                    'Error in handling message inside for cycle' + error
+                )
+
+                await sleep(10000)
+            }
+
+            await sleep(10000)
         }
-
-        const page = await browser.newPage()
     }
 
     async launchBrowser({ headless = true }): Promise<puppeteer.Browser> {
@@ -104,7 +131,16 @@ export class StatsV2Service {
         res: string
         pair: string
         ts: number
-    }): Promise<IGetCandlesResponse> {
+    }): Promise<{ historyCandles: IGetCandlesResponse }> {
+        await page.setExtraHTTPHeaders({
+            'user-agent':
+                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36',
+            'upgrade-insecure-requests': '1',
+            accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+            'accept-encoding': 'gzip, deflate, br',
+            'accept-language': 'en-US,en;q=0.9,en;q=0.8',
+        })
+
         const url = new URL(
             'https://www.dextools.io/chain-ethereum/api/generic/history/candles/v3?sym=usd&span=month&timezone=3'
         )
@@ -113,7 +149,12 @@ export class StatsV2Service {
         url.searchParams.append('pair', pair.toLowerCase())
         url.searchParams.append('ts', String(ts))
 
-        const response = await page.evaluate(async (url) => {
+        await page.bringToFront()
+
+        await sleep(3000)
+        await page.waitForSelector('body')
+
+        const historyCandles = await page.evaluate(async (url) => {
             try {
                 const res = await fetch(url)
                 const resJson = await res.json()
@@ -124,14 +165,61 @@ export class StatsV2Service {
             }
         }, url)
 
-        if (response.__proro__ === Error.prototype || response.code !== 'OK') {
-            throw new Error('Cant get candles', response)
+        if (
+            historyCandles.__proro__ === Error.prototype ||
+            historyCandles.code !== 'OK'
+        ) {
+            console.log('historyCandles', historyCandles)
+
+            throw new Error('Cant get candles', historyCandles)
         }
 
-        return response
+        return { historyCandles }
     }
 
-    async getLatestCandles({ page }: { page: puppeteer.Page }) {}
+    // Better not to use
+    async getLatestCandles({
+        page,
+        latest, // 1m 5m 15m 30m 1d
+        pair,
+    }: {
+        page: puppeteer.Page
+        latest: string
+        pair: string
+    }): Promise<{ latestCandles: IGetCandlesResponse }> {
+        const url = new URL(
+            'https://www.dextools.io/chain-ethereum/api/generic/history/candles/v3?sym=usd&timezone=3'
+        )
+
+        url.searchParams.append('latest', latest)
+        url.searchParams.append('pair', pair.toLowerCase())
+
+        await page.bringToFront()
+
+        await sleep(300)
+
+        const latestCandles = await page.evaluate(async (url) => {
+            try {
+                const res = await fetch(url)
+                const resJson = await res.json()
+
+                return resJson
+            } catch (error) {
+                return error
+            }
+        }, url)
+
+        if (
+            latestCandles.__proro__ === Error.prototype ||
+            latestCandles.code !== 'OK'
+        ) {
+            console.log('latestCandles', latestCandles)
+
+            throw new Error('Cant get candles', latestCandles)
+        }
+
+        return { latestCandles }
+    }
 
     parseTelegramSignalsFromFile(): ITelegramSignals {
         const text = String(fs.readFileSync(this.telegramSignalsFilePath))
@@ -158,15 +246,16 @@ export class StatsV2Service {
         }
 
         const body = splittedOnBodyAndBuyers.shift()
-        let tradersBoughtText = splittedOnBodyAndBuyers
-
         const bodySplitted = body?.split('\n')
+        let tradersBoughtTextArr = splittedOnBodyAndBuyers
 
         const detailsToAdd = {
             tokenId: '',
             price: 0,
             lastBuyDate: '',
             lastBuyTime: 0,
+            tradersBoughtTextArr,
+            tradersBoughtCount: tradersBoughtTextArr.length,
         }
 
         detailsToAdd.tokenId = bodySplitted?.[1].toLowerCase() ?? ''
@@ -188,13 +277,151 @@ export class StatsV2Service {
         signal.details = detailsToAdd
     }
 
-    // async #getAllDataForSignal({
-    //     message,
-    // }: {
-    //     message: IMessageFromTelegramSignal
-    // }): Promise<{ signalData: any }> {
-    //     // Получить цену хорошую и плохую
-    // }
+    async #getAllDataForSignal({
+        message,
+        browser,
+        dexToolsPage,
+    }: {
+        message: IMessageFromTelegramSignal
+        browser: puppeteer.Browser
+        dexToolsPage: puppeteer.Page
+    }): Promise<{ signalData: any }> {
+        // Получить цену хорошую и плохую
+
+        let signalData
+
+        try {
+            if (!message.details.tokenId) {
+                throw new Error('Token id not found')
+            }
+
+            const { pairAddress } = await this.getPairAddress({
+                browser,
+                tokenId: message.details.tokenId,
+            })
+            console.log('Pair address Ive got', pairAddress)
+
+            const { historyCandles: dayCandles } = await this.getHistoryCandles(
+                {
+                    pair: pairAddress,
+                    page: dexToolsPage,
+                    res: '1d',
+                    ts: new Date().getTime() - 14 * 24 * 60 * 60 * 1000,
+                }
+            )
+
+            await sleep(1000)
+
+            const highestPrice = dayCandles.data.candles.reduce(
+                (prev, curr) => {
+                    const max = Math.max(prev.high, curr.high)
+
+                    if (max === prev.high) {
+                        return prev
+                    } else {
+                        return curr
+                    }
+                },
+                dayCandles.data.candles[0]
+            ).high
+
+            const { historyCandles: minuteCandles } =
+                await this.getHistoryCandles({
+                    pair: pairAddress,
+                    page: dexToolsPage,
+                    res: '1m',
+                    ts: Number(message.date_unixtime) * 1000,
+                })
+
+            signalData = {
+                pairAddress,
+                dayCandles,
+                minuteCandles,
+                worstBuyPrice: minuteCandles.data.candles[0].high,
+                goodBuyPrice: minuteCandles.data.candles[0].open,
+                highestPrice,
+            }
+        } catch (error) {
+            throw error
+        }
+
+        return { signalData }
+    }
+
+    async getPairAddress({
+        tokenId,
+        browser,
+    }: {
+        tokenId: string
+        browser: puppeteer.Browser
+    }): Promise<{ pairAddress: string }> {
+        console.log('Trying to get pairs data by token address: ', tokenId)
+        let pairs
+        try {
+            pairs = await dexScreenerApi.getPairsDataByTokenAddress({
+                tokenAddress: tokenId,
+            })
+            console.log('pairs', pairs)
+
+            return { pairAddress: pairs[0].pairAddress }
+        } catch (error) {
+            console.log('Cant get pairs data from dexScreenerApi')
+        }
+
+        let dataFromDexScreenerPage
+        if (!pairs) {
+            console.log('Trying to get data from dexScreener browser page')
+            dataFromDexScreenerPage = await this.getDataFromDexScreenerPage({
+                browser,
+                tokenId: tokenId,
+            })
+        }
+
+        if (!dataFromDexScreenerPage) {
+            throw new Error('Cant get pair address by token address')
+        }
+
+        let pairAddress
+
+        return { pairAddress: dataFromDexScreenerPage.pairAddress }
+    }
+
+    async getDataFromDexScreenerPage({
+        browser,
+        tokenId,
+    }: {
+        browser: puppeteer.Browser
+        tokenId: string
+    }) {
+        const page = await browser.newPage()
+        await page.goto(
+            `https://dexscreener.com/ethereum/${tokenId.toLocaleLowerCase()}`
+        )
+        await page.waitForSelector(
+            '.chakra-stack > .chakra-link[title="Open in block explorer"]'
+        )
+
+        const details = await page.evaluate(() => {
+            const dataToReturn = { pairAddress: '' }
+
+            // document.querySelector(
+            //     '[title="Open in block explorer"]'
+            // ).href
+            const href = (
+                document.querySelector(
+                    '.chakra-stack > .chakra-link[title="Open in block explorer"]'
+                ) as HTMLAnchorElement
+            )?.href
+
+            dataToReturn.pairAddress = href.split('address/')[1].toLowerCase()
+
+            return dataToReturn
+        })
+
+        await page.close()
+
+        return details
+    }
 }
 
 const statsV2Service = new StatsV2Service()

@@ -39,8 +39,12 @@ const tokensAreadyBoughtAndHandledSet = new Set()
 
 const telegramSignals = statsV2Service.parseTelegramSignalsFromFile()
 const browser = await statsV2Service.launchBrowser({ headless: false })
-const page = await statsV2Service.createDexToolsPage({ browser })
-await statsV2Service.getLatestCandles({ page })
+const dexToolsPage = await statsV2Service.createDexToolsPage({ browser })
+statsV2Service.getStatsAndWriteToFile({
+    dexToolsPage,
+    telegramSignals,
+    browser,
+})
 
 // thisShouldRunOnServer()
 
