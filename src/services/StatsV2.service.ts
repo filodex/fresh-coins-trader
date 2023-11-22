@@ -5,12 +5,19 @@ import syveApi from '../apis/SyveApi.js'
 import dexScreenerApi from '../apis/DexScreenerApi.js'
 import { sleep } from '../utils/utils.js'
 
+export interface ISignalStats {
+    message: IMessageFromTelegramSignal
+    signalData: ISignalData
+}
+
 export interface IMessageFromTelegramSignal {
     details: {
         tokenId?: string
         price?: number
         lastBuyDate?: string
         lastBuyTime?: number
+        tradersBoughtCount: number
+        tradersBoughtTextArr: string[]
     }
     id: number
     type: string
@@ -110,12 +117,20 @@ export class StatsV2Service {
         }
     }
 
-    readSignalsStats() {
+    readSignalsStatsFromFile() {
         const text = String(fs.readFileSync(this.signalsStatsFilePath))
-        const signalsStats:ISignalData[] = []
-        const splitted = text.split('******').forEach((el) => {
+        const signalsStats: {
+            message: IMessageFromTelegramSignal
+            signalData: ISignalData
+        }[] = []
+        text.split('******').forEach((el) => {
             el.trim()
+            try {
+                signalsStats.push(JSON.parse(el))
+            } catch (error) {}
         })
+
+        console.log(signalsStats)
     }
 
     async launchBrowser({ headless = true }): Promise<puppeteer.Browser> {
@@ -135,6 +150,32 @@ export class StatsV2Service {
         )
 
         return page
+    }
+
+    calcStats({ signalsStats }: { signalsStats: ISignalStats[] }) {
+        for (const signalStats of signalsStats) {
+            const errCounters = {}
+
+            const myPrice = signalStats.message.details.price
+            const worstBuyPrice = signalStats.signalData.worstBuyPrice
+            const goodBuyPrice = signalStats.signalData.goodBuyPrice
+            const myBuyTime = Number(signalStats.message.date_unixtime) * 1000
+            const lastWhaleBuyTime = signalStats.message.details.lastBuyTime
+            const tokenHighestPrice = signalStats.signalData.highestPrice
+            const whalesCount = signalStats.message.details.tradersBoughtCount
+
+            const dataToReturn = {
+                signalsProfit: {
+                    20: 0,
+                    50: 0,
+                    100: 0,
+                    300: 0,
+                    500: 0,
+                    1000: 0,
+                    more: 0,
+                },
+            }
+        }
     }
 
     // Плохо возвращает дневки
