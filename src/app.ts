@@ -37,14 +37,7 @@ const tokensAreadyBoughtAndHandledSet = new Set()
  * MAIN
  */
 
-const telegramSignals = statsV2Service.parseTelegramSignalsFromFile()
-const browser = await statsV2Service.launchBrowser({ headless: false })
-const dexToolsPage = await statsV2Service.createDexToolsPage({ browser })
-statsV2Service.getStatsAndWriteToFile({
-    dexToolsPage,
-    telegramSignals,
-    browser,
-})
+statsV2Service.readSignalsStatsFromFile()
 
 // thisShouldRunOnServer()
 
@@ -52,6 +45,17 @@ setInterval(() => {}, 5000)
 
 async function thisShouldRunOnServer() {
     await findAndHandleGoodTrades()
+}
+
+async function runStatsCollecting() {
+    const telegramSignals = statsV2Service.parseTelegramSignalsFromFile()
+    const browser = await statsV2Service.launchBrowser({ headless: false })
+    const dexToolsPage = await statsV2Service.createDexToolsPage({ browser })
+    statsV2Service.getStatsAndWriteToFile({
+        dexToolsPage,
+        telegramSignals,
+        browser,
+    })
 }
 
 async function findAndHandleGoodTrades() {
