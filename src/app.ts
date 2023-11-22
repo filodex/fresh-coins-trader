@@ -37,7 +37,8 @@ const tokensAreadyBoughtAndHandledSet = new Set()
  * MAIN
  */
 
-statsV2Service.readSignalsStatsFromFile()
+const signalsStats = statsV2Service.readSignalsStatsFromFile()
+statsV2Service.calcStats({ signalsStats })
 
 // thisShouldRunOnServer()
 
