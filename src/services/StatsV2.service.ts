@@ -130,7 +130,7 @@ export class StatsV2Service {
             } catch (error) {}
         })
 
-        console.log(signalsStats)
+        return signalsStats
     }
 
     async launchBrowser({ headless = true }): Promise<puppeteer.Browser> {
@@ -153,29 +153,62 @@ export class StatsV2Service {
     }
 
     calcStats({ signalsStats }: { signalsStats: ISignalStats[] }) {
+        const errCounters = { forCycleErr: 0 }
+        const stats = []
+        const signalsProfit = {
+            20: 0,
+            50: 0,
+            100: 0,
+            300: 0,
+            500: 0,
+            1000: 0,
+            more: 0,
+        }
+
         for (const signalStats of signalsStats) {
-            const errCounters = {}
+            try {
+                const myPrice = signalStats.message.details.price ?? 0
+                const worstBuyPrice = signalStats.signalData.worstBuyPrice
+                const goodBuyPrice = signalStats.signalData.goodBuyPrice
+                const myBuyTime =
+                    Number(signalStats.message.date_unixtime) * 1000
+                const lastWhaleBuyTime =
+                    signalStats.message.details.lastBuyTime ?? 0
+                const tokenHighestPrice = signalStats.signalData.highestPrice
+                const whalesCount =
+                    signalStats.message.details.tradersBoughtCount
 
-            const myPrice = signalStats.message.details.price
-            const worstBuyPrice = signalStats.signalData.worstBuyPrice
-            const goodBuyPrice = signalStats.signalData.goodBuyPrice
-            const myBuyTime = Number(signalStats.message.date_unixtime) * 1000
-            const lastWhaleBuyTime = signalStats.message.details.lastBuyTime
-            const tokenHighestPrice = signalStats.signalData.highestPrice
-            const whalesCount = signalStats.message.details.tradersBoughtCount
+                const dataToReturn = {
+                    name: signalStats.message.details.tokenId,
+                    whalesCount,
+                    tokenHighestPrice,
+                    goodBuyPrice,
+                    worstBuyPrice,
+                    myPrice,
+                    worstBuyPriceHigherThanGood:
+                        (worstBuyPrice / goodBuyPrice) * 100 - 100,
+                    worstBuyPriceHigherThanMyPrice:
+                        (worstBuyPrice / myPrice) * 100 - 100,
+                    myBuyTimeLaterThanLastWhale:
+                        lastWhaleBuyTime === 0
+                            ? 'Unknown'
+                            : myBuyTime - lastWhaleBuyTime,
+                    tokenHighestMoreThanworst:
+                        (tokenHighestPrice / worstBuyPrice) * 100 - 100,
+                    tokenHighestPriceMoreThanMyPrice:
+                        (tokenHighestPrice / myPrice) * 100 - 100,
+                    tokenHighestPriceMoreThanGoodBuyPrice:
+                        (tokenHighestPrice / goodBuyPrice) * 100 - 100,
+                }
 
-            const dataToReturn = {
-                signalsProfit: {
-                    20: 0,
-                    50: 0,
-                    100: 0,
-                    300: 0,
-                    500: 0,
-                    1000: 0,
-                    more: 0,
-                },
+                stats.push({ signalStats, stats: dataToReturn })
+            } catch (error) {
+                console.log(error)
+                errCounters.forCycleErr++
             }
         }
+
+        console.log(stats)
     }
 
     // Плохо возвращает дневки
