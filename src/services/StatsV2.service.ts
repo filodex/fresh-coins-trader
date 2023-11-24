@@ -18,6 +18,7 @@ export interface IMessageFromTelegramSignal {
         lastBuyTime?: number
         tradersBoughtCount: number
         tradersBoughtTextArr: string[]
+        tradersAddresses: string[]
     }
     id: number
     type: string
@@ -125,9 +126,26 @@ export class StatsV2Service {
         }[] = []
         text.split('******').forEach((el) => {
             el.trim()
+
+            let parsed
             try {
-                signalsStats.push(JSON.parse(el))
+                parsed = JSON.parse(el)
             } catch (error) {}
+
+            try {
+                parsed.message.details.tradersAddresses = []
+
+                for (const text of parsed.message.details
+                    .tradersBoughtTextArr) {
+                    const address = text.split('\n')[0].slice(15)
+
+                    parsed.message.details.tradersAddresses.push(address)
+                }
+            } catch (error) {}
+
+            if (parsed) {
+                signalsStats.push(parsed)
+            }
         })
 
         return signalsStats
@@ -152,10 +170,43 @@ export class StatsV2Service {
         return page
     }
 
+    #calcTokenHighestPriceAfterSignal({
+        dayCandles,
+        messageTime,
+    }: {
+        dayCandles: IGetCandlesResponse
+        messageTime: string
+    }) {
+        const msgTime = Number(messageTime) * 1000
+        let candlesToDelete = 0
+
+        for (const candle of dayCandles.data.candles) {
+            if (candle.time < msgTime) {
+                candlesToDelete++
+            }
+        }
+
+        candlesToDelete--
+
+        if (candlesToDelete < 0) {
+            candlesToDelete = 0
+        }
+
+        const noBadDayCandles = dayCandles.data.candles.slice(candlesToDelete)
+
+        const heights = []
+        for (const candle of noBadDayCandles) {
+            heights.push(candle.high)
+        }
+
+        return Math.max(...heights)
+    }
+
     calcStats({ signalsStats }: { signalsStats: ISignalStats[] }) {
         const errCounters = { forCycleErr: 0 }
         const stats = []
-        const signalsProfit = {
+        const walletStats: any = {}
+        const signalsProfitBlank = {
             20: 0,
             50: 0,
             100: 0,
@@ -163,10 +214,40 @@ export class StatsV2Service {
             500: 0,
             1000: 0,
             more: 0,
+            averageProfit: 0,
+            totalProfit: 0,
+            profitsCounter: 0,
+            moreArr: [0],
+        }
+        const signalsProfit = {
+            byWorstPrice: Object.assign({}, signalsProfitBlank),
+            byMyPrice: Object.assign({}, signalsProfitBlank),
+            byGoodPrice: Object.assign({}, signalsProfitBlank),
         }
 
         for (const signalStats of signalsStats) {
             try {
+                const goodWallets = [
+                    '0x0D260D8aD1CCAe73f0d53BE60Ff6Aa6ed94A01FC',
+                    '0x1071316b698da9947b2F267A02fD77e17ef2Fb5b',
+                    '0x2e120B2626f32fc10b1E7f3576cb17b28eDBFaC3',
+                    // '0x31b47c9b70F6ed771457b99eD92585938e2C43cF',
+                    '0x37e38E229ecEBBf9a6F4B8479B71508Ece16D597',
+                    '0x3e57efEf507b4db7aCFa2eE79CeCA6B19e18D106',
+                    '0x3eB81b24F5c89fe0119998bb8772413D32fEC77C',
+                    '0x5c1Ef9FDF2dC91eA2eFD2F21cD2AC24A243FDAF3',
+                    '0x6cdD2717F39E75808eeFE90B09065Cbaf392d504',
+                    '0x717B882A78cB7bFAa53305769f67C65b6b1B5375',
+                    // '0x772f0bB499aD06490f988359b5a1dF96ac32b9E2',
+                    '0xB37FC112feBaE7a0c86A2564D6D85E8DD3ee7ee7',
+                ]
+
+                // CalcTokenHighestPrice
+                const tokenHighestPrice =
+                    this.#calcTokenHighestPriceAfterSignal({
+                        dayCandles: signalStats.signalData.dayCandles,
+                        messageTime: signalStats.message.date_unixtime,
+                    })
                 const myPrice = signalStats.message.details.price ?? 0
                 const worstBuyPrice = signalStats.signalData.worstBuyPrice
                 const goodBuyPrice = signalStats.signalData.goodBuyPrice
@@ -174,9 +255,40 @@ export class StatsV2Service {
                     Number(signalStats.message.date_unixtime) * 1000
                 const lastWhaleBuyTime =
                     signalStats.message.details.lastBuyTime ?? 0
-                const tokenHighestPrice = signalStats.signalData.highestPrice
+
                 const whalesCount =
                     signalStats.message.details.tradersBoughtCount
+
+                signalStats.message.details.tradersAddresses.forEach(
+                    (address) => {
+                        if (!walletStats[address]) {
+                            walletStats[address] = Object.assign(
+                                {},
+                                signalsProfitBlank
+                            )
+                        }
+                    }
+                )
+
+                // if (whalesCount < 3) {
+                //     continue
+                // }
+
+                // if (signalStats.signalData.dayCandles.data.candles.length < 2) {
+                //     continue
+                // }
+
+                let isGoodTradedTraded = false
+                for (const iterator of signalStats.message.details
+                    .tradersAddresses) {
+                    if (goodWallets.includes(iterator)) {
+                        isGoodTradedTraded = true
+                    }
+                }
+
+                if (!isGoodTradedTraded) {
+                    continue
+                }
 
                 const dataToReturn = {
                     name: signalStats.message.details.tokenId,
@@ -193,13 +305,146 @@ export class StatsV2Service {
                         lastWhaleBuyTime === 0
                             ? 'Unknown'
                             : myBuyTime - lastWhaleBuyTime,
-                    tokenHighestMoreThanworst:
+                    tokenHighestPriceMoreThanWorst:
                         (tokenHighestPrice / worstBuyPrice) * 100 - 100,
                     tokenHighestPriceMoreThanMyPrice:
                         (tokenHighestPrice / myPrice) * 100 - 100,
-                    tokenHighestPriceMoreThanGoodBuyPrice:
+                    tokenHighestPriceMoreThanGoodPrice:
                         (tokenHighestPrice / goodBuyPrice) * 100 - 100,
                 }
+
+                signalsProfit.byGoodPrice.totalProfit +=
+                    dataToReturn.tokenHighestPriceMoreThanGoodPrice
+                signalsProfit.byMyPrice.totalProfit +=
+                    dataToReturn.tokenHighestPriceMoreThanMyPrice
+                signalsProfit.byWorstPrice.totalProfit +=
+                    dataToReturn.tokenHighestPriceMoreThanWorst
+
+                signalsProfit.byGoodPrice.profitsCounter++
+                signalsProfit.byMyPrice.profitsCounter++
+                signalsProfit.byWorstPrice.profitsCounter++
+
+                if (dataToReturn.tokenHighestPriceMoreThanGoodPrice < 20) {
+                    signalsProfit.byGoodPrice[20]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanGoodPrice < 50
+                ) {
+                    signalsProfit.byGoodPrice[50]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanGoodPrice < 100
+                ) {
+                    signalsProfit.byGoodPrice[100]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanGoodPrice < 300
+                ) {
+                    signalsProfit.byGoodPrice[300]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanGoodPrice < 500
+                ) {
+                    signalsProfit.byGoodPrice[500]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanGoodPrice < 1000
+                ) {
+                    signalsProfit.byGoodPrice[1000]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanGoodPrice > 1000
+                ) {
+                    signalsProfit.byGoodPrice.more++
+                    signalsProfit.byGoodPrice.moreArr.push(
+                        dataToReturn.tokenHighestPriceMoreThanGoodPrice
+                    )
+                }
+
+                if (dataToReturn.tokenHighestPriceMoreThanMyPrice < 20) {
+                    signalsProfit.byMyPrice[20]++
+                } else if (dataToReturn.tokenHighestPriceMoreThanMyPrice < 50) {
+                    signalsProfit.byMyPrice[50]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanMyPrice < 100
+                ) {
+                    signalsProfit.byMyPrice[100]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanMyPrice < 300
+                ) {
+                    signalsProfit.byMyPrice[300]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanMyPrice < 500
+                ) {
+                    signalsProfit.byMyPrice[500]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanMyPrice < 1000
+                ) {
+                    signalsProfit.byMyPrice[1000]++
+                } else if (
+                    dataToReturn.tokenHighestPriceMoreThanMyPrice > 1000
+                ) {
+                    signalsProfit.byMyPrice.more++
+                    signalsProfit.byMyPrice.moreArr.push(
+                        dataToReturn.tokenHighestPriceMoreThanMyPrice
+                    )
+                }
+
+                if (dataToReturn.tokenHighestPriceMoreThanWorst < 20) {
+                    signalsProfit.byWorstPrice[20]++
+                    signalStats.message.details.tradersAddresses.forEach(
+                        (address) => {
+                            walletStats[address][20]++
+                        }
+                    )
+                } else if (dataToReturn.tokenHighestPriceMoreThanWorst < 50) {
+                    signalsProfit.byWorstPrice[50]++
+                    signalStats.message.details.tradersAddresses.forEach(
+                        (address) => {
+                            walletStats[address][50]++
+                        }
+                    )
+                } else if (dataToReturn.tokenHighestPriceMoreThanWorst < 100) {
+                    signalsProfit.byWorstPrice[100]++
+                    signalStats.message.details.tradersAddresses.forEach(
+                        (address) => {
+                            walletStats[address][100]++
+                        }
+                    )
+                } else if (dataToReturn.tokenHighestPriceMoreThanWorst < 300) {
+                    signalsProfit.byWorstPrice[300]++
+                    signalStats.message.details.tradersAddresses.forEach(
+                        (address) => {
+                            walletStats[address][300]++
+                        }
+                    )
+                } else if (dataToReturn.tokenHighestPriceMoreThanWorst < 500) {
+                    signalsProfit.byWorstPrice[500]++
+                    signalStats.message.details.tradersAddresses.forEach(
+                        (address) => {
+                            walletStats[address][500]++
+                        }
+                    )
+                } else if (dataToReturn.tokenHighestPriceMoreThanWorst < 1000) {
+                    signalsProfit.byWorstPrice[1000]++
+                    signalStats.message.details.tradersAddresses.forEach(
+                        (address) => {
+                            walletStats[address][1000]++
+                        }
+                    )
+                } else if (dataToReturn.tokenHighestPriceMoreThanWorst > 1000) {
+                    signalsProfit.byWorstPrice.more++
+                    signalsProfit.byWorstPrice.moreArr.push(
+                        dataToReturn.tokenHighestPriceMoreThanWorst
+                    )
+                    signalStats.message.details.tradersAddresses.forEach(
+                        (address) => {
+                            walletStats[address].more++
+                        }
+                    )
+                }
+
+                signalStats.message.details.tradersAddresses.forEach(
+                    (address) => {
+                        walletStats[address].totalProfit +=
+                            dataToReturn.tokenHighestPriceMoreThanWorst
+                        walletStats[address].profitsCounter++
+                    }
+                )
 
                 stats.push({ signalStats, stats: dataToReturn })
             } catch (error) {
@@ -208,7 +453,24 @@ export class StatsV2Service {
             }
         }
 
+        signalsProfit.byGoodPrice.averageProfit =
+            signalsProfit.byGoodPrice.totalProfit /
+            signalsProfit.byGoodPrice.profitsCounter
+        signalsProfit.byMyPrice.averageProfit =
+            signalsProfit.byMyPrice.totalProfit /
+            signalsProfit.byMyPrice.profitsCounter
+        signalsProfit.byWorstPrice.averageProfit =
+            signalsProfit.byWorstPrice.totalProfit /
+            signalsProfit.byWorstPrice.profitsCounter
+
+        for (const key in walletStats) {
+            walletStats[key].averageProfit =
+                walletStats[key].totalProfit / walletStats[key].profitsCounter
+        }
+
         console.log(stats)
+        console.log(signalsProfit)
+        console.log(walletStats)
     }
 
     // Плохо возвращает дневки
@@ -347,6 +609,7 @@ export class StatsV2Service {
             lastBuyTime: 0,
             tradersBoughtTextArr,
             tradersBoughtCount: tradersBoughtTextArr.length,
+            tradersAddresses: [],
         }
 
         detailsToAdd.tokenId = bodySplitted?.[1].toLowerCase() ?? ''
