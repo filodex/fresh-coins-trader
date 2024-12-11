@@ -233,7 +233,7 @@ export class StatsV2Service {
                     '0x2e120B2626f32fc10b1E7f3576cb17b28eDBFaC3',
                     // '0x31b47c9b70F6ed771457b99eD92585938e2C43cF',
                     '0x37e38E229ecEBBf9a6F4B8479B71508Ece16D597',
-                    '0x3e57efEf507b4db7aCFa2eE79CeCA6B19e18D106',
+                    // '0x3e57efEf507b4db7aCFa2eE79CeCA6B19e18D106',
                     '0x3eB81b24F5c89fe0119998bb8772413D32fEC77C',
                     '0x5c1Ef9FDF2dC91eA2eFD2F21cD2AC24A243FDAF3',
                     '0x6cdD2717F39E75808eeFE90B09065Cbaf392d504',
